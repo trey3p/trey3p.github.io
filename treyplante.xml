@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>240</fr:anchor><fr:addr
+type="user">treyplante</fr:addr><fr:route>treyplante.xml</fr:route><fr:title
+text="Trey Plante">Trey Plante</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
+name="institution"><fr:link
+type="external"
+href="Wesleyan">Wesleyan</fr:link></fr:meta><fr:meta
+name="position">CS Masters Student</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Masters student of Dan Licata and Robert Rose at Wesleyan University</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Contributions">Contributions</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>241</fr:anchor><fr:addr
+type="user">egp-0001</fr:addr><fr:route>egp-0001.xml</fr:route><fr:title
+text="My first tree">My first tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>HI</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
