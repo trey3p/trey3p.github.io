@@ -27,7 +27,7 @@ root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>247</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Trey Plante">Trey Plante</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>I am a masters student in Computer Science at Wesleyan University,
-  advised by Dan Licata and Robert Rose.</fr:p><fr:tree
+  advised by Dan Licata and Robert Rose.</fr:p><fr:p>Hit Ctrl-K to search my site!</fr:p><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
