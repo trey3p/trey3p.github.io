@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
 type="user">egp-0003</fr:addr><fr:route>egp-0003.xml</fr:route><fr:title
 text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>List of notes somehow
 
@@ -18,7 +18,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
 text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -31,7 +31,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>234</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -42,7 +42,44 @@ to describe partially specified n-dimensional cubes.</fr:p><fr:p>I use the notat
 display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
 of partial elements of A defined on <fr:tex
 display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
-display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
+type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
+text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>boundary type</fr:em> is a type that describes the witness of a partial element being ``extensible''.
+  Given a partial element <fr:tex
+display="inline"><![CDATA[u : [\alpha ] \to  A]]></fr:tex>, the boundary type <fr:tex
+display="inline"><![CDATA[A[\alpha  \to  u]]]></fr:tex> is the type of elements <fr:tex
+display="inline"><![CDATA[a : A]]></fr:tex> that ``extend'' <fr:tex
+display="inline"><![CDATA[u]]></fr:tex>. A term <fr:tex
+display="inline"><![CDATA[a : A[\alpha  \to  u]]]></fr:tex> is a proof that <fr:tex
+display="inline"><![CDATA[a : A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[u : A]]></fr:tex> agree on <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex>.
+  Any term <fr:tex
+display="inline"><![CDATA[u : A]]></fr:tex> is a term of <fr:tex
+display="inline"><![CDATA[A[\alpha  \to  u]]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is equivalent with itself. Thus, the boundary type internalizes two judgments: <fr:tex
+display="inline"><![CDATA[\Gamma  \vdash  a : A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Gamma , \alpha  \vdash  a \equiv  u : A]]></fr:tex>.
+  Boundary types can be thought of as a <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-type: <fr:tex
+display="inline"><![CDATA[\Sigma  (a : A) ([\phi ] \to  A \equiv  u)]]></fr:tex>.</fr:p><fr:p>Generally, boundary types can describe
+
+
+TODO: Expand to bound types with multiple map</fr:p><fr:p>TODO: explain why <fr:tex
+display="inline"><![CDATA[u : A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[u : \alpha  \to  A]]></fr:tex> shifting type
+  TODO: write typing rules (inference)</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -57,7 +94,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Trey Plante">Trey Plante</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>I am a masters student in Computer Science at Wesleyan University,
   advised by Dan Licata and Robert Rose.</fr:p><fr:p>Hit Ctrl-K to search my site!</fr:p><fr:tree
@@ -67,7 +104,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:addr
 type="user">egp-0002</fr:addr><fr:route>egp-0002.xml</fr:route><fr:title
 text="Research Themes">Research Themes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Talk abt research ...</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -76,7 +113,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
 type="user">egp-0003</fr:addr><fr:route>egp-0003.xml</fr:route><fr:title
 text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>List of notes somehow
 
@@ -87,7 +124,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
 text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -100,7 +137,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>234</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -111,4 +148,41 @@ to describe partially specified n-dimensional cubes.</fr:p><fr:p>I use the notat
 display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
 of partial elements of A defined on <fr:tex
 display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
-display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
+type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
+text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>boundary type</fr:em> is a type that describes the witness of a partial element being ``extensible''.
+  Given a partial element <fr:tex
+display="inline"><![CDATA[u : [\alpha ] \to  A]]></fr:tex>, the boundary type <fr:tex
+display="inline"><![CDATA[A[\alpha  \to  u]]]></fr:tex> is the type of elements <fr:tex
+display="inline"><![CDATA[a : A]]></fr:tex> that ``extend'' <fr:tex
+display="inline"><![CDATA[u]]></fr:tex>. A term <fr:tex
+display="inline"><![CDATA[a : A[\alpha  \to  u]]]></fr:tex> is a proof that <fr:tex
+display="inline"><![CDATA[a : A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[u : A]]></fr:tex> agree on <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex>.
+  Any term <fr:tex
+display="inline"><![CDATA[u : A]]></fr:tex> is a term of <fr:tex
+display="inline"><![CDATA[A[\alpha  \to  u]]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is equivalent with itself. Thus, the boundary type internalizes two judgments: <fr:tex
+display="inline"><![CDATA[\Gamma  \vdash  a : A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Gamma , \alpha  \vdash  a \equiv  u : A]]></fr:tex>.
+  Boundary types can be thought of as a <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-type: <fr:tex
+display="inline"><![CDATA[\Sigma  (a : A) ([\phi ] \to  A \equiv  u)]]></fr:tex>.</fr:p><fr:p>Generally, boundary types can describe
+
+
+TODO: Expand to bound types with multiple map</fr:p><fr:p>TODO: explain why <fr:tex
+display="inline"><![CDATA[u : A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[u : \alpha  \to  A]]></fr:tex> shifting type
+  TODO: write typing rules (inference)</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
