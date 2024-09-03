@@ -17,4 +17,7 @@ type="external"
 href="https://www.cs.cmu.edu/~rwh/courses/chtt/">Robert Harper course on Computation Type Theory</fr:link></fr:li>
 <fr:li><fr:link
 type="external"
-href="https://favonia.org/courses/hdtt2020/">Favonia class on HDTT</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree>
+href="https://favonia.org/courses/hdtt2020/">Favonia class on HDTT</fr:link></fr:li>
+<fr:li><fr:link
+type="external"
+href="https://jonsterling.github.io/courses/ct-fall-2022/">Jon Sterling class on Category Theory</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree>
