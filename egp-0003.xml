@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>272</fr:anchor><fr:addr
 type="user">egp-0003</fr:addr><fr:route>egp-0003.xml</fr:route><fr:title
 text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>List of notes somehow
 
@@ -18,7 +18,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>240</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
 text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -31,7 +31,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -42,14 +42,42 @@ to describe partially specified n-dimensional cubes.</fr:p><fr:p>I use the notat
 display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
 of partial elements of A defined on <fr:tex
 display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
-display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows:</fr:p><fr:embedded-tex
+hash="299c9367e49e20481b2e0c919beb92e0"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+    \usepackage {mathtools}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  A : Type_{l}}
+        \infer 1[form]{\Gamma  \vdash  [\alpha ] \to  A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  ,\alpha  \vdash  a : A}
+        \infer 1[intro]{\Gamma  \vdash  in(f) : [\alpha ] \to  A}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="37f1a1dbfad577e56e4dfd8862596225"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+    \usepackage {mathtools}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
+        \infer 1[elim]{\Gamma  \vdash  out(f) : A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
+        \infer 1[comp]{\Gamma  \vdash  out(f) \equiv  a}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:addr
 type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
 text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -79,7 +107,136 @@ display="inline"><![CDATA[\Sigma  (a : A) ([\phi ] \to  A \equiv  u)]]></fr:tex>
 TODO: Expand to bound types with multiple map</fr:p><fr:p>TODO: explain why <fr:tex
 display="inline"><![CDATA[u : A]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[u : \alpha  \to  A]]></fr:tex> shifting type
-  TODO: write typing rules (inference)</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+  TODO: write typing rules (inference)
+
+  The typing rules for boundary types are as follows:</fr:p><fr:embedded-tex
+hash="2a5ba6a867bea5a3bff5105cc0f14a8a"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        \begin {prooftree}
+            \hypo {\Gamma  \vdash  A : Type_l} \hypo {\Gamma  \vdash  \psi  cof} \hypo {\Gamma  \vdash  t : [\psi ] \to  A}
+            \infer 3[form]{\Gamma  \vdash  A[\psi  \to  t]}
+        \end {prooftree}
+        \quad 
+         \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A}
+            \hypo {\Gamma  \vdash  \psi  cof}
+            \infer 2[intro]{\Gamma  \vdash  in(a) : A[\psi  \to  a]}
+        \end {prooftree}
+        \newline 
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="49b99d7fda10cb29f37d2f5ed18ab83d"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
+            \infer 1[elim]{\Gamma  \vdash  out(a) : A}
+        \end {prooftree}
+        \quad 
+        \begin {prooftree}
+             \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
+             \hypo {\Gamma  \vdash  \psi }
+            \infer 2[comp]{\Gamma  \vdash  out(a) \equiv  t}
+        \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
+
+      <fr:li><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr
+type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
+text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>These are notes from a Mathematical Logic class taught by
+    Alexander Van Abel at Wesleyan University. Any mistakes in the
+    following material are my own.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>234</fr:anchor><fr:addr
+type="user">mlg-0002</fr:addr><fr:route>mlg-0002.xml</fr:route><fr:title
+text="First-order Language">First-order Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A first-order language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is an infinite collection of distinct symbols,
+where no symbol is contained in another, in the following categories:
+
+The following are logical symbols that belong to every language:
+<fr:ul><fr:li>"(", ")"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[\lor ]]></fr:tex>", "<fr:tex
+display="inline"><![CDATA[\lnot ]]></fr:tex>"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[\forall ]]></fr:tex>"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[v_1]]></fr:tex>," "v_{2}", ... (an infinite sequence of variables). The set of variables is denoted
+        <fr:tex
+display="inline"><![CDATA[Vars]]></fr:tex>.</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[=]]></fr:tex>"</fr:li></fr:ul>
+
+
+The following are non-logical symbols that a language is not required to contain
+<fr:ul><fr:li>Constant symbols.</fr:li>
+
+    <fr:li>For every <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbols.</fr:li>
+
+    <fr:li>For every <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation symbols.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
+type="user">mlg-0003</fr:addr><fr:route>mlg-0003.xml</fr:route><fr:title
+text="Term of a Language">Term of a Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is a language a <fr:em>term of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:em> is a nonempty finite string <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> of symbols
+from <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> such that either:
+<fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a constant symbol</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a variable</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[t \coloneq  f t_{1} t_{2} \cdots  t_{n}]]></fr:tex>, , where <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbol of
+        <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and each of the <fr:tex
+display="inline"><![CDATA[t_i]]></fr:tex> is a term of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li></fr:ul>
+
+<fr:p>The symbol <fr:tex
+display="inline"><![CDATA[\coloneq ]]></fr:tex> is not a part of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, but a meta-linguistic symbol that means
+    the strings of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-symbols on each side of the <fr:tex
+display="inline"><![CDATA[\coloneq ]]></fr:tex> are identical.</fr:p></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -94,7 +251,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>273</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Trey Plante">Trey Plante</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>I am a masters student in Computer Science at Wesleyan University,
   advised by Dan Licata and Robert Rose.</fr:p><fr:p>Hit Ctrl-K to search my site!</fr:p><fr:tree
@@ -104,7 +261,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>274</fr:anchor><fr:addr
 type="user">egp-0002</fr:addr><fr:route>egp-0002.xml</fr:route><fr:title
 text="Research Themes">Research Themes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Talk abt research ...</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -113,7 +270,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>275</fr:anchor><fr:addr
 type="user">egp-0003</fr:addr><fr:route>egp-0003.xml</fr:route><fr:title
 text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>List of notes somehow
 
@@ -124,7 +281,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>240</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
 text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -137,7 +294,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -148,14 +305,42 @@ to describe partially specified n-dimensional cubes.</fr:p><fr:p>I use the notat
 display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
 of partial elements of A defined on <fr:tex
 display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
-display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows:</fr:p><fr:embedded-tex
+hash="299c9367e49e20481b2e0c919beb92e0"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+    \usepackage {mathtools}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  A : Type_{l}}
+        \infer 1[form]{\Gamma  \vdash  [\alpha ] \to  A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  ,\alpha  \vdash  a : A}
+        \infer 1[intro]{\Gamma  \vdash  in(f) : [\alpha ] \to  A}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="37f1a1dbfad577e56e4dfd8862596225"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+    \usepackage {mathtools}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
+        \infer 1[elim]{\Gamma  \vdash  out(f) : A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
+        \infer 1[comp]{\Gamma  \vdash  out(f) \equiv  a}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:addr
 type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
 text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -185,4 +370,133 @@ display="inline"><![CDATA[\Sigma  (a : A) ([\phi ] \to  A \equiv  u)]]></fr:tex>
 TODO: Expand to bound types with multiple map</fr:p><fr:p>TODO: explain why <fr:tex
 display="inline"><![CDATA[u : A]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[u : \alpha  \to  A]]></fr:tex> shifting type
-  TODO: write typing rules (inference)</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+  TODO: write typing rules (inference)
+
+  The typing rules for boundary types are as follows:</fr:p><fr:embedded-tex
+hash="2a5ba6a867bea5a3bff5105cc0f14a8a"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        \begin {prooftree}
+            \hypo {\Gamma  \vdash  A : Type_l} \hypo {\Gamma  \vdash  \psi  cof} \hypo {\Gamma  \vdash  t : [\psi ] \to  A}
+            \infer 3[form]{\Gamma  \vdash  A[\psi  \to  t]}
+        \end {prooftree}
+        \quad 
+         \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A}
+            \hypo {\Gamma  \vdash  \psi  cof}
+            \infer 2[intro]{\Gamma  \vdash  in(a) : A[\psi  \to  a]}
+        \end {prooftree}
+        \newline 
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="49b99d7fda10cb29f37d2f5ed18ab83d"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
+            \infer 1[elim]{\Gamma  \vdash  out(a) : A}
+        \end {prooftree}
+        \quad 
+        \begin {prooftree}
+             \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
+             \hypo {\Gamma  \vdash  \psi }
+            \infer 2[comp]{\Gamma  \vdash  out(a) \equiv  t}
+        \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
+
+      <fr:li><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr
+type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
+text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>These are notes from a Mathematical Logic class taught by
+    Alexander Van Abel at Wesleyan University. Any mistakes in the
+    following material are my own.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>234</fr:anchor><fr:addr
+type="user">mlg-0002</fr:addr><fr:route>mlg-0002.xml</fr:route><fr:title
+text="First-order Language">First-order Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A first-order language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is an infinite collection of distinct symbols,
+where no symbol is contained in another, in the following categories:
+
+The following are logical symbols that belong to every language:
+<fr:ul><fr:li>"(", ")"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[\lor ]]></fr:tex>", "<fr:tex
+display="inline"><![CDATA[\lnot ]]></fr:tex>"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[\forall ]]></fr:tex>"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[v_1]]></fr:tex>," "v_{2}", ... (an infinite sequence of variables). The set of variables is denoted
+        <fr:tex
+display="inline"><![CDATA[Vars]]></fr:tex>.</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[=]]></fr:tex>"</fr:li></fr:ul>
+
+
+The following are non-logical symbols that a language is not required to contain
+<fr:ul><fr:li>Constant symbols.</fr:li>
+
+    <fr:li>For every <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbols.</fr:li>
+
+    <fr:li>For every <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation symbols.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
+type="user">mlg-0003</fr:addr><fr:route>mlg-0003.xml</fr:route><fr:title
+text="Term of a Language">Term of a Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is a language a <fr:em>term of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:em> is a nonempty finite string <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> of symbols
+from <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> such that either:
+<fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a constant symbol</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a variable</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[t \coloneq  f t_{1} t_{2} \cdots  t_{n}]]></fr:tex>, , where <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbol of
+        <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and each of the <fr:tex
+display="inline"><![CDATA[t_i]]></fr:tex> is a term of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li></fr:ul>
+
+<fr:p>The symbol <fr:tex
+display="inline"><![CDATA[\coloneq ]]></fr:tex> is not a part of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, but a meta-linguistic symbol that means
+    the strings of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-symbols on each side of the <fr:tex
+display="inline"><![CDATA[\coloneq ]]></fr:tex> are identical.</fr:p></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

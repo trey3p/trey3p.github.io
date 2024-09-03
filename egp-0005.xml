@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>245</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:addr
 type="user">egp-0005</fr:addr><fr:route>egp-0005.xml</fr:route><fr:title
 text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -20,7 +20,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>247</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>264</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -31,4 +31,32 @@ to describe partially specified n-dimensional cubes.</fr:p><fr:p>I use the notat
 display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
 of partial elements of A defined on <fr:tex
 display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
-display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
+display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows:</fr:p><fr:embedded-tex
+hash="299c9367e49e20481b2e0c919beb92e0"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+    \usepackage {mathtools}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  A : Type_{l}}
+        \infer 1[form]{\Gamma  \vdash  [\alpha ] \to  A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  ,\alpha  \vdash  a : A}
+        \infer 1[intro]{\Gamma  \vdash  in(f) : [\alpha ] \to  A}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="37f1a1dbfad577e56e4dfd8862596225"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+    \usepackage {mathtools}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
+        \infer 1[elim]{\Gamma  \vdash  out(f) : A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
+        \infer 1[comp]{\Gamma  \vdash  out(f) \equiv  a}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>

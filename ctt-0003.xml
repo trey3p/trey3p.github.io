@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>231</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
 type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
 text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -37,7 +37,39 @@ display="inline"><![CDATA[\Sigma  (a : A) ([\phi ] \to  A \equiv  u)]]></fr:tex>
 TODO: Expand to bound types with multiple map</fr:p><fr:p>TODO: explain why <fr:tex
 display="inline"><![CDATA[u : A]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[u : \alpha  \to  A]]></fr:tex> shifting type
-  TODO: write typing rules (inference)</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+  TODO: write typing rules (inference)
+
+  The typing rules for boundary types are as follows:</fr:p><fr:embedded-tex
+hash="2a5ba6a867bea5a3bff5105cc0f14a8a"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        \begin {prooftree}
+            \hypo {\Gamma  \vdash  A : Type_l} \hypo {\Gamma  \vdash  \psi  cof} \hypo {\Gamma  \vdash  t : [\psi ] \to  A}
+            \infer 3[form]{\Gamma  \vdash  A[\psi  \to  t]}
+        \end {prooftree}
+        \quad 
+         \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A}
+            \hypo {\Gamma  \vdash  \psi  cof}
+            \infer 2[intro]{\Gamma  \vdash  in(a) : A[\psi  \to  a]}
+        \end {prooftree}
+        \newline 
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="49b99d7fda10cb29f37d2f5ed18ab83d"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
+            \infer 1[elim]{\Gamma  \vdash  out(a) : A}
+        \end {prooftree}
+        \quad 
+        \begin {prooftree}
+             \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
+             \hypo {\Gamma  \vdash  \psi }
+            \infer 2[comp]{\Gamma  \vdash  out(a) \equiv  t}
+        \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -52,7 +84,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>233</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
 text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -65,7 +97,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -76,14 +108,42 @@ to describe partially specified n-dimensional cubes.</fr:p><fr:p>I use the notat
 display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
 of partial elements of A defined on <fr:tex
 display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
-display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows:</fr:p><fr:embedded-tex
+hash="299c9367e49e20481b2e0c919beb92e0"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+    \usepackage {mathtools}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  A : Type_{l}}
+        \infer 1[form]{\Gamma  \vdash  [\alpha ] \to  A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  ,\alpha  \vdash  a : A}
+        \infer 1[intro]{\Gamma  \vdash  in(f) : [\alpha ] \to  A}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="37f1a1dbfad577e56e4dfd8862596225"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+    \usepackage {mathtools}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
+        \infer 1[elim]{\Gamma  \vdash  out(f) : A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
+        \infer 1[comp]{\Gamma  \vdash  out(f) \equiv  a}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:addr
 type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
 text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -113,4 +173,36 @@ display="inline"><![CDATA[\Sigma  (a : A) ([\phi ] \to  A \equiv  u)]]></fr:tex>
 TODO: Expand to bound types with multiple map</fr:p><fr:p>TODO: explain why <fr:tex
 display="inline"><![CDATA[u : A]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[u : \alpha  \to  A]]></fr:tex> shifting type
-  TODO: write typing rules (inference)</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+  TODO: write typing rules (inference)
+
+  The typing rules for boundary types are as follows:</fr:p><fr:embedded-tex
+hash="2a5ba6a867bea5a3bff5105cc0f14a8a"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        \begin {prooftree}
+            \hypo {\Gamma  \vdash  A : Type_l} \hypo {\Gamma  \vdash  \psi  cof} \hypo {\Gamma  \vdash  t : [\psi ] \to  A}
+            \infer 3[form]{\Gamma  \vdash  A[\psi  \to  t]}
+        \end {prooftree}
+        \quad 
+         \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A}
+            \hypo {\Gamma  \vdash  \psi  cof}
+            \infer 2[intro]{\Gamma  \vdash  in(a) : A[\psi  \to  a]}
+        \end {prooftree}
+        \newline 
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="49b99d7fda10cb29f37d2f5ed18ab83d"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
+            \infer 1[elim]{\Gamma  \vdash  out(a) : A}
+        \end {prooftree}
+        \quad 
+        \begin {prooftree}
+             \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
+             \hypo {\Gamma  \vdash  \psi }
+            \infer 2[comp]{\Gamma  \vdash  out(a) \equiv  t}
+        \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
