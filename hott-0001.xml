@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:addr
+type="user">hott-0001</fr:addr><fr:route>hott-0001.xml</fr:route><fr:title
+text="Functions are functors">Functions are functors</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The claim is that functions behave "functorially" on paths. This is equivalent to saying functions
+   respect equality in type theory and that functions are continuous (preserve paths) in topology.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>241</fr:anchor><fr:addr
+type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
+text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[f : A \to  B]]></fr:tex> is a function. Then for any <fr:tex
+display="inline"><![CDATA[x, y : A]]></fr:tex> there is an operation
+    <fr:tex
+display="block"><![CDATA[ap_{f} : (x =_{A} y) \to  (f(x) =_{B} f(y))]]></fr:tex>.</fr:p><fr:p>Moreover, for each <fr:tex
+display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex
+display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p><fr:p>The notation <fr:tex
+display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
+    on paths of f.</fr:p><fr:p>It suffices (by induction) to define <fr:tex
+display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>For functions <fr:tex
+display="inline"><![CDATA[f : A \to  B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g : B \to  C]]></fr:tex> and paths <fr:tex
+display="inline"><![CDATA[p : x =_{A} y]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[q : y =_{A} z]]></fr:tex> we have:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[ap_{f}(p \bullet  q) = ap_{f}(p) \bullet  ap_f(q)]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[ap_{f}(p^{-1}) = ap_{f}(p)^{-1}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[ap_{g}(ap_{f}(p)) = ap_{g \circ  f}(p)]]></fr:tex></fr:li>
+
+        <fr:li>ap_{id_{A}}(p) = p</fr:li></fr:ul></fr:p><fr:p>Notes from section 2.2 of the HoTT book</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
