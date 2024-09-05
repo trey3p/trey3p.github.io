@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>304</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:addr
 type="user">treyplante</fr:addr><fr:route>treyplante.xml</fr:route><fr:title
 text="Trey Plante">Trey Plante</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
 name="institution"><fr:link
@@ -28,7 +28,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>326</fr:anchor><fr:addr
 type="user">hott-0003</fr:addr><fr:route>hott-0003.xml</fr:route><fr:title
 text="(S^{1}) = {Z} "><fr:tex
 display="inline"><![CDATA[\Pi (S^{1}) = \mathbb {Z}]]></fr:tex> </fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -64,7 +64,109 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>307</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:addr
+type="user">ctt-0004</fr:addr><fr:route>ctt-0004.xml</fr:route><fr:title
+text="Cofibration Logics">Cofibration Logics</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
+type="local"
+href="rose-weaver-licata-types-2022.xml"
+addr="rose-weaver-licata-types-2022"
+title="Deciding the cofibration logic of cartesian cubical type theories">cofibration logic</fr:link> is a first-order intuitonstic logic used in the definition of cubical type theories.
+    Like any first-order logic, a cofibration logic is defined by a description of terms and formulas.</fr:p><fr:p>The terms of a cofibration logic are a specification of the structure of <fr:tex
+display="inline"><![CDATA[\mathbb {I}]]></fr:tex>, the interval.
+    The simplest interval term structure contains the endpoints <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[1]]></fr:tex> and arbitrary variables <fr:tex
+display="inline"><![CDATA[x_i]]></fr:tex>.
+    The most complex interval term structure contains the above and joins, meets, and complements (DeMorgan Algebra).
+    In cubical type thoeries, the specified structure of <fr:tex
+display="inline"><![CDATA[\mathbb {I}]]></fr:tex> is used to reason about the dimensions of the <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-cube.
+    Varying term definitions lead to varying levels of complexity of the path structure in a cubical type theory.</fr:p><fr:p>The formulas of a cofibration logic are a fragment of intuitionistic first-order equational logic over interval terms.
+    The formulas of a cofibration logic are called <fr:em>cofibrations</fr:em>. Cofibrations are used in cubical type theory to reason
+    about portions of paths.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:addr
+type="user">ctt-0005</fr:addr><fr:route>ctt-0005.xml</fr:route><fr:title
+text="Cofibration Logic for Directed Type Theory">Cofibration Logic for Directed Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The interval terms presented in the style of sequent calculus are as follows:</fr:p><fr:embedded-tex
+hash="a0e436a673138731ad117ce0eac085d5"><fr:embedded-tex-preamble><![CDATA[ \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath, amsfonts}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \infer 0[form]{\vdash  \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \infer 0[intro1]{\vdash  0 : \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \infer 0[intro2]{\vdash  1 : \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \infer 0[intro3]{\vdash  x_{i} : \bI }
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="045e5783f0d4daed8f5966e370e8672b"><fr:embedded-tex-preamble><![CDATA[ \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath, amsfonts}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Psi  \vdash  p : \bI  } \hypo {\Psi  \vdash  q : \bI }
+        \infer 2[join]{\Psi  \vdash  p \lor  q : \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Psi  \vdash  p : \bI } \hypo {\Psi  \vdash  q : \bI }
+        \infer 2[meet]{\Psi  \vdash  p \land  q : \bI }
+   \end {prooftree}
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>The cofibration formulas presented in the style of sequent calculus are as follows:</fr:p><fr:embedded-tex
+hash="6442a1e72b56a407010a0a6105f51700"><fr:embedded-tex-preamble><![CDATA[
+     \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \infer 0[bot]{\vdash  \bot  cofib}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:addr
 type="user">hott-0001</fr:addr><fr:route>hott-0001.xml</fr:route><fr:title
 text="Functions are functors">Functions are functors</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -78,7 +180,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>241</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
 type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
 text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -114,7 +216,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>309</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:addr
 type="user">hott-0004</fr:addr><fr:route>hott-0004.xml</fr:route><fr:title
 text="Notes on Homotopy Type Theory">Notes on Homotopy Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -163,7 +265,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>311</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>336</fr:anchor><fr:addr
 type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
 text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -185,7 +287,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:addr
 type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
 text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -200,7 +302,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:addr
 type="user">mlg-0002</fr:addr><fr:route>mlg-0002.xml</fr:route><fr:title
 text="First-order Language">First-order Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A first-order language <fr:tex
 display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is an infinite collection of distinct symbols,
@@ -241,7 +343,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>266</fr:anchor><fr:addr
 type="user">mlg-0003</fr:addr><fr:route>mlg-0003.xml</fr:route><fr:title
 text="Term of a Language">Term of a Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -280,7 +382,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>340</fr:anchor><fr:addr
 type="user">mlg-0003</fr:addr><fr:route>mlg-0003.xml</fr:route><fr:title
 text="Term of a Language">Term of a Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -319,7 +421,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>342</fr:anchor><fr:addr
 type="user">dtt-0001</fr:addr><fr:route>dtt-0001.xml</fr:route><fr:title
 text="Truncation Levels in Type Theory">Truncation Levels in Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -332,7 +434,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>344</fr:anchor><fr:addr
 type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
 text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -365,35 +467,63 @@ display="inline"><![CDATA[u : \alpha  \to  A]]></fr:tex> shifting type
   TODO: write typing rules (inference)
 
   The typing rules for boundary types are as follows:</fr:p><fr:embedded-tex
-hash="2a5ba6a867bea5a3bff5105cc0f14a8a"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+hash="b53febbb58ba7f6e4c91b328cebb00f3"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
      \usepackage {mathtools}
+     \usepackage {amsmath}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
     ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
         \begin {prooftree}
-            \hypo {\Gamma  \vdash  A : Type_l} \hypo {\Gamma  \vdash  \psi  cof} \hypo {\Gamma  \vdash  t : [\psi ] \to  A}
-            \infer 3[form]{\Gamma  \vdash  A[\psi  \to  t]}
+            \hypo {\Gamma  \vdash  A : \sU _l} \hypo {\Gamma  \vdash  \psi  \cof } \hypo {\Gamma  \vdash  t : [\psi ] \to  \A }
+            \infer 3[form]{\Gamma  \vdash  \A [\psi  \to  t]}
         \end {prooftree}
-        \quad 
-         \begin {prooftree}
-            \hypo {\Gamma  \vdash  a : A}
-            \hypo {\Gamma  \vdash  \psi  cof}
-            \infer 2[intro]{\Gamma  \vdash  in(a) : A[\psi  \to  a]}
-        \end {prooftree}
-        \newline 
 
 ]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
-hash="49b99d7fda10cb29f37d2f5ed18ab83d"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+hash="4fff20fd514e4131916ddb1c772f421c"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
      \usepackage {mathtools}
+     \usepackage {amsmath}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : \A }
+            \hypo {\Gamma  \vdash  \psi  \cof }
+            \hypo {\Gamma , \psi  \vdash  t : \A }
+            \hypo {\Gamma , \psi  \vdash  t \equiv  a}
+            \infer 4[intro]{\Gamma  \vdash  \inb (a) : \A [\psi  \to  t]}
+        \end {prooftree}
+
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="21b35b2daaf886add090fa0611f9cc4b"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
     ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     \begin {prooftree}
-            \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
-            \infer 1[elim]{\Gamma  \vdash  out(a) : A}
+            \hypo {\Gamma  \vdash  a : \A [\psi  \to  t]}
+            \infer 1[elim]{\Gamma  \vdash  \outb (a) : \A }
         \end {prooftree}
         \quad 
         \begin {prooftree}
              \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
              \hypo {\Gamma  \vdash  \psi }
-            \infer 2[comp]{\Gamma  \vdash  out(a) \equiv  t}
+            \infer 2[comp1]{\Gamma  \vdash  \outb (a) \equiv  t}
         \end {prooftree}
+        \quad 
+        \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A}
+            \infer 1[comp2]{\Gamma  \vdash  \outb (\inb (a)) \equiv  a}
+        \end {prooftree}
+
 ]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
@@ -401,13 +531,43 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>321</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>346</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
 text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="treyplante.xml"
 addr="treyplante"
 title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Cubical type theory is a constructive approach to homotopy type theory..</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr
+type="user">ctt-0004</fr:addr><fr:route>ctt-0004.xml</fr:route><fr:title
+text="Cofibration Logics">Cofibration Logics</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
+type="local"
+href="rose-weaver-licata-types-2022.xml"
+addr="rose-weaver-licata-types-2022"
+title="Deciding the cofibration logic of cartesian cubical type theories">cofibration logic</fr:link> is a first-order intuitonstic logic used in the definition of cubical type theories.
+    Like any first-order logic, a cofibration logic is defined by a description of terms and formulas.</fr:p><fr:p>The terms of a cofibration logic are a specification of the structure of <fr:tex
+display="inline"><![CDATA[\mathbb {I}]]></fr:tex>, the interval.
+    The simplest interval term structure contains the endpoints <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[1]]></fr:tex> and arbitrary variables <fr:tex
+display="inline"><![CDATA[x_i]]></fr:tex>.
+    The most complex interval term structure contains the above and joins, meets, and complements (DeMorgan Algebra).
+    In cubical type thoeries, the specified structure of <fr:tex
+display="inline"><![CDATA[\mathbb {I}]]></fr:tex> is used to reason about the dimensions of the <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-cube.
+    Varying term definitions lead to varying levels of complexity of the path structure in a cubical type theory.</fr:p><fr:p>The formulas of a cofibration logic are a fragment of intuitionistic first-order equational logic over interval terms.
+    The formulas of a cofibration logic are called <fr:em>cofibrations</fr:em>. Cofibrations are used in cubical type theory to reason
+    about portions of paths.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
@@ -426,32 +586,44 @@ display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
 of partial elements of A defined on <fr:tex
 display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
 display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows:</fr:p><fr:embedded-tex
-hash="299c9367e49e20481b2e0c919beb92e0"><fr:embedded-tex-preamble><![CDATA[
+hash="97c55be213baff4d0977a7c5ae7dbabd"><fr:embedded-tex-preamble><![CDATA[
     \usepackage {ebproof}
-    \usepackage {mathtools}
-]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     \begin {prooftree}
-        \hypo {\Gamma  \vdash  A : Type_{l}}
+        \hypo {\Gamma  \vdash  \A  : \sU _{l}}
         \infer 1[form]{\Gamma  \vdash  [\alpha ] \to  A}
     \end {prooftree}
     \quad 
     \begin {prooftree}
         \hypo {\Gamma  ,\alpha  \vdash  a : A}
-        \infer 1[intro]{\Gamma  \vdash  in(f) : [\alpha ] \to  A}
+        \infer 1[intro]{\Gamma  \vdash  \inb (f) : [\alpha ] \to  \A }
     \end {prooftree}
 ]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
-hash="37f1a1dbfad577e56e4dfd8862596225"><fr:embedded-tex-preamble><![CDATA[
+hash="cc90b8c81413046e4c70a50bf99685f4"><fr:embedded-tex-preamble><![CDATA[
     \usepackage {ebproof}
     \usepackage {mathtools}
+       \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
 ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     \begin {prooftree}
         \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
-        \infer 1[elim]{\Gamma  \vdash  out(f) : A}
+        \infer 1[elim]{\Gamma  \vdash  \outb (f) : A}
     \end {prooftree}
     \quad 
     \begin {prooftree}
-        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
-        \infer 1[comp]{\Gamma  \vdash  out(f) \equiv  a}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  \A }
+        \infer 1[comp]{\Gamma  \vdash  \outb (f) \equiv  a}
     \end {prooftree}
 ]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -493,35 +665,63 @@ display="inline"><![CDATA[u : \alpha  \to  A]]></fr:tex> shifting type
   TODO: write typing rules (inference)
 
   The typing rules for boundary types are as follows:</fr:p><fr:embedded-tex
-hash="2a5ba6a867bea5a3bff5105cc0f14a8a"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+hash="b53febbb58ba7f6e4c91b328cebb00f3"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
      \usepackage {mathtools}
+     \usepackage {amsmath}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
     ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
         \begin {prooftree}
-            \hypo {\Gamma  \vdash  A : Type_l} \hypo {\Gamma  \vdash  \psi  cof} \hypo {\Gamma  \vdash  t : [\psi ] \to  A}
-            \infer 3[form]{\Gamma  \vdash  A[\psi  \to  t]}
+            \hypo {\Gamma  \vdash  A : \sU _l} \hypo {\Gamma  \vdash  \psi  \cof } \hypo {\Gamma  \vdash  t : [\psi ] \to  \A }
+            \infer 3[form]{\Gamma  \vdash  \A [\psi  \to  t]}
         \end {prooftree}
-        \quad 
-         \begin {prooftree}
-            \hypo {\Gamma  \vdash  a : A}
-            \hypo {\Gamma  \vdash  \psi  cof}
-            \infer 2[intro]{\Gamma  \vdash  in(a) : A[\psi  \to  a]}
-        \end {prooftree}
-        \newline 
 
 ]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
-hash="49b99d7fda10cb29f37d2f5ed18ab83d"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+hash="4fff20fd514e4131916ddb1c772f421c"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
      \usepackage {mathtools}
+     \usepackage {amsmath}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : \A }
+            \hypo {\Gamma  \vdash  \psi  \cof }
+            \hypo {\Gamma , \psi  \vdash  t : \A }
+            \hypo {\Gamma , \psi  \vdash  t \equiv  a}
+            \infer 4[intro]{\Gamma  \vdash  \inb (a) : \A [\psi  \to  t]}
+        \end {prooftree}
+
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="21b35b2daaf886add090fa0611f9cc4b"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
     ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     \begin {prooftree}
-            \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
-            \infer 1[elim]{\Gamma  \vdash  out(a) : A}
+            \hypo {\Gamma  \vdash  a : \A [\psi  \to  t]}
+            \infer 1[elim]{\Gamma  \vdash  \outb (a) : \A }
         \end {prooftree}
         \quad 
         \begin {prooftree}
              \hypo {\Gamma  \vdash  a : A[\psi  \to  t]}
              \hypo {\Gamma  \vdash  \psi }
-            \infer 2[comp]{\Gamma  \vdash  out(a) \equiv  t}
+            \infer 2[comp1]{\Gamma  \vdash  \outb (a) \equiv  t}
         \end {prooftree}
+        \quad 
+        \begin {prooftree}
+            \hypo {\Gamma  \vdash  a : A}
+            \infer 1[comp2]{\Gamma  \vdash  \outb (\inb (a)) \equiv  a}
+        \end {prooftree}
+
 ]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
@@ -529,7 +729,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>348</fr:anchor><fr:addr
 type="user">egp-0005</fr:addr><fr:route>egp-0005.xml</fr:route><fr:title
 text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -542,7 +742,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>287</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>300</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -554,32 +754,44 @@ display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
 of partial elements of A defined on <fr:tex
 display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
 display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows:</fr:p><fr:embedded-tex
-hash="299c9367e49e20481b2e0c919beb92e0"><fr:embedded-tex-preamble><![CDATA[
+hash="97c55be213baff4d0977a7c5ae7dbabd"><fr:embedded-tex-preamble><![CDATA[
     \usepackage {ebproof}
-    \usepackage {mathtools}
-]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     \begin {prooftree}
-        \hypo {\Gamma  \vdash  A : Type_{l}}
+        \hypo {\Gamma  \vdash  \A  : \sU _{l}}
         \infer 1[form]{\Gamma  \vdash  [\alpha ] \to  A}
     \end {prooftree}
     \quad 
     \begin {prooftree}
         \hypo {\Gamma  ,\alpha  \vdash  a : A}
-        \infer 1[intro]{\Gamma  \vdash  in(f) : [\alpha ] \to  A}
+        \infer 1[intro]{\Gamma  \vdash  \inb (f) : [\alpha ] \to  \A }
     \end {prooftree}
 ]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
-hash="37f1a1dbfad577e56e4dfd8862596225"><fr:embedded-tex-preamble><![CDATA[
+hash="cc90b8c81413046e4c70a50bf99685f4"><fr:embedded-tex-preamble><![CDATA[
     \usepackage {ebproof}
     \usepackage {mathtools}
+       \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
 ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     \begin {prooftree}
         \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
-        \infer 1[elim]{\Gamma  \vdash  out(f) : A}
+        \infer 1[elim]{\Gamma  \vdash  \outb (f) : A}
     \end {prooftree}
     \quad 
     \begin {prooftree}
-        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
-        \infer 1[comp]{\Gamma  \vdash  out(f) \equiv  a}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  \A }
+        \infer 1[comp]{\Gamma  \vdash  \outb (f) \equiv  a}
     \end {prooftree}
 ]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -588,7 +800,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>350</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -600,32 +812,44 @@ display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
 of partial elements of A defined on <fr:tex
 display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
 display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows:</fr:p><fr:embedded-tex
-hash="299c9367e49e20481b2e0c919beb92e0"><fr:embedded-tex-preamble><![CDATA[
+hash="97c55be213baff4d0977a7c5ae7dbabd"><fr:embedded-tex-preamble><![CDATA[
     \usepackage {ebproof}
-    \usepackage {mathtools}
-]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     \begin {prooftree}
-        \hypo {\Gamma  \vdash  A : Type_{l}}
+        \hypo {\Gamma  \vdash  \A  : \sU _{l}}
         \infer 1[form]{\Gamma  \vdash  [\alpha ] \to  A}
     \end {prooftree}
     \quad 
     \begin {prooftree}
         \hypo {\Gamma  ,\alpha  \vdash  a : A}
-        \infer 1[intro]{\Gamma  \vdash  in(f) : [\alpha ] \to  A}
+        \infer 1[intro]{\Gamma  \vdash  \inb (f) : [\alpha ] \to  \A }
     \end {prooftree}
 ]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
-hash="37f1a1dbfad577e56e4dfd8862596225"><fr:embedded-tex-preamble><![CDATA[
+hash="cc90b8c81413046e4c70a50bf99685f4"><fr:embedded-tex-preamble><![CDATA[
     \usepackage {ebproof}
     \usepackage {mathtools}
+       \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
 ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     \begin {prooftree}
         \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
-        \infer 1[elim]{\Gamma  \vdash  out(f) : A}
+        \infer 1[elim]{\Gamma  \vdash  \outb (f) : A}
     \end {prooftree}
     \quad 
     \begin {prooftree}
-        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
-        \infer 1[comp]{\Gamma  \vdash  out(f) \equiv  a}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  \A }
+        \infer 1[comp]{\Gamma  \vdash  \outb (f) \equiv  a}
     \end {prooftree}
 ]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -634,7 +858,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>352</fr:anchor><fr:addr
 type="user">egp-0001</fr:addr><fr:route>egp-0001.xml</fr:route><fr:title
 text="My first tree">My first tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"

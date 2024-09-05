@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">ctt-0005</fr:addr><fr:route>ctt-0005.xml</fr:route><fr:title
+text="Cofibration Logic for Directed Type Theory">Cofibration Logic for Directed Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The interval terms presented in the style of sequent calculus are as follows:</fr:p><fr:embedded-tex
+hash="a0e436a673138731ad117ce0eac085d5"><fr:embedded-tex-preamble><![CDATA[ \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath, amsfonts}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \infer 0[form]{\vdash  \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \infer 0[intro1]{\vdash  0 : \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \infer 0[intro2]{\vdash  1 : \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \infer 0[intro3]{\vdash  x_{i} : \bI }
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="045e5783f0d4daed8f5966e370e8672b"><fr:embedded-tex-preamble><![CDATA[ \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath, amsfonts}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Psi  \vdash  p : \bI  } \hypo {\Psi  \vdash  q : \bI }
+        \infer 2[join]{\Psi  \vdash  p \lor  q : \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Psi  \vdash  p : \bI } \hypo {\Psi  \vdash  q : \bI }
+        \infer 2[meet]{\Psi  \vdash  p \land  q : \bI }
+   \end {prooftree}
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>The cofibration formulas presented in the style of sequent calculus are as follows:</fr:p><fr:embedded-tex
+hash="6442a1e72b56a407010a0a6105f51700"><fr:embedded-tex-preamble><![CDATA[
+     \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \infer 0[bot]{\vdash  \bot  cofib}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree>
