@@ -67,7 +67,7 @@ root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>284</fr:anchor><fr:addr
 type="user">egp-0003</fr:addr><fr:route>egp-0003.xml</fr:route><fr:title
 text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>List of notes somehow
-    <fr:ol><fr:li><fr:tree
+    <fr:ul><fr:li><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
@@ -76,7 +76,7 @@ expanded="false"
 root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>285</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
-text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
+text="Notes on Cubical Type Theory">Notes on Cubical Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="treyplante.xml"
 addr="treyplante"
@@ -561,4 +561,4 @@ display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex
 display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p><fr:p>The notation <fr:tex
 display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
     on paths of f.</fr:p><fr:p>It suffices (by induction) to define <fr:tex
-display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

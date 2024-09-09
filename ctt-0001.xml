@@ -74,8 +74,79 @@ show-metadata="true"
 expanded="false"
 root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:addr
-type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
+type="user">egp-0005</fr:addr><fr:route>egp-0005.xml</fr:route><fr:title
 text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Cubical type theory is a constructive approach to homotopy type theory..</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:addr
+type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
+text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Partial elements are elements of a type that are defined on the extent of a cofibration formula. Partial elements are used in cubical type theory
+to describe partially specified n-dimensional cubes.</fr:p><fr:p>I use the notation <fr:tex
+display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
+of partial elements of A defined on <fr:tex
+display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
+display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows:</fr:p><fr:embedded-tex
+hash="97c55be213baff4d0977a7c5ae7dbabd"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  \A  : \sU _{l}}
+        \infer 1[form]{\Gamma  \vdash  [\alpha ] \to  A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  ,\alpha  \vdash  a : A}
+        \infer 1[intro]{\Gamma  \vdash  \inb (f) : [\alpha ] \to  \A }
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="cc90b8c81413046e4c70a50bf99685f4"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+    \usepackage {mathtools}
+       \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
+        \infer 1[elim]{\Gamma  \vdash  \outb (f) : A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : [\alpha ] \to  \A }
+        \infer 1[comp]{\Gamma  \vdash  \outb (f) \equiv  a}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:addr
+type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
+text="Notes on Cubical Type Theory">Notes on Cubical Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="treyplante.xml"
 addr="treyplante"
@@ -264,75 +335,4 @@ hash="21b35b2daaf886add090fa0611f9cc4b"><fr:embedded-tex-preamble><![CDATA[\usep
             \infer 1[comp2]{\Gamma  \vdash  \outb (\inb (a)) \equiv  a}
         \end {prooftree}
 
-]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:addr
-type="user">egp-0005</fr:addr><fr:route>egp-0005.xml</fr:route><fr:title
-text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Cubical type theory is a constructive approach to homotopy type theory..</fr:p><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>321</fr:anchor><fr:addr
-type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
-text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Partial elements are elements of a type that are defined on the extent of a cofibration formula. Partial elements are used in cubical type theory
-to describe partially specified n-dimensional cubes.</fr:p><fr:p>I use the notation <fr:tex
-display="inline"><![CDATA[ [\alpha ] \rightarrow  A ]]></fr:tex> for the type
-of partial elements of A defined on <fr:tex
-display="inline"><![CDATA[ \alpha  ]]></fr:tex>.  Partial elements internalize the structure of the judgement <fr:tex
-display="inline"><![CDATA[ \alpha  \vdash  a : A]]></fr:tex>.</fr:p><fr:p>The typing rules for partial elements are as follows:</fr:p><fr:embedded-tex
-hash="97c55be213baff4d0977a7c5ae7dbabd"><fr:embedded-tex-preamble><![CDATA[
-    \usepackage {ebproof}
-     \usepackage {mathtools}
-     \usepackage {amsmath}
-        \DeclareMathOperator {\cof }{cof}
-     \DeclareMathOperator {\A }{A}
-     \DeclareMathOperator {\sU }{\mathcal {U}}
-     \DeclareMathOperator {\inb }{in}
-     \DeclareMathOperator {\outb }{out}
-    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-    \begin {prooftree}
-        \hypo {\Gamma  \vdash  \A  : \sU _{l}}
-        \infer 1[form]{\Gamma  \vdash  [\alpha ] \to  A}
-    \end {prooftree}
-    \quad 
-    \begin {prooftree}
-        \hypo {\Gamma  ,\alpha  \vdash  a : A}
-        \infer 1[intro]{\Gamma  \vdash  \inb (f) : [\alpha ] \to  \A }
-    \end {prooftree}
-]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
-hash="cc90b8c81413046e4c70a50bf99685f4"><fr:embedded-tex-preamble><![CDATA[
-    \usepackage {ebproof}
-    \usepackage {mathtools}
-       \usepackage {amsmath}
-        \DeclareMathOperator {\cof }{cof}
-     \DeclareMathOperator {\A }{A}
-     \DeclareMathOperator {\sU }{\mathcal {U}}
-     \DeclareMathOperator {\inb }{in}
-     \DeclareMathOperator {\outb }{out}
-]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-    \begin {prooftree}
-        \hypo {\Gamma  \vdash  f : [\alpha ] \to  A}
-        \infer 1[elim]{\Gamma  \vdash  \outb (f) : A}
-    \end {prooftree}
-    \quad 
-    \begin {prooftree}
-        \hypo {\Gamma  \vdash  f : [\alpha ] \to  \A }
-        \infer 1[comp]{\Gamma  \vdash  \outb (f) \equiv  a}
-    \end {prooftree}
 ]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

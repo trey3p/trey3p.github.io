@@ -7,9 +7,9 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>314</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
-text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
+text="Notes on Cubical Type Theory">Notes on Cubical Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="treyplante.xml"
 addr="treyplante"
@@ -213,7 +213,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:addr
 type="user">rose-weaver-licata-types-2022</fr:addr><fr:route>rose-weaver-licata-types-2022.xml</fr:route><fr:title
 text="Deciding the cofibration logic of cartesian cubical type theories">Deciding the cofibration logic of cartesian cubical type theories</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author>June, 2022 - Robert Rose, Matthew Weaver, Daniel R. Licata - 28th International Conference on Types for Proofs and Programs</fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:code>@inproceedings{rose-weaver-licata-2022-types,
   author = {Rose, Robert and Weaver, Matthew and Licata, Daniel},
@@ -236,10 +236,10 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>322</fr:anchor><fr:addr
 type="user">egp-0003</fr:addr><fr:route>egp-0003.xml</fr:route><fr:title
 text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>List of notes somehow
-    <fr:ol><fr:li><fr:tree
+    <fr:ul><fr:li><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
@@ -248,7 +248,7 @@ expanded="false"
 root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>285</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
-text="Cubical Type Theory">Cubical Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
+text="Notes on Cubical Type Theory">Notes on Cubical Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="treyplante.xml"
 addr="treyplante"
@@ -733,4 +733,4 @@ display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex
 display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p><fr:p>The notation <fr:tex
 display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
     on paths of f.</fr:p><fr:p>It suffices (by induction) to define <fr:tex
-display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
