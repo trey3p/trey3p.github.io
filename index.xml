@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>361</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Trey Plante">Trey Plante</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>I am a masters student in Computer Science at Wesleyan University,
   advised by Dan Licata and Robert Rose.</fr:p><fr:p>Hit Ctrl-K to search my site!</fr:p><fr:tree
@@ -17,7 +17,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>333</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>351</fr:anchor><fr:addr
 type="user">egp-0002</fr:addr><fr:route>egp-0002.xml</fr:route><fr:title
 text="Research Themes">Research Themes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Talk abt research ...</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -26,17 +26,17 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>352</fr:anchor><fr:addr
 type="user">egp-0003</fr:addr><fr:route>egp-0003.xml</fr:route><fr:title
 text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>List of notes somehow
     <fr:ul><fr:li><fr:tree
 toc="true"
-numbered="true"
+numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>285</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
 text="Notes on Cubical Type Theory">Notes on Cubical Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -49,7 +49,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>270</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>284</fr:anchor><fr:addr
 type="user">ctt-0004</fr:addr><fr:route>ctt-0004.xml</fr:route><fr:title
 text="Cofibration Logics">Cofibration Logics</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -79,7 +79,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>272</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>286</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -137,7 +137,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>274</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>288</fr:anchor><fr:addr
 type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
 text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -231,12 +231,12 @@ hash="21b35b2daaf886add090fa0611f9cc4b"><fr:embedded-tex-preamble><![CDATA[\usep
 
       <fr:li><fr:tree
 toc="true"
-numbered="true"
+numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>287</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:addr
 type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
 text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -476,12 +476,12 @@ display="inline"><![CDATA[\mathcal {L}^{NT}]]></fr:tex>-structure.</fr:p></fr:ma
 
       <fr:li><fr:tree
 toc="true"
-numbered="true"
+numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>307</fr:anchor><fr:addr
 type="user">hott-0004</fr:addr><fr:route>hott-0004.xml</fr:route><fr:title
 text="Notes on Homotopy Type Theory">Notes on Homotopy Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -494,21 +494,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:addr
-type="user">hott-0003</fr:addr><fr:route>hott-0003.xml</fr:route><fr:title
-text="(S^{1}) = {Z} "><fr:tex
-display="inline"><![CDATA[\Pi (S^{1}) = \mathbb {Z}]]></fr:tex> </fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
 type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
 text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -523,7 +509,214 @@ display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex
 display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p><fr:p>The notation <fr:tex
 display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
     on paths of f.</fr:p><fr:p>It suffices (by induction) to define <fr:tex
-display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
+display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+type="user">hott-0001</fr:addr><fr:route>hott-0001.xml</fr:route><fr:title
+text="Functions are functors">Functions are functors</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The claim is that functions behave "functorially" on paths. This is equivalent to saying functions
+   respect equality in type theory and that functions are continuous (preserve paths) in topology.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
+type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
+text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[f : A \to  B]]></fr:tex> is a function. Then for any <fr:tex
+display="inline"><![CDATA[x, y : A]]></fr:tex> there is an operation
+    <fr:tex
+display="block"><![CDATA[ap_{f} : (x =_{A} y) \to  (f(x) =_{B} f(y))]]></fr:tex>.</fr:p><fr:p>Moreover, for each <fr:tex
+display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex
+display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p><fr:p>The notation <fr:tex
+display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
+    on paths of f.</fr:p><fr:p>It suffices (by induction) to define <fr:tex
+display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>For functions <fr:tex
+display="inline"><![CDATA[f : A \to  B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g : B \to  C]]></fr:tex> and paths <fr:tex
+display="inline"><![CDATA[p : x =_{A} y]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[q : y =_{A} z]]></fr:tex> we have:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[ap_{f}(p \bullet  q) = ap_{f}(p) \bullet  ap_f(q)]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[ap_{f}(p^{-1}) = ap_{f}(p)^{-1}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[ap_{g}(ap_{f}(p)) = ap_{g \circ  f}(p)]]></fr:tex></fr:li>
+
+        <fr:li>ap_{id_{A}}(p) = p</fr:li></fr:ul></fr:p><fr:p>Notes from section 2.2 of the HoTT book</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:addr
+type="user">hott-0007</fr:addr><fr:route>hott-0007.xml</fr:route><fr:title
+text="Transport &amp; Path Lifting">Transport &amp; Path Lifting</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is a type famnily over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> and that <fr:tex
+display="inline"><![CDATA[p : x =_{A} y]]></fr:tex>.
+   Then there is a function <fr:tex
+display="inline"><![CDATA[p_{*} : P(x) \to  P(y)]]></fr:tex>.</fr:p><fr:p>By induction, we can assume <fr:tex
+display="inline"><![CDATA[p]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[refl_{x}]]></fr:tex>. We can take <fr:tex
+display="inline"><![CDATA[(refl_{x})_{*} : P(x) \to  P(x)]]></fr:tex>
+    to be the identity function.</fr:p><fr:p>We notate the type family P in which the trasport operation happens with:
+<fr:tex
+display="block"><![CDATA[transport^{P}(p, -) : P(x) \to  P(y)]]></fr:tex>
+
+A type family P over a type <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> can be viewed as a property of elements of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> that holds for <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>
+if <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is inhabited. Thus, transport says that properties are preserved along paths; if P holds for x,
+and there is a path from <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[y]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> holds for <fr:tex
+display="inline"><![CDATA[y]]></fr:tex>. This is equivalent to saying that
+properties (type families) respect equality.</fr:p><fr:p>Transportation can also be viewed as a "path liting" operation in a fibration. We consider a type family over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> to be a fibration with a base space <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> and fibers <fr:tex
+display="inline"><![CDATA[P(x)]]></fr:tex>
+    over each <fr:tex
+display="inline"><![CDATA[x : A]]></fr:tex>. Thus, the total space of the fibration is <fr:tex
+display="inline"><![CDATA[\Sigma _{(x : A)} P(x)]]></fr:tex>. Fibrations have the property that given a path <fr:tex
+display="inline"><![CDATA[p : x = y]]></fr:tex> in the base space and a point
+    <fr:tex
+display="inline"><![CDATA[u : P(x)]]></fr:tex> we can lift the path <fr:tex
+display="inline"><![CDATA[p]]></fr:tex> to a path in the total space starting at <fr:tex
+display="inline"><![CDATA[u]]></fr:tex>.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[P : A \to  \mathcal {U}]]></fr:tex> be a type family over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> and assume we have <fr:tex
+display="inline"><![CDATA[u : P(x)]]></fr:tex> for some <fr:tex
+display="inline"><![CDATA[x : A]]></fr:tex>. Then for any <fr:tex
+display="inline"><![CDATA[p : x = y]]></fr:tex>, we have
+    <fr:tex
+display="block"><![CDATA[lift(u, p) : (x, u) = (y, p_{*}(u))]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\Sigma _{(x : A)} P(x)]]></fr:tex>, such that <fr:tex
+display="inline"><![CDATA[pr_{1}(lift(u, p)) = p]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:addr
+type="user">hott-0005</fr:addr><fr:route>hott-0005.xml</fr:route><fr:title
+text="Dependent map">Dependent map</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose <fr:tex
+display="inline"><![CDATA[f : \Pi _{x : A} P(x)]]></fr:tex>; then we have a map <fr:tex
+display="block"><![CDATA[ apd_{f}: \Pi _{p : x = y} (p_{*}(f(x))) =_{p(y)} f(y) ]]></fr:tex></fr:p><fr:p>By induction, we can assume <fr:tex
+display="inline"><![CDATA[p]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[refl_{x}]]></fr:tex>. Then, <fr:tex
+display="inline"><![CDATA[(refl_{x})(f(x)) = f(x)]]></fr:tex>.</fr:p><fr:p>The intuition is that given a section <fr:tex
+display="inline"><![CDATA[f : \Pi _{x : A} P(x)]]></fr:tex> and a path <fr:tex
+display="inline"><![CDATA[p : x =_{A} y]]></fr:tex> we can apply <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[p]]></fr:tex>
+    and obtain a path in the total space of <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> over <fr:tex
+display="inline"><![CDATA[p]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>264</fr:anchor><fr:addr
+type="user">hott-0006</fr:addr><fr:route>hott-0006.xml</fr:route><fr:title
+text="S^1: The Circle "><fr:tex
+display="inline"><![CDATA[S^1]]></fr:tex>: The Circle </fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>6</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Informally, the circle <fr:tex
+display="inline"><![CDATA[S^1]]></fr:tex> is the higher inductive type generated by a point and a path.
+    Presented formally:</fr:p><fr:embedded-tex
+hash="706b0fdd5f71a607ef4007814fefac10"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath, amsfonts}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+     \DeclareMathOperator {\base }{base}
+     ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        \begin {prooftree}
+            \infer 0[form]{S^{1} : \sU }
+        \end {prooftree}
+        \quad 
+        \begin {prooftree}
+            \infer 0[intro1]{\base  : S^{1}}
+        \end {prooftree}
+        \quad 
+        \begin {prooftree}
+            \hypo {r : \bI }
+            \infer 1[intro-loop]{loop : Id_{S^1}(base; base)}
+        \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:embedded-tex
+hash="918c62b7bf304c6c5bcbe7e65623e10b"><fr:embedded-tex-preamble><![CDATA[    \usepackage {ebproof}
+        \usepackage {mathtools}
+        \usepackage {amsmath, amsfonts}
+        \DeclareMathOperator {\cof }{cof}
+        \DeclareMathOperator {\A }{A}
+        \DeclareMathOperator {\sU }{\mathcal {U}}
+        \DeclareMathOperator {\inb }{in}
+        \DeclareMathOperator {\bI }{\mathbb {I}}
+         \DeclareMathOperator {\base }{\base }
+        ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \begin {prooftree}
+                \infer 0{hello}
+            \end {prooftree}
+        ]]></fr:embedded-tex-body></fr:embedded-tex><fr:embedded-tex
+hash="001e43edcee3de853d88bcdbeb1a5fcd"><fr:embedded-tex-preamble><![CDATA[ \usepackage {ebproof}
+        \usepackage {mathtools}
+        \usepackage {amsmath, amsfonts}
+        \DeclareMathOperator {\cof }{cof}
+        \DeclareMathOperator {\A }{A}
+        \DeclareMathOperator {\sU }{\mathcal {U}}
+        \DeclareMathOperator {\inb }{in}
+        \DeclareMathOperator {\bI }{\mathbb {I}}
+         \DeclareMathOperator {\base }{\base }
+        ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        scratch
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:addr
+type="user">hott-0003</fr:addr><fr:route>hott-0003.xml</fr:route><fr:title
+text="(S^{1}) = {Z} "><fr:tex
+display="inline"><![CDATA[\Pi (S^{1}) = \mathbb {Z}]]></fr:tex> </fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -538,7 +731,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>344</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
 type="user">rose-weaver-licata-types-2022</fr:addr><fr:route>rose-weaver-licata-types-2022.xml</fr:route><fr:title
 text="Deciding the cofibration logic of cartesian cubical type theories">Deciding the cofibration logic of cartesian cubical type theories</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author>June, 2022 - Robert Rose, Matthew Weaver, Daniel R. Licata - 28th International Conference on Types for Proofs and Programs</fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:code>@inproceedings{rose-weaver-licata-2022-types,
   author = {Rose, Robert and Weaver, Matthew and Licata, Daniel},
