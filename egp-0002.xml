@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>353</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>361</fr:anchor><fr:addr
 type="user">egp-0002</fr:addr><fr:route>egp-0002.xml</fr:route><fr:title
 text="Research Themes">Research Themes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Talk abt research ...</fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
@@ -24,7 +24,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>354</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Trey Plante">Trey Plante</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>I am a masters student in Computer Science at Wesleyan University,
   advised by Dan Licata and Robert Rose.</fr:p><fr:p>Hit Ctrl-K to search my site!</fr:p><fr:tree
@@ -34,7 +34,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>351</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>359</fr:anchor><fr:addr
 type="user">egp-0002</fr:addr><fr:route>egp-0002.xml</fr:route><fr:title
 text="Research Themes">Research Themes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Talk abt research ...</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -43,7 +43,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>352</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>360</fr:anchor><fr:addr
 type="user">egp-0003</fr:addr><fr:route>egp-0003.xml</fr:route><fr:title
 text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>List of notes somehow
     <fr:ul><fr:li><fr:tree
@@ -53,20 +53,96 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>311</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
 text="Notes on Cubical Type Theory">Notes on Cubical Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="treyplante.xml"
 addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Cubical type theory is a constructive approach to homotopy type theory..</fr:p><fr:tree
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Cubical type theory is a constructive approach to homotopy type theory that is meant to give a computation character to HoTT.
+Roughly speaking, cubical type theory extends Martin-Lof type theory with a pretype, <fr:tex
+display="inline"><![CDATA[\mathbb {I}]]></fr:tex>, that is interpreted as the abstract interval.
+The reason for extending type theory with this structure is to construct a type theory with the semantic properties of HoTT without sacrificing
+all the syntactic properties that imbue dependent type theory with computational character.</fr:p><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>284</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>234</fr:anchor><fr:addr
+type="user">ctt-0005</fr:addr><fr:route>ctt-0005.xml</fr:route><fr:title
+text="Cofibration Logic for Directed Type Theory">Cofibration Logic for Directed Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The interval terms presented in the style of sequent calculus are as follows:</fr:p><fr:embedded-tex
+hash="a0e436a673138731ad117ce0eac085d5"><fr:embedded-tex-preamble><![CDATA[ \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath, amsfonts}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \infer 0[form]{\vdash  \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \infer 0[intro1]{\vdash  0 : \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \infer 0[intro2]{\vdash  1 : \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \infer 0[intro3]{\vdash  x_{i} : \bI }
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p /><fr:embedded-tex
+hash="045e5783f0d4daed8f5966e370e8672b"><fr:embedded-tex-preamble><![CDATA[ \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath, amsfonts}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Psi  \vdash  p : \bI  } \hypo {\Psi  \vdash  q : \bI }
+        \infer 2[join]{\Psi  \vdash  p \lor  q : \bI }
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Psi  \vdash  p : \bI } \hypo {\Psi  \vdash  q : \bI }
+        \infer 2[meet]{\Psi  \vdash  p \land  q : \bI }
+   \end {prooftree}
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>The cofibration formulas presented in the style of sequent calculus are as follows:</fr:p><fr:embedded-tex
+hash="6442a1e72b56a407010a0a6105f51700"><fr:embedded-tex-preamble><![CDATA[
+     \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+     \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\bI }{\mathbb {I}}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \infer 0[bot]{\vdash  \bot  cofib}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>236</fr:anchor><fr:addr
 type="user">ctt-0004</fr:addr><fr:route>ctt-0004.xml</fr:route><fr:title
 text="Cofibration Logics">Cofibration Logics</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -96,7 +172,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>286</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>238</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -154,7 +230,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>288</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>240</fr:anchor><fr:addr
 type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
 text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -244,6 +320,69 @@ hash="21b35b2daaf886add090fa0611f9cc4b"><fr:embedded-tex-preamble><![CDATA[\usep
             \infer 1[comp2]{\Gamma  \vdash  \outb (\inb (a)) \equiv  a}
         \end {prooftree}
 
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
+type="user">ctt-0006</fr:addr><fr:route>ctt-0006.xml</fr:route><fr:title
+text="Branch on Cofibrations">Branch on Cofibrations</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>11</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The branch on cofibrations is an expression in cubical type theory that creates conditional evaluation based on the validity of a given formula
+    within a given context. We write <fr:tex
+display="inline"><![CDATA[ [e_{1}, e_{2}]_{\alpha , \beta } ]]></fr:tex> to indicate the branch expression on <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[e_{1}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[e_{2}]]></fr:tex>
+    as values of the branch. The expression is analagous to the common case expression on coproducts seen in dependent type theory.</fr:p><fr:embedded-tex
+hash="a2bf4ece8b88d7c3ea338dd4ec76734c"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+            \hypo {\Gamma  \vdash  A : \sU _{l}} \hypo {\Gamma  \vdash  \alpha  \cof } \hypo {\Gamma  \vdash  \beta  \cof } \hypo {Gamma \vdash  e_{1} : A} \hypo {Gamma \vdash  e_{2} : A}
+            \infer 5[intro]{\Gamma  \vdash  [e_{1}, e_{2}]_{\alpha , \beta } : A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+            \hypo {\Gamma  \vdash  \alpha }
+            \infer 1[comp1]{\Gamma  \vdash  [e_{1}, e_{2}]_{\alpha , \beta } \equiv  e_{1}}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  \beta }
+        \infer 1[comp2]{\Gamma  \vdash  [e_{1}, e_{2}]_{\alpha , \beta } \equiv  e_{2}}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>We now present two ways of writing the "left-inversion"</fr:p><fr:embedded-tex
+hash="eedb2d4805367f8f71bf6ecf58510eed"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  \alpha  \lor  beta}
+        \hypo {\Gamma , \alpha  \vdash  e \equiv  f : A}
+        \hypo {\Gamma , \beta  \vdash  e \equiv  f : A}
+        \infer 3{\Gamma  \vdash  e \equiv  f : A}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  \alpha  \lor  \beta }
+        \hypo {\Gamma  \vdash  e_{1} : A}
+        \hypo {\Gamma  \vdash  e_{2} : A}
+        \infer 3{e \equiv  [e, e]_{\alpha , \beta } : A}
+    \end {prooftree}
 ]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
 
       <fr:li><fr:tree
@@ -253,7 +392,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr
 type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
 text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -268,7 +407,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>234</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr
 type="user">mlg-0002</fr:addr><fr:route>mlg-0002.xml</fr:route><fr:title
 text="First-order Language">First-order Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A first-order language <fr:tex
 display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is an infinite collection of distinct symbols,
@@ -309,7 +448,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>247</fr:anchor><fr:addr
 type="user">mlg-0003</fr:addr><fr:route>mlg-0003.xml</fr:route><fr:title
 text="Term of a Language">Term of a Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -351,7 +490,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:addr
 type="user">mlg-0004</fr:addr><fr:route>mlg-0004.xml</fr:route><fr:title
 text="Formula of a language">Formula of a language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>5</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -401,7 +540,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
 type="user">mlg-0006</fr:addr><fr:route>mlg-0006.xml</fr:route><fr:title
 text="Language of Number Theory">Language of Number Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -425,7 +564,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>241</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:addr
 type="user">mlg-0005</fr:addr><fr:route>mlg-0005.xml</fr:route><fr:title
 text="Free variable">Free variable</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
 display="inline"><![CDATA[v]]></fr:tex> is a variable and <fr:tex
@@ -458,7 +597,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
 type="user">mlg-0007</fr:addr><fr:route>mlg-0007.xml</fr:route><fr:title
 text="{L}-structure"><fr:tex
 display="inline"><![CDATA[\mathcal {L}-structure]]></fr:tex></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Fix a language <fr:tex
@@ -498,7 +637,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>307</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:addr
 type="user">hott-0004</fr:addr><fr:route>hott-0004.xml</fr:route><fr:title
 text="Notes on Homotopy Type Theory">Notes on Homotopy Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -511,7 +650,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>266</fr:anchor><fr:addr
 type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
 text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -533,7 +672,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>268</fr:anchor><fr:addr
 type="user">hott-0001</fr:addr><fr:route>hott-0001.xml</fr:route><fr:title
 text="Functions are functors">Functions are functors</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -547,7 +686,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>270</fr:anchor><fr:addr
 type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
 text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -583,7 +722,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>272</fr:anchor><fr:addr
 type="user">hott-0007</fr:addr><fr:route>hott-0007.xml</fr:route><fr:title
 text="Transport &amp; Path Lifting">Transport &amp; Path Lifting</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -640,7 +779,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>274</fr:anchor><fr:addr
 type="user">hott-0005</fr:addr><fr:route>hott-0005.xml</fr:route><fr:title
 text="Dependent map">Dependent map</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -665,7 +804,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>264</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>276</fr:anchor><fr:addr
 type="user">hott-0006</fr:addr><fr:route>hott-0006.xml</fr:route><fr:title
 text="S^1: The Circle "><fr:tex
 display="inline"><![CDATA[S^1]]></fr:tex>: The Circle </fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>6</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Informally, the circle <fr:tex
@@ -726,7 +865,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>277</fr:anchor><fr:addr
 type="user">hott-0003</fr:addr><fr:route>hott-0003.xml</fr:route><fr:title
 text="(S^{1}) = {Z} "><fr:tex
 display="inline"><![CDATA[\Pi (S^{1}) = \mathbb {Z}]]></fr:tex> </fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
