@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>231</fr:anchor><fr:addr
+type="user">mlg-000A</fr:addr><fr:route>mlg-000A.xml</fr:route><fr:title
+text="Satisfies">Satisfies</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is a <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure, <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula and <fr:tex
+display="inline"><![CDATA[s : Vars \to  A]]></fr:tex> is
+   an assignment function. The <fr:em>satisfies</fr:em> relation, denoted <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi [s]]]></fr:tex>, is inductively defined as follows:
+   <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[ \mathcal {U} \vDash  = t_{1}t_{2}[s]]]></fr:tex> iff  <fr:tex
+display="inline"><![CDATA[\overline {s}(t_1) = \overline {s}(t_2)]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  R t_1 \cdots  t_n[s]]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[(\overline {s}(t_1) \cdots  \overline {s}(t_n)) \in  R^{\mathcal {U}}]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\lnot  \alpha )[s] ]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\mathcal {U} \n \vDash  \alpha  [s]]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\alpha  \lor  \beta )[s]]]></fr:tex> iff  <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \alpha  [s]]]></fr:tex> or  <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \beta  [s]]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U \vDash  (\forall  x)(\alpha )}]]></fr:tex> iff for each <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \alpha  [s(x/a)]]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>233</fr:anchor><fr:addr
+type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
+text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>These are notes from a Mathematical Logic class taught by
+    Alexander Van Abel at Wesleyan University. Any mistakes in the
+    following material are my own.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
+type="user">mlg-0002</fr:addr><fr:route>mlg-0002.xml</fr:route><fr:title
+text="First-order Language">First-order Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A first-order language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is an infinite collection of distinct symbols,
+where no symbol is contained in another, in the following categories:
+
+The following are logical symbols that belong to every language:
+<fr:ul><fr:li>"(", ")"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[\lor ]]></fr:tex>", "<fr:tex
+display="inline"><![CDATA[\lnot ]]></fr:tex>"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[\forall ]]></fr:tex>"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[v_1]]></fr:tex>," "v_{2}", ... (an infinite sequence of variables). The set of variables is denoted
+        <fr:tex
+display="inline"><![CDATA[Vars]]></fr:tex>.</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[=]]></fr:tex>"</fr:li></fr:ul>
+
+
+The following are non-logical symbols that a language is not required to contain
+<fr:ul><fr:li>Constant symbols.</fr:li>
+
+    <fr:li>For every <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbols.</fr:li>
+
+    <fr:li>For every <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation symbols.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>236</fr:anchor><fr:addr
+type="user">mlg-0003</fr:addr><fr:route>mlg-0003.xml</fr:route><fr:title
+text="Term of a Language">Term of a Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is a language a <fr:em>term of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:em> is a nonempty finite string <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> of symbols
+from <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> such that either:
+<fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a constant symbol</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a variable</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[t \coloneq  f t_{1} t_{2} \cdots  t_{n}]]></fr:tex>, , where <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbol of
+        <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and each of the <fr:tex
+display="inline"><![CDATA[t_i]]></fr:tex> is a term of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li></fr:ul>
+
+<fr:p>The set of terms of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is the smallest set of strings that adhere to the preceding properties.</fr:p>
+
+<fr:p>The symbol <fr:tex
+display="inline"><![CDATA[\coloneq ]]></fr:tex> is not a part of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, but a meta-linguistic symbol that means
+    the strings of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-symbols on each side of the <fr:tex
+display="inline"><![CDATA[\coloneq ]]></fr:tex> are identical.</fr:p></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>238</fr:anchor><fr:addr
+type="user">mlg-0004</fr:addr><fr:route>mlg-0004.xml</fr:route><fr:title
+text="Formula of a language">Formula of a language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>5</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is a first-order language, a formula of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is a nonempty
+    finite string <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> of symbols from <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> such that either:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  = t_{1}t_{2}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[t_{1}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[t_{2}]]></fr:tex> are terms of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  R t_{1}t_{2}\cdots  t_{n}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation symbol of
+            <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[t_{1}, \cdots , t_{n}]]></fr:tex> are all terms of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\lnot  \alpha )]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is a formula of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\alpha  \lor  \beta )]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex> are formulas of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\forall  v)(\alpha )]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is a variable and <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is a formula of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>The set of formulas of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is the smallest set of strings that adhere to the preceding properties.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>240</fr:anchor><fr:addr
+type="user">mlg-0006</fr:addr><fr:route>mlg-0006.xml</fr:route><fr:title
+text="Language of Number Theory">Language of Number Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The language <fr:tex
+display="inline"><![CDATA[\mathcal {L}_{NT}]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\{0, S, +, \cdot , E, <\} ]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>
+   is a constant symbol, <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is a unary function symbol, <fr:tex
+display="inline"><![CDATA[+]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\cdot ]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[E]]></fr:tex>
+   are binary function symbols, and <fr:tex
+display="inline"><![CDATA[<]]></fr:tex> is a binary relation symbol. This will be referred to
+   as the language of number theory.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
+type="user">mlg-0005</fr:addr><fr:route>mlg-0005.xml</fr:route><fr:title
+text="Free variable">Free variable</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is a variable and <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a formula. We will say that
+    <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is <fr:em>free</fr:em> in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> if
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is atomic and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> and occurs in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li>
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\lnot  \alpha )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is free in <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:li>
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\alpha  \lor  \beta )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is free in at least one of <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex></fr:li>
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\forall  u)(\alpha )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is not <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is free <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:addr
+type="user">mlg-0007</fr:addr><fr:route>mlg-0007.xml</fr:route><fr:title
+text="{L}-structure"><fr:tex
+display="inline"><![CDATA[\mathcal {L}-structure]]></fr:tex></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Fix a language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>. A <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex><fr:em>-structure</fr:em> <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is a nonempty
+   set <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, called the <fr:em>universe of</fr:em> <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>, together with:
+   <fr:ul><fr:li>For each constant symbol <fr:tex
+display="inline"><![CDATA[c]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, an element <fr:tex
+display="inline"><![CDATA[u^{\mathcal {U}}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {A}]]></fr:tex></fr:li>
+    <fr:li>For each <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbol <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, a function <fr:tex
+display="inline"><![CDATA[f^{\mathcal {U}} : A^{n} \to  A]]></fr:tex></fr:li>
+    <fr:li>For each <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation symbol <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation <fr:tex
+display="inline"><![CDATA[R^{\mathcal {U}}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, or a <fr:tex
+display="inline"><![CDATA[R^{\mathcal {U}} \subset  A^{n}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>For example, consider <fr:tex
+display="inline"><![CDATA[\mathcal {N} = (\mathbb {N}, 0, S, +, \cdot , E, <)]]></fr:tex>, where we ignore
+    the superscripts for the constants, functions, and relations and everything else gets its standard
+    interpretation. This structure is called the standard <fr:tex
+display="inline"><![CDATA[\mathcal {L}^{NT}]]></fr:tex>-structure.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:addr
+type="user">mlg-0008</fr:addr><fr:route>mlg-0008.xml</fr:route><fr:title
+text="Variable Assignment">Variable Assignment</fr:title><fr:taxon>Definition</fr:taxon><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure, a <fr:em>variable assignment function into <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex></fr:em> is a function <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>
+    that assigns to each variable an element of the universe <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> can be any function with type <fr:tex
+display="inline"><![CDATA[s : Vars \to  A]]></fr:tex></fr:p><fr:p>Suppose <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> is a variable assignment function into <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>. Then,</fr:p><fr:embedded-tex
+hash="c5a4841dfdbee933ea55f466f1e55db7"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {amsmath}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            $
+            s[x|a] =
+            \begin {cases}
+                s(v) & \text { if } v \neq  x \\
+                a & v = x
+            \end {cases}$
+    ]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>We call the function <fr:tex
+display="inline"><![CDATA[s[x|a]]]></fr:tex> an <fr:em>x-modification of the assignment function</fr:em> <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr
+type="user">mlg-0009</fr:addr><fr:route>mlg-0009.xml</fr:route><fr:title
+text="Term Assignment">Term Assignment</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure with the variable assignment <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.
+    The function <fr:tex
+display="inline"><![CDATA[\overline {s} : \mathcal {L}-terms \to  A]]></fr:tex> is defined inductively as follows:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[t :\equiv  v]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\overline {s}(t) = s(t)]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[t :\equiv  c]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\overline {s} (t) = c^{\mathcal {U}}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[t :\equiv  f t_{1} \cdots  t_{n}]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\overline {s}(t) = f^{\mathcal {U}}(\overline {s}(t_{1}), \cdots , \overline {s}(t_{n}))]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:addr
+type="user">mlg-000A</fr:addr><fr:route>mlg-000A.xml</fr:route><fr:title
+text="Satisfies">Satisfies</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is a <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure, <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula and <fr:tex
+display="inline"><![CDATA[s : Vars \to  A]]></fr:tex> is
+   an assignment function. The <fr:em>satisfies</fr:em> relation, denoted <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi [s]]]></fr:tex>, is inductively defined as follows:
+   <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[ \mathcal {U} \vDash  = t_{1}t_{2}[s]]]></fr:tex> iff  <fr:tex
+display="inline"><![CDATA[\overline {s}(t_1) = \overline {s}(t_2)]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  R t_1 \cdots  t_n[s]]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[(\overline {s}(t_1) \cdots  \overline {s}(t_n)) \in  R^{\mathcal {U}}]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\lnot  \alpha )[s] ]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\mathcal {U} \n \vDash  \alpha  [s]]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\alpha  \lor  \beta )[s]]]></fr:tex> iff  <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \alpha  [s]]]></fr:tex> or  <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \beta  [s]]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U \vDash  (\forall  x)(\alpha )}]]></fr:tex> iff for each <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \alpha  [s(x/a)]]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
