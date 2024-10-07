@@ -7,42 +7,26 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>355</fr:anchor><fr:addr
-type="user">mlg-0003</fr:addr><fr:route>mlg-0003.xml</fr:route><fr:title
-text="Term of a Language">Term of a Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
-display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is a language a <fr:em>term of <fr:tex
-display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:em> is a nonempty finite string <fr:tex
-display="inline"><![CDATA[t]]></fr:tex> of symbols
-from <fr:tex
-display="inline"><![CDATA[\mathcal {L}]]></fr:tex> such that either:
-<fr:ul><fr:li><fr:tex
-display="inline"><![CDATA[t]]></fr:tex> is a constant symbol</fr:li>
-
-    <fr:li><fr:tex
-display="inline"><![CDATA[t]]></fr:tex> is a variable</fr:li>
-
-    <fr:li><fr:tex
-display="inline"><![CDATA[t \coloneq  f t_{1} t_{2} \cdots  t_{n}]]></fr:tex>, , where <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is an <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-ary function symbol of
-        <fr:tex
-display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and each of the <fr:tex
-display="inline"><![CDATA[t_i]]></fr:tex> is a term of <fr:tex
-display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li></fr:ul>
-
-<fr:p>The set of terms of <fr:tex
-display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is the smallest set of strings that adhere to the preceding properties.</fr:p>
-
-<fr:p>The symbol <fr:tex
-display="inline"><![CDATA[\coloneq ]]></fr:tex> is not a part of <fr:tex
-display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, but a meta-linguistic symbol that means
-    the strings of <fr:tex
-display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-symbols on each side of the <fr:tex
-display="inline"><![CDATA[\coloneq ]]></fr:tex> are identical.</fr:p></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">mlg-000C</fr:addr><fr:route>mlg-000C.xml</fr:route><fr:title
+text="Model">Model</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>7</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a formula in the language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure,
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is a model of <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>, denoted <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ]]></fr:tex>, if and only if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi  [s]]]></fr:tex>
+    for every assignment function <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.</fr:p><fr:p>If <fr:tex
+display="inline"><![CDATA[\Phi ]]></fr:tex> is a set of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> formulas, then <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Phi ]]></fr:tex> if and only if
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vdash  \phi ]]></fr:tex> for each <fr:tex
+display="inline"><![CDATA[\phi  \in  \Phi ]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -57,7 +41,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>357</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:addr
 type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
 text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"

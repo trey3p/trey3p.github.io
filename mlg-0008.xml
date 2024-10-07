@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>441</fr:anchor><fr:addr
 type="user">mlg-0008</fr:addr><fr:route>mlg-0008.xml</fr:route><fr:title
 text="Variable Assignment">Variable Assignment</fr:title><fr:taxon>Definition</fr:taxon><fr:authors><fr:author><fr:link
 type="local"
@@ -50,7 +50,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>431</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>443</fr:anchor><fr:addr
 type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
 text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -65,7 +65,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>234</fr:anchor><fr:addr
 type="user">mlg-0002</fr:addr><fr:route>mlg-0002.xml</fr:route><fr:title
 text="First-order Language">First-order Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A first-order language <fr:tex
 display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is an infinite collection of distinct symbols,
@@ -106,7 +106,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>236</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
 type="user">mlg-0003</fr:addr><fr:route>mlg-0003.xml</fr:route><fr:title
 text="Term of a Language">Term of a Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -148,7 +148,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>238</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
 type="user">mlg-0004</fr:addr><fr:route>mlg-0004.xml</fr:route><fr:title
 text="Formula of a language">Formula of a language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>5</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -198,7 +198,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>240</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:addr
 type="user">mlg-0006</fr:addr><fr:route>mlg-0006.xml</fr:route><fr:title
 text="Language of Number Theory">Language of Number Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -222,7 +222,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>241</fr:anchor><fr:addr
 type="user">mlg-0005</fr:addr><fr:route>mlg-0005.xml</fr:route><fr:title
 text="Free variable">Free variable</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
 display="inline"><![CDATA[v]]></fr:tex> is a variable and <fr:tex
@@ -255,7 +255,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
 type="user">mlg-0007</fr:addr><fr:route>mlg-0007.xml</fr:route><fr:title
 text="{L}-structure"><fr:tex
 display="inline"><![CDATA[\mathcal {L}-structure]]></fr:tex></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Fix a language <fr:tex
@@ -293,7 +293,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:addr
 type="user">mlg-0008</fr:addr><fr:route>mlg-0008.xml</fr:route><fr:title
 text="Variable Assignment">Variable Assignment</fr:title><fr:taxon>Definition</fr:taxon><fr:authors><fr:author><fr:link
 type="local"
@@ -328,7 +328,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>245</fr:anchor><fr:addr
 type="user">mlg-0009</fr:addr><fr:route>mlg-0009.xml</fr:route><fr:title
 text="Term Assignment">Term Assignment</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -357,7 +357,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>247</fr:anchor><fr:addr
 type="user">mlg-000A</fr:addr><fr:route>mlg-000A.xml</fr:route><fr:title
 text="Satisfies">Satisfies</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -381,14 +381,131 @@ display="inline"><![CDATA[(\overline {s}(t_1) \cdots  \overline {s}(t_n)) \in  R
 
    <fr:li><fr:tex
 display="inline"><![CDATA[\mathcal {U} \vDash  (\lnot  \alpha )[s] ]]></fr:tex> iff <fr:tex
-display="inline"><![CDATA[\mathcal {U} \n \vDash  \alpha  [s]]]></fr:tex></fr:li>
+display="inline"><![CDATA[\mathcal {U} \nvDash  \alpha  [s]]]></fr:tex></fr:li>
 
    <fr:li><fr:tex
-display="inline"><![CDATA[\mathcal {U} \vDash  (\alpha  \lor  \beta )[s]]]></fr:tex> iff  <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\alpha  \lor  \beta )[s]]]></fr:tex> iff <fr:tex
 display="inline"><![CDATA[\mathcal {U} \vDash  \alpha  [s]]]></fr:tex> or  <fr:tex
 display="inline"><![CDATA[\mathcal {U} \vDash  \beta  [s]]]></fr:tex></fr:li>
 
    <fr:li><fr:tex
-display="inline"><![CDATA[\mathcal {U \vDash  (\forall  x)(\alpha )}]]></fr:tex> iff for each <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\forall  x)(\alpha )]]></fr:tex> iff for each <fr:tex
 display="inline"><![CDATA[a \in  A]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[\mathcal {U} \vDash  \alpha  [s(x/a)]]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+display="inline"><![CDATA[\mathcal {U} \vDash  \alpha  [s(x/a)]]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:addr
+type="user">mlg-000B</fr:addr><fr:route>mlg-000B.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>7</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[s_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[s_2]]></fr:tex> are variable assignment functions into a structure <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>
+    such that <fr:tex
+display="inline"><![CDATA[s_1(v) = s_2(v)]]></fr:tex> for every variable <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> in the term <fr:tex
+display="inline"><![CDATA[t]]></fr:tex>. Then, <fr:tex
+display="inline"><![CDATA[\overline {s_1}(v) = \overline {s_2}(v)]]></fr:tex>.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[s_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[s_2]]></fr:tex> are variable assignment functions into a structure <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>
+    such that <fr:tex
+display="inline"><![CDATA[\overline {s_1}(v) = \overline {s_2}(v)]]></fr:tex> for every free variable <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> in the formula
+    <fr:tex
+display="inline"><![CDATA[\Phi ]]></fr:tex>. Then, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Phi  [s_1]]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Phi  [s_2]]]></fr:tex>.</fr:p><fr:p>As a corollary: If <fr:tex
+display="inline"><![CDATA[\sigma ]]></fr:tex> is a sentence in the language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is an
+    <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure, either <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \sigma  [s]]]></fr:tex> for all assignment functions <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>, or
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vdash  \sigma [s]]]></fr:tex> for no assignment function s.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+type="user">mlg-000C</fr:addr><fr:route>mlg-000C.xml</fr:route><fr:title
+text="Model">Model</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>7</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a formula in the language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure,
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is a model of <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>, denoted <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ]]></fr:tex>, if and only if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi  [s]]]></fr:tex>
+    for every assignment function <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.</fr:p><fr:p>If <fr:tex
+display="inline"><![CDATA[\Phi ]]></fr:tex> is a set of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> formulas, then <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Phi ]]></fr:tex> if and only if
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vdash  \phi ]]></fr:tex> for each <fr:tex
+display="inline"><![CDATA[\phi  \in  \Phi ]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+type="user">mlg-000D</fr:addr><fr:route>mlg-000D.xml</fr:route><fr:title
+text="Substitution">Substitution</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>7</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is a term, <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is a variable, and <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a term. The term <fr:tex
+display="inline"><![CDATA[u^{x}_{t}]]></fr:tex> is
+    inductively defined as follows:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[u]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[u :\nequiv  x]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[u :\equiv  x]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[u]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[u :\equiv  c]]></fr:tex>, where c is some constant symbol</fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[f(u_1)^{x}_{t}(u_2)^{x}_{t} \cdots  (u_n)^{x}_{t}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[u :\equiv  f u_{1} \cdots  u_{n}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula, <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a term, and <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is a variable.
+    The formula <fr:tex
+display="inline"><![CDATA[\phi ^{x}_{t}]]></fr:tex> is inductively defined as follows:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[= (u_1)^{x}_{t} (u_2)^{x}_{t} ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  = u_1 u_2]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[R (u_1)^{x}_{t} \cdots  (u_2)^{x}_{t} ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  R u_1 \cdots  u_n]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\lnot  (\alpha )^{x}_{t}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  \lnot  (\alpha )]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[( \alpha ^{x}_{t} \lor  \beta ^{x}_{t})]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  \alpha  \lor  \beta ]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[x :\equiv  y]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[(\forall  y)(\alpha ^{x}_{t})]]></fr:tex> otherwise, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\forall  y)(\alpha )]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
