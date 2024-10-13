@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:addr
+type="user">rdg-0001</fr:addr><fr:route>rdg-0001.xml</fr:route><fr:title
+text="Notes on papers">Notes on papers</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This page is a reading list and corresponding notes.
+
+   <fr:ul><fr:li><fr:link
+type="external"
+href="https://www.andrej.com/zapiski/MGS-2022/notes-on-realizability.pdf">Notes on Realizability - Andrej Bauer</fr:link></fr:li>
+   <fr:li><fr:link
+type="external"
+href="https://math.andrej.com/data/c2c.pdf">Realizability as the Connection Between Constructive and Computable Mathematics</fr:link></fr:li>
+   <fr:li /></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

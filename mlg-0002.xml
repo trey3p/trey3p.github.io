@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>349</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>366</fr:anchor><fr:addr
 type="user">mlg-0002</fr:addr><fr:route>mlg-0002.xml</fr:route><fr:title
 text="First-order Language">First-order Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A first-order language <fr:tex
 display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is an infinite collection of distinct symbols,
@@ -56,7 +56,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>350</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>367</fr:anchor><fr:addr
 type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
 text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -514,4 +514,126 @@ display="inline"><![CDATA[\phi  :\equiv  \alpha  \lor  \beta ]]></fr:tex></fr:li
 display="inline"><![CDATA[\phi ]]></fr:tex> if <fr:tex
 display="inline"><![CDATA[x :\equiv  y]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[(\forall  y)(\alpha ^{x}_{t})]]></fr:tex> otherwise, <fr:tex
-display="inline"><![CDATA[\phi  :\equiv  (\forall  y)(\alpha )]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+display="inline"><![CDATA[\phi  :\equiv  (\forall  y)(\alpha )]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">mlg-000H</fr:addr><fr:route>mlg-000H.xml</fr:route><fr:title
+text="Logical Implication and Validity">Logical Implication and Validity</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Delta ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> are sets of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas. We will say that <fr:tex
+display="inline"><![CDATA[\Delta ]]></fr:tex>
+    <fr:em>logically implies</fr:em> <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> and write <fr:tex
+display="inline"><![CDATA[\Delta  \vDash  \Gamma ]]></fr:tex> if for every <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Delta ]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Gamma ]]></fr:tex>.</fr:p><fr:p>An <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is <fr:em>valid</fr:em> if <fr:tex
+display="inline"><![CDATA[\empty  \vDash  \phi ]]></fr:tex>, meaning if
+    <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is true in every <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure with every assignment function <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.
+    We write <fr:tex
+display="inline"><![CDATA[\vDash  \phi ]]></fr:tex> to denote that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is valid.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:addr
+type="user">mlg-000E</fr:addr><fr:route>mlg-000E.xml</fr:route><fr:title
+text="Substiutability">Substiutability</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[L]]></fr:tex>-formula, t is a term and x is a variable. We say that
+    t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> if
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is atomic</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  \lnot  (\alpha )]]></fr:tex> and t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\alpha  \lor  \beta )]]></fr:tex> and t is substitutable for x in both <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\forall  y)(\alpha )]]></fr:tex> and either x is not free in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li> or y does not occur in t and t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
+type="user">mlg-000F</fr:addr><fr:route>mlg-000F.xml</fr:route><fr:title
+text="Deduction">Deduction</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> is a collection of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas
+    and D is a finite sequence (<fr:tex
+display="inline"><![CDATA[\phi _{1}, \cdots , \phi _{n}]]></fr:tex>) of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas.
+    We say that D is a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> if for each i, <fr:tex
+display="inline"><![CDATA[1 \leq  i \leq  n]]></fr:tex>, either
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi _{i} \in  \Lambda ]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi _i \in  \Sigma ]]></fr:tex></fr:li>
+
+    <fr:li>There is a rule of inference <fr:tex
+display="inline"><![CDATA[(\Gamma , \phi _i)]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\Gamma  \subset  \{\phi _1, \cdots , \phi _n\}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>If there is a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> as the last line, we call this a deduction
+    from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>, and write <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \phi ]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+type="user">mlg-000G</fr:addr><fr:route>mlg-000G.xml</fr:route><fr:title
+text="Logical Axioms">Logical Axioms</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The groups of equality axioms are defined as follows:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[x = x]]></fr:tex> for each variable <fr:tex
+display="inline"><![CDATA[x]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[f(x_{1}, \cdots , x_{n}) = f(y_{1}, \cdots , y_{n})]]></fr:tex> when <fr:tex
+display="inline"><![CDATA[x_{1} = y_{1}, \cdots , x_{n} = y_{n}]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[R(x_{1}, \cdots , x_{n}) = R(y_{1}, \cdots , y_{n})]]></fr:tex> when <fr:tex
+display="inline"><![CDATA[x_{1} = y_{1}, \cdots , x_{n} = y_{n}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>The groups of quanitfier axioms are defined as follows:
+
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[(\forall  x. \phi ) \rightarrow  \phi ^{x}_{t}]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is substitutable for <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi ^{x}_{t} \to  (\exists  x \phi )]]></fr:tex>, if t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

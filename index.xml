@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>395</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>412</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Trey Plante">Trey Plante</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>I am a masters student in Computer Science at Wesleyan University,
   advised by Dan Licata and Robert Rose.</fr:p><fr:p>Hit Ctrl-K to search my site!</fr:p><fr:tree
@@ -17,7 +17,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:addr
 type="user">egp-0002</fr:addr><fr:route>egp-0002.xml</fr:route><fr:title
 text="Research Themes">Research Themes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Talk abt research ...</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -26,7 +26,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>386</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>403</fr:anchor><fr:addr
 type="user">egp-0003</fr:addr><fr:route>egp-0003.xml</fr:route><fr:title
 text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>List of notes somehow
     <fr:ul><fr:li><fr:tree
@@ -36,7 +36,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>354</fr:anchor><fr:addr
 type="user">ctt-0002</fr:addr><fr:route>ctt-0002.xml</fr:route><fr:title
 text="Notes on Cubical Type Theory">Notes on Cubical Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -53,7 +53,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>269</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>286</fr:anchor><fr:addr
 type="user">ctt-0005</fr:addr><fr:route>ctt-0005.xml</fr:route><fr:title
 text="Cofibration Logic for Directed Type Theory">Cofibration Logic for Directed Type Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -125,7 +125,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>271</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>288</fr:anchor><fr:addr
 type="user">ctt-0004</fr:addr><fr:route>ctt-0004.xml</fr:route><fr:title
 text="Cofibration Logics">Cofibration Logics</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -155,7 +155,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>273</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:addr
 type="user">ctt-0001</fr:addr><fr:route>ctt-0001.xml</fr:route><fr:title
 text="Partial Elements">Partial Elements</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -213,7 +213,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>275</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:addr
 type="user">ctt-0003</fr:addr><fr:route>ctt-0003.xml</fr:route><fr:title
 text="Boundary Types">Boundary Types</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -310,7 +310,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>277</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:addr
 type="user">ctt-0006</fr:addr><fr:route>ctt-0006.xml</fr:route><fr:title
 text="Branch on Cofibrations">Branch on Cofibrations</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>11</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The branch on cofibrations is an expression in cubical type theory that creates conditional evaluation based on the validity of a given formula
     within a given context. We write <fr:tex
@@ -406,7 +406,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>339</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:addr
 type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
 text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -864,7 +864,129 @@ display="inline"><![CDATA[\phi  :\equiv  \alpha  \lor  \beta ]]></fr:tex></fr:li
 display="inline"><![CDATA[\phi ]]></fr:tex> if <fr:tex
 display="inline"><![CDATA[x :\equiv  y]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[(\forall  y)(\alpha ^{x}_{t})]]></fr:tex> otherwise, <fr:tex
-display="inline"><![CDATA[\phi  :\equiv  (\forall  y)(\alpha )]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
+display="inline"><![CDATA[\phi  :\equiv  (\forall  y)(\alpha )]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">mlg-000H</fr:addr><fr:route>mlg-000H.xml</fr:route><fr:title
+text="Logical Implication and Validity">Logical Implication and Validity</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Delta ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> are sets of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas. We will say that <fr:tex
+display="inline"><![CDATA[\Delta ]]></fr:tex>
+    <fr:em>logically implies</fr:em> <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> and write <fr:tex
+display="inline"><![CDATA[\Delta  \vDash  \Gamma ]]></fr:tex> if for every <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Delta ]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Gamma ]]></fr:tex>.</fr:p><fr:p>An <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is <fr:em>valid</fr:em> if <fr:tex
+display="inline"><![CDATA[\empty  \vDash  \phi ]]></fr:tex>, meaning if
+    <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is true in every <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure with every assignment function <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.
+    We write <fr:tex
+display="inline"><![CDATA[\vDash  \phi ]]></fr:tex> to denote that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is valid.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:addr
+type="user">mlg-000E</fr:addr><fr:route>mlg-000E.xml</fr:route><fr:title
+text="Substiutability">Substiutability</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[L]]></fr:tex>-formula, t is a term and x is a variable. We say that
+    t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> if
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is atomic</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  \lnot  (\alpha )]]></fr:tex> and t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\alpha  \lor  \beta )]]></fr:tex> and t is substitutable for x in both <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\forall  y)(\alpha )]]></fr:tex> and either x is not free in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li> or y does not occur in t and t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
+type="user">mlg-000F</fr:addr><fr:route>mlg-000F.xml</fr:route><fr:title
+text="Deduction">Deduction</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> is a collection of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas
+    and D is a finite sequence (<fr:tex
+display="inline"><![CDATA[\phi _{1}, \cdots , \phi _{n}]]></fr:tex>) of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas.
+    We say that D is a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> if for each i, <fr:tex
+display="inline"><![CDATA[1 \leq  i \leq  n]]></fr:tex>, either
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi _{i} \in  \Lambda ]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi _i \in  \Sigma ]]></fr:tex></fr:li>
+
+    <fr:li>There is a rule of inference <fr:tex
+display="inline"><![CDATA[(\Gamma , \phi _i)]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\Gamma  \subset  \{\phi _1, \cdots , \phi _n\}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>If there is a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> as the last line, we call this a deduction
+    from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>, and write <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \phi ]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+type="user">mlg-000G</fr:addr><fr:route>mlg-000G.xml</fr:route><fr:title
+text="Logical Axioms">Logical Axioms</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The groups of equality axioms are defined as follows:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[x = x]]></fr:tex> for each variable <fr:tex
+display="inline"><![CDATA[x]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[f(x_{1}, \cdots , x_{n}) = f(y_{1}, \cdots , y_{n})]]></fr:tex> when <fr:tex
+display="inline"><![CDATA[x_{1} = y_{1}, \cdots , x_{n} = y_{n}]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[R(x_{1}, \cdots , x_{n}) = R(y_{1}, \cdots , y_{n})]]></fr:tex> when <fr:tex
+display="inline"><![CDATA[x_{1} = y_{1}, \cdots , x_{n} = y_{n}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>The groups of quanitfier axioms are defined as follows:
+
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[(\forall  x. \phi ) \rightarrow  \phi ^{x}_{t}]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is substitutable for <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi ^{x}_{t} \to  (\exists  x \phi )]]></fr:tex>, if t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
 
       <fr:li><fr:tree
 toc="true"
@@ -873,7 +995,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>341</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>358</fr:anchor><fr:addr
 type="user">hott-0004</fr:addr><fr:route>hott-0004.xml</fr:route><fr:title
 text="Notes on Homotopy Type Theory">Notes on Homotopy Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -886,7 +1008,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>309</fr:anchor><fr:addr
 type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
 text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -908,7 +1030,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>311</fr:anchor><fr:addr
 type="user">hott-0001</fr:addr><fr:route>hott-0001.xml</fr:route><fr:title
 text="Functions are functors">Functions are functors</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -922,7 +1044,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>296</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr
 type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
 text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -958,7 +1080,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:addr
 type="user">hott-0007</fr:addr><fr:route>hott-0007.xml</fr:route><fr:title
 text="Transport &amp; Path Lifting">Transport &amp; Path Lifting</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -1015,7 +1137,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>300</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:addr
 type="user">hott-0005</fr:addr><fr:route>hott-0005.xml</fr:route><fr:title
 text="Dependent map">Dependent map</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -1040,7 +1162,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>302</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:addr
 type="user">hott-0006</fr:addr><fr:route>hott-0006.xml</fr:route><fr:title
 text="S^1: The Circle "><fr:tex
 display="inline"><![CDATA[S^1]]></fr:tex>: The Circle </fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>6</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Informally, the circle <fr:tex
@@ -1101,7 +1223,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:addr
 type="user">hott-0003</fr:addr><fr:route>hott-0003.xml</fr:route><fr:title
 text="(S^{1}) = {Z} "><fr:tex
 display="inline"><![CDATA[\Pi (S^{1}) = \mathbb {Z}]]></fr:tex> </fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -1123,7 +1245,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>413</fr:anchor><fr:addr
 type="user">rose-weaver-licata-types-2022</fr:addr><fr:route>rose-weaver-licata-types-2022.xml</fr:route><fr:title
 text="Deciding the cofibration logic of cartesian cubical type theories">Deciding the cofibration logic of cartesian cubical type theories</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author>June, 2022 - Robert Rose, Matthew Weaver, Daniel R. Licata - 28th International Conference on Types for Proofs and Programs</fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:code>@inproceedings{rose-weaver-licata-2022-types,
   author = {Rose, Robert and Weaver, Matthew and Licata, Daniel},
