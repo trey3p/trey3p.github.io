@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:addr
+type="user">cat-0003</fr:addr><fr:route>cat-0003.xml</fr:route><fr:title
+text="Functor">Functor</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>15</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>functor</fr:em> between categories <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>, denoted <fr:tex
+display="inline"><![CDATA[\mathcal {F} : \mathcal {C} \to  \mathcal {D}]]></fr:tex>, is defined by:
+
+    <fr:ul><fr:li>An operation taking objects <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to objects <fr:tex
+display="inline"><![CDATA[\mathcal {F} A]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>.</fr:li>
+
+        <fr:li>An operation taking moprhisms <fr:tex
+display="inline"><![CDATA[f : A \to  B]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to morphisms <fr:tex
+display="inline"><![CDATA[\mathcal {F} f : \mathcal {F} A \to  \mathcal {F} B]]></fr:tex>  in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>, where
+            <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {F} (\mathbb {1}_{A}) = \mathbb {1}_{\mathcal {F} A} ]]></fr:tex>, meaning that the identity operation is preserved.</fr:li>
+
+                    <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {F} (gf) = \mathcal {F} g \circ  \mathcal {F} f]]></fr:tex>, meaning that morphism composition is preserved.</fr:li></fr:ul></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>307</fr:anchor><fr:addr
+type="user">cat-start</fr:addr><fr:route>cat-start.xml</fr:route><fr:title
+text="Category Theory Primer">Category Theory Primer</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>15</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:addr
+type="user">cat-0001</fr:addr><fr:route>cat-0001.xml</fr:route><fr:title
+text="Category">Category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>category</fr:em> <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is an entity with:
+
+    <fr:ul><fr:li>A collection <fr:tex
+display="inline"><![CDATA[ob \mathcal {C}]]></fr:tex> of entities called <fr:em>objects</fr:em>.</fr:li>
+
+        <fr:li>A collection <fr:tex
+display="inline"><![CDATA[mor \mathcal {C}]]></fr:tex> of entities called <fr:em>morphisms</fr:em>.</fr:li>
+
+        <fr:li>There are operations assigning to each morphism <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> its source <fr:tex
+display="inline"><![CDATA[src (f)]]></fr:tex> and its target <fr:tex
+display="inline"><![CDATA[tar (f)]]></fr:tex>. We indicate
+            the source and target of a morphism by writing <fr:tex
+display="inline"><![CDATA[f : A \to  B]]></fr:tex>.</fr:li>
+
+        <fr:li>Morphisms <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> and {g} are <fr:em>composable</fr:em> if <fr:tex
+display="inline"><![CDATA[src (f) = tar (g)]]></fr:tex> and their <fr:em>composition</fr:em>, denoted <fr:tex
+display="inline"><![CDATA[f \circ  g]]></fr:tex>, is a morphism
+            with <fr:tex
+display="inline"><![CDATA[src (f \circ  g) = src (g)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[tar (f \circ  g) = tar f]]></fr:tex>.</fr:li>
+
+        <fr:li>For each object of <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>, there is an <fr:em>identity</fr:em> morphism <fr:tex
+display="inline"><![CDATA[\mathbb {1}]]></fr:tex>.</fr:li>
+
+        <fr:li>Composition morphism is associative and unital:
+            <fr:tex
+display="inline"><![CDATA[\mathbb {1}_{tar(f)} \circ  f = f]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[f \circ  \mathbb {1}_{src(f)} = f]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h(gf) = (hg)f]]></fr:tex> for any three morphism <fr:tex
+display="inline"><![CDATA[h,g, f]]></fr:tex>.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+    <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>268</fr:anchor><fr:addr
+type="user">cat-0002</fr:addr><fr:route>cat-0002.xml</fr:route><fr:title
+text="Opposite Category">Opposite Category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>15</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The <fr:em>opposite category</fr:em>, <fr:tex
+display="inline"><![CDATA[\mathcal {C}^{op}]]></fr:tex>, is defined to be the category with the same objects as <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, but with each morphism
+    flipped. For each <fr:tex
+display="inline"><![CDATA[f : A \to  B]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathcal {C}^{op}]]></fr:tex> has <fr:tex
+display="inline"><![CDATA[f : B \to  A]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+    <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>270</fr:anchor><fr:addr
+type="user">cat-0003</fr:addr><fr:route>cat-0003.xml</fr:route><fr:title
+text="Functor">Functor</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>15</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>functor</fr:em> between categories <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>, denoted <fr:tex
+display="inline"><![CDATA[\mathcal {F} : \mathcal {C} \to  \mathcal {D}]]></fr:tex>, is defined by:
+
+    <fr:ul><fr:li>An operation taking objects <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to objects <fr:tex
+display="inline"><![CDATA[\mathcal {F} A]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>.</fr:li>
+
+        <fr:li>An operation taking moprhisms <fr:tex
+display="inline"><![CDATA[f : A \to  B]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> to morphisms <fr:tex
+display="inline"><![CDATA[\mathcal {F} f : \mathcal {F} A \to  \mathcal {F} B]]></fr:tex>  in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>, where
+            <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {F} (\mathbb {1}_{A}) = \mathbb {1}_{\mathcal {F} A} ]]></fr:tex>, meaning that the identity operation is preserved.</fr:li>
+
+                    <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {F} (gf) = \mathcal {F} g \circ  \mathcal {F} f]]></fr:tex>, meaning that morphism composition is preserved.</fr:li></fr:ul></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
