@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>284</fr:anchor><fr:addr
 type="user">mlg-000G</fr:addr><fr:route>mlg-000G.xml</fr:route><fr:title
 text="Logical Axioms">Logical Axioms</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The groups of equality axioms are defined as follows:
     <fr:ul><fr:li><fr:tex
@@ -45,7 +45,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>285</fr:anchor><fr:addr
 type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
 text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -625,4 +625,249 @@ display="inline"><![CDATA[\phi ]]></fr:tex></fr:li>
 
         <fr:li><fr:tex
 display="inline"><![CDATA[\phi ^{x}_{t} \to  (\exists  x \phi )]]></fr:tex>, if t is substitutable for x in <fr:tex
-display="inline"><![CDATA[\phi ]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+type="user">mlg-000I</fr:addr><fr:route>mlg-000I.xml</fr:route><fr:title
+text="Truth Assignment">Truth Assignment</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Given an assignment <fr:tex
+display="inline"><![CDATA[v : Vars \to  \{T, F\}]]></fr:tex> we extend <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\overline {v}]]></fr:tex> as follows:
+
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[v(\phi )]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a propositional variable</fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[F]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\lnot  \alpha )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\overline (v)(\alpha ) = T]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[F]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\alpha  \lor  \beta )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\overline (v)(\alpha ) = \overline (v)(\beta ) = F]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[T]]></fr:tex> otherwise</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:addr
+type="user">mlg-000J</fr:addr><fr:route>mlg-000J.xml</fr:route><fr:title
+text="Propositional Consequence">Propositional Consequence</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> is a set of propositional formulas and <fr:tex
+display="inline"><![CDATA[\phi _{p}]]></fr:tex> is a propositional formula. We say that
+    <fr:tex
+display="inline"><![CDATA[\phi _{p}]]></fr:tex> is a <fr:em>propositional consequence of</fr:em> <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> if every truth assignment that makes each formula in
+    <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> true also makes <fr:tex
+display="inline"><![CDATA[\phi _{p}]]></fr:tex> true. Notice <fr:tex
+display="inline"><![CDATA[\phi _{p}]]></fr:tex> is a tautology if <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> is a propositional consequence of
+    <fr:tex
+display="inline"><![CDATA[\empty ]]></fr:tex>.</fr:p><fr:p>We also overload this terminology to sets of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>
+    to indicate that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a propositional consequence of <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> after both undergo the transformation to propositional
+    formulas.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
+type="user">mlg-000K</fr:addr><fr:route>mlg-000K.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> is a nonempty finite set of propositional formulas and <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> is a propositional formula, then <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex>
+    is a propositional consequence of <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}] \to  \phi _p]]></fr:tex>
+    is a tautology.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> is a propositional consequence of <fr:tex
+display="inline"><![CDATA[\Gamma _p]]></fr:tex>. Let <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> be any truth assignment. Suppose <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> makes the
+    formula <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}]]]></fr:tex> false. Then, <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}] \to  \phi _p]]></fr:tex> is true.
+    Suppose <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> makes the formula <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}]]]></fr:tex> true. By definition, <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> makes <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> true.
+    Then,  <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}] \to  \phi _p]]></fr:tex> is true. So the formula is a tautology.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}] \to  \phi _p]]></fr:tex> is a tautology. Let <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> be a truth assignment
+    such that <fr:tex
+display="inline"><![CDATA[\overline (v)([\gamma _{1p} \land  \cdots  \land  \gamma _{np}]) = T]]></fr:tex>. If there is no such assignment, then the claim holds
+    vacuosly. We know that <fr:tex
+display="inline"><![CDATA[\overline (v)(\phi _p) = T]]></fr:tex> by definiton of tautology. Thus, every assignment that makes the formulas in <fr:tex
+display="inline"><![CDATA[\Gamma _p]]></fr:tex>
+    true also makes <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> true. Thus, <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> is a propositional consequence of <fr:tex
+display="inline"><![CDATA[\Gamma _p]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>259</fr:anchor><fr:addr
+type="user">mlg-000L</fr:addr><fr:route>mlg-000L.xml</fr:route><fr:title
+text="Propositional Consequence as Inference Rule">Propositional Consequence as Inference Rule</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> is a finite set of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas, <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula, and <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a propositional
+    consequence of <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[(\Gamma , \phi )]]></fr:tex> is a rule of inference of type (PC).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:addr
+type="user">mlg-000M</fr:addr><fr:route>mlg-000M.xml</fr:route><fr:title
+text="Quantifier Inference Rules">Quantifier Inference Rules</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that the variable <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is not free in the formula <fr:tex
+display="inline"><![CDATA[\psi ]]></fr:tex>. Then the following are rules of type (QR):
+
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[(\{ \psi  \to  \phi  \}, \psi  (\forall  x \phi ))]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[(\{ \phi  \to  \psi  \}, (\exists  x \phi ) \to  \psi )]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:addr
+type="user">mlg-000N</fr:addr><fr:route>mlg-000N.xml</fr:route><fr:title
+text="Validity of Equality Axioms">Validity of Equality Axioms</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>We will prove the validity of the equality axioms (E1), (E2), and (E3).
+    Let <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> be any struture and <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> any assignment function.
+
+    (E1)
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((\forall  x)(x = x))[s]]]></fr:tex>.
+
+    By definition, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((\forall  x)(x = x))[s]]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((\forall  x)(x = x))[s[a/x]]]]></fr:tex> for
+    each <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex>. Thus, we want to show that <fr:tex
+display="inline"><![CDATA[\overline {s}'(x) = \overline {s}'(x)]]></fr:tex> for each <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex> where <fr:tex
+display="inline"><![CDATA[s' = [s[a/x]]]]></fr:tex>.
+    Well, {s'(x) = s'(x)} for each <fr:tex
+display="inline"><![CDATA[a in \mathcal {U}]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[a = a]]></fr:tex> for any <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex>. Thus, (E1) is valid</fr:p><fr:p>(E2)
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((x_1 = y_1) \land  \cdots  \land  (x_n = y_n) \to  (f(x_1, \cdots , x_n) = f(y_1, \cdots , y_n)))(s)]]></fr:tex>.
+
+    If the antecedent is false, we are done. Suppose <fr:tex
+display="inline"><![CDATA[s(x_1) = s(y_1), \cdots , s(x_n) = s(y_n)]]></fr:tex>. We want to show that
+    <fr:tex
+display="inline"><![CDATA[\overline {s}(f(x_1, \cdots , x_n)) = \overline {s}(f(y_1, \cdots , y_n))]]></fr:tex>. By the definition of term assignment,
+    <fr:tex
+display="inline"><![CDATA[f(\overline {s}(x_1), \cdots , \overline {s}(x_n)) = f^{\mathcal {U}}(\overline {s}(y_1), \cdots , \overline {s}(y_n))]]></fr:tex>. Because
+    <fr:tex
+display="inline"><![CDATA[\overline {s}(x_i) = s(x_i) = s(y_i) = \overline {s}(y_i)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[f^{\mathcal {U}}]]></fr:tex> is a function, this is true. Thus,
+    (E2) is valid.</fr:p><fr:p>(E3)
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((x_1 = y_1) \land  \cdots  \land  (x_n = y_n) \to  (R(x_1, \cdots , x_n) = R(y_1, \cdots , y_n)))(s)]]></fr:tex>.
+
+    If the antecdent is false, we are done. Suppose <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \[(x_1 = y_1) \land  \cdots  \land  (x_n = y_n)\](s)]]></fr:tex>. Then,
+    <fr:tex
+display="inline"><![CDATA[s(x_1) = s(y_1), \cdots , s(x_n) = s(y_n)]]></fr:tex>. We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (R(x_1, \cdots , x_n) = R(y_1, \cdots , y_n))]]></fr:tex>.
+    By definition, this translates to showing <fr:tex
+display="inline"><![CDATA[\overline {s}(R(x_1, \cdots , x_n)) = \overline {s}(R(y_1, \cdots , y_n))]]></fr:tex>.
+    By definition of term assignment, this is equivalent to saying <fr:tex
+display="inline"><![CDATA[R^{\mathcal {U}}(\overline {s}(x_1), \cdots , \overline {s}(x_n)) = R^{\mathcal {U}}(\overline {s}(y_1), \cdots , \overline {s}(y_n))]]></fr:tex>.
+    Because <fr:tex
+display="inline"><![CDATA[\overline {s}(x_i) = s(x_i) = s(y_i) = \overline {s}(y_i)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[R^{\mathcal {U}}]]></fr:tex> is a relation, this is true. Thus,
+    (E3) is valid.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:addr
+type="user">mlg-000O</fr:addr><fr:route>mlg-000O.xml</fr:route><fr:title
+text="Validity of Quantifier Axioms">Validity of Quantifier Axioms</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>We prove that the quantifier axioms (Q1) and (Q2) are valid. Let <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> be any structure and <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> any assignment function.
+    Suppose t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>.
+
+    (Q1) We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\forall  x \phi ) \to  \phi ^{x}_{t} [s]]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is substitutable for <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>.
+
+    If the antecedent is false, we are done. So suppose <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\forall  x \phi )[s]]]></fr:tex>,
+    which means <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\phi )[s[a/x]]]]></fr:tex> for every <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex>.
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ^{x}_{t}]]></fr:tex>[s]. Well, we know <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\phi )[s[\overline {s}(t)/x]]]]></fr:tex>
+    because <fr:tex
+display="inline"><![CDATA[\overline {s}]]></fr:tex> maps the term <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> to some element in <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ^{x}_{t}]]></fr:tex>[s].
+    It is shown later that <fr:tex
+display="inline"><![CDATA[\phi (s[\overline {s}(t)/x])]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\phi ^{x}_{t}[s]]]></fr:tex> are equivalent.</fr:p><fr:p>(Q2) We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ^{x}_{t} \to  (\exists  x \phi )[s]]]></fr:tex>.
+
+    Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ^{x}_{t}[s]]]></fr:tex>. We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\exists  x \phi )[s]]]></fr:tex>.
+    By definition this means, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi (s[a/x])]]></fr:tex> for some <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex>.
+    Well we know <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi (s[\overline {s}(t)/x])]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[\overline {s}]]></fr:tex> maps the term <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> to some element in <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>.
+    Thus, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi (s[a/x])]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
