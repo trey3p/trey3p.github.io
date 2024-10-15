@@ -793,7 +793,7 @@ display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex>. Thus, (E1) is valid</
     We want to show that <fr:tex
 display="inline"><![CDATA[\mathcal {U} \vDash  ((x_1 = y_1) \land  \cdots  \land  (x_n = y_n) \to  (f(x_1, \cdots , x_n) = f(y_1, \cdots , y_n)))(s)]]></fr:tex>.
 
-    If the antecedent is false, we are done. Suppose <fr:tex
+    Suppose <fr:tex
 display="inline"><![CDATA[s(x_1) = s(y_1), \cdots , s(x_n) = s(y_n)]]></fr:tex>. We want to show that
     <fr:tex
 display="inline"><![CDATA[\overline {s}(f(x_1, \cdots , x_n)) = \overline {s}(f(y_1, \cdots , y_n))]]></fr:tex>. By the definition of term assignment,
@@ -807,8 +807,8 @@ display="inline"><![CDATA[f^{\mathcal {U}}]]></fr:tex> is a function, this is tr
     We want to show that <fr:tex
 display="inline"><![CDATA[\mathcal {U} \vDash  ((x_1 = y_1) \land  \cdots  \land  (x_n = y_n) \to  (R(x_1, \cdots , x_n) = R(y_1, \cdots , y_n)))(s)]]></fr:tex>.
 
-    If the antecdent is false, we are done. Suppose <fr:tex
-display="inline"><![CDATA[\mathcal {U} \vDash  \[(x_1 = y_1) \land  \cdots  \land  (x_n = y_n)\](s)]]></fr:tex>. Then,
+    Suppose <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (x_1 = y_1) \land  \cdots  \land  (x_n = y_n) (s)]]></fr:tex>. Then,
     <fr:tex
 display="inline"><![CDATA[s(x_1) = s(y_1), \cdots , s(x_n) = s(y_n)]]></fr:tex>. We want to show that <fr:tex
 display="inline"><![CDATA[\mathcal {U} \vDash  (R(x_1, \cdots , x_n) = R(y_1, \cdots , y_n))]]></fr:tex>.
