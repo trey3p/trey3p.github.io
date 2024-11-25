@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>497</fr:anchor><fr:addr
+type="user">pl-0003</fr:addr><fr:route>pl-0003.xml</fr:route><fr:title
+text="Polarity and Invertibility">Polarity and Invertibility</fr:title><fr:taxon>Definition</fr:taxon><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Types may be classified by their <fr:em>polarity</fr:em>, either <fr:em>positive</fr:em> or <fr:em>negative</fr:em>, which is determined by their characrerization
+    either structurally or behaviorally. Types characterized by their structure, or the way in which they are introduced, have positive polarization,
+    and are called positive types. Types characterized by their behavior, or the way in which they are eliminated, have negative polarization.</fr:p><fr:p>The introduction rule of the sum type:</fr:p><fr:embedded-tex
+hash="c4c4ca6f31fe37f7420ab23b6e6d6249"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+     \DeclareMathOperator {\bPsi }{\mathbf {\Psi }}
+     \DeclareMathOperator {\case }{case}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+            \hypo {\Gamma  \vdash  u : A_i}
+            \infer 1[intro $(i \in  \{1, 2\})$]{\Gamma  \vdash  l_i(u) : A + B}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree>

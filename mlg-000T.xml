@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>280</fr:anchor><fr:addr
+type="user">mlg-000T</fr:addr><fr:route>mlg-000T.xml</fr:route><fr:title
+text="Universal Closure Preserves Deducibility">Universal Closure Preserves Deducibility</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>19</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \theta ]]></fr:tex>. Then if <fr:tex
+display="inline"><![CDATA[\Sigma ']]></fr:tex> is formed by taking any <fr:tex
+display="inline"><![CDATA[\sigma  \in  \Sigma ]]></fr:tex> and adding or
+    deleting a universal quantifier whose scope is the entire formula, <fr:tex
+display="inline"><![CDATA[\Sigma ' \vdash  \theta ]]></fr:tex>.</fr:p><fr:p>This lemma follows immediately from <fr:link
+type="local"
+href="mlg-000S.xml"
+addr="mlg-000S">the preceding lemma</fr:link>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>281</fr:anchor><fr:addr
+type="user">mlg-0001</fr:addr><fr:route>mlg-0001.xml</fr:route><fr:title
+text="Notes on Mathematical Logic">Notes on Mathematical Logic</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>These are notes from a Mathematical Logic class taught by
+    Alexander Van Abel at Wesleyan University. Any mistakes in the
+    following material are my own.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>234</fr:anchor><fr:addr
+type="user">mlg-0002</fr:addr><fr:route>mlg-0002.xml</fr:route><fr:title
+text="First-order Language">First-order Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A first-order language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is an infinite collection of distinct symbols,
+where no symbol is contained in another, in the following categories:
+
+The following are logical symbols that belong to every language:
+<fr:ul><fr:li>"(", ")"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[\lor ]]></fr:tex>", "<fr:tex
+display="inline"><![CDATA[\lnot ]]></fr:tex>"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[\forall ]]></fr:tex>"</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[v_1]]></fr:tex>," "v_{2}", ... (an infinite sequence of variables). The set of variables is denoted
+        <fr:tex
+display="inline"><![CDATA[Vars]]></fr:tex>.</fr:li>
+
+    <fr:li>"<fr:tex
+display="inline"><![CDATA[=]]></fr:tex>"</fr:li></fr:ul>
+
+
+The following are non-logical symbols that a language is not required to contain
+<fr:ul><fr:li>Constant symbols.</fr:li>
+
+    <fr:li>For every <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbols.</fr:li>
+
+    <fr:li>For every <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation symbols.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>235</fr:anchor><fr:addr
+type="user">mlg-0003</fr:addr><fr:route>mlg-0003.xml</fr:route><fr:title
+text="Term of a Language">Term of a Language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>3</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is a language a <fr:em>term of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:em> is a nonempty finite string <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> of symbols
+from <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> such that either:
+<fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a constant symbol</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a variable</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[t \coloneq  f t_{1} t_{2} \cdots  t_{n}]]></fr:tex>, , where <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbol of
+        <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and each of the <fr:tex
+display="inline"><![CDATA[t_i]]></fr:tex> is a term of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li></fr:ul>
+
+<fr:p>The set of terms of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is the smallest set of strings that adhere to the preceding properties.</fr:p>
+
+<fr:p>The symbol <fr:tex
+display="inline"><![CDATA[\coloneq ]]></fr:tex> is not a part of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, but a meta-linguistic symbol that means
+    the strings of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-symbols on each side of the <fr:tex
+display="inline"><![CDATA[\coloneq ]]></fr:tex> are identical.</fr:p></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>237</fr:anchor><fr:addr
+type="user">mlg-0004</fr:addr><fr:route>mlg-0004.xml</fr:route><fr:title
+text="Formula of a language">Formula of a language</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>5</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is a first-order language, a formula of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is a nonempty
+    finite string <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> of symbols from <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> such that either:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  = t_{1}t_{2}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[t_{1}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[t_{2}]]></fr:tex> are terms of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  R t_{1}t_{2}\cdots  t_{n}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation symbol of
+            <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[t_{1}, \cdots , t_{n}]]></fr:tex> are all terms of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\lnot  \alpha )]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is a formula of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\alpha  \lor  \beta )]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex> are formulas of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\forall  v)(\alpha )]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is a variable and <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is a formula of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>The set of formulas of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> is the smallest set of strings that adhere to the preceding properties.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:addr
+type="user">mlg-0006</fr:addr><fr:route>mlg-0006.xml</fr:route><fr:title
+text="Language of Number Theory">Language of Number Theory</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The language <fr:tex
+display="inline"><![CDATA[\mathcal {L}_{NT}]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\{0, S, +, \cdot , E, <\} ]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>
+   is a constant symbol, <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> is a unary function symbol, <fr:tex
+display="inline"><![CDATA[+]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\cdot ]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[E]]></fr:tex>
+   are binary function symbols, and <fr:tex
+display="inline"><![CDATA[<]]></fr:tex> is a binary relation symbol. This will be referred to
+   as the language of number theory.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>241</fr:anchor><fr:addr
+type="user">mlg-0005</fr:addr><fr:route>mlg-0005.xml</fr:route><fr:title
+text="Free variable">Free variable</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is a variable and <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a formula. We will say that
+    <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is <fr:em>free</fr:em> in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> if
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is atomic and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> and occurs in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li>
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\lnot  \alpha )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is free in <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:li>
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\alpha  \lor  \beta )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is free in at least one of <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex></fr:li>
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\forall  u)(\alpha )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is not <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> is free <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
+type="user">mlg-0007</fr:addr><fr:route>mlg-0007.xml</fr:route><fr:title
+text="{L}-structure"><fr:tex
+display="inline"><![CDATA[\mathcal {L}-structure]]></fr:tex></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Fix a language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>. A <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex><fr:em>-structure</fr:em> <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is a nonempty
+   set <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, called the <fr:em>universe of</fr:em> <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>, together with:
+   <fr:ul><fr:li>For each constant symbol <fr:tex
+display="inline"><![CDATA[c]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, an element <fr:tex
+display="inline"><![CDATA[u^{\mathcal {U}}]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {A}]]></fr:tex></fr:li>
+    <fr:li>For each <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary function symbol <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, a function <fr:tex
+display="inline"><![CDATA[f^{\mathcal {U}} : A^{n} \to  A]]></fr:tex></fr:li>
+    <fr:li>For each <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation symbol <fr:tex
+display="inline"><![CDATA[R]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>, an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-ary relation <fr:tex
+display="inline"><![CDATA[R^{\mathcal {U}}]]></fr:tex> on <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, or a <fr:tex
+display="inline"><![CDATA[R^{\mathcal {U}} \subset  A^{n}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>For example, consider <fr:tex
+display="inline"><![CDATA[\mathcal {N} = (\mathbb {N}, 0, S, +, \cdot , E, <)]]></fr:tex>, where we ignore
+    the superscripts for the constants, functions, and relations and everything else gets its standard
+    interpretation. This structure is called the standard <fr:tex
+display="inline"><![CDATA[\mathcal {L}^{NT}]]></fr:tex>-structure.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:addr
+type="user">mlg-0008</fr:addr><fr:route>mlg-0008.xml</fr:route><fr:title
+text="Variable Assignment">Variable Assignment</fr:title><fr:taxon>Definition</fr:taxon><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure, a <fr:em>variable assignment function into <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex></fr:em> is a function <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>
+    that assigns to each variable an element of the universe <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> can be any function with type <fr:tex
+display="inline"><![CDATA[s : Vars \to  A]]></fr:tex></fr:p><fr:p>Suppose <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> is a variable assignment function into <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>. Then,</fr:p><fr:embedded-tex
+hash="c5a4841dfdbee933ea55f466f1e55db7"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {amsmath}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            $
+            s[x|a] =
+            \begin {cases}
+                s(v) & \text { if } v \neq  x \\
+                a & v = x
+            \end {cases}$
+    ]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>We call the function <fr:tex
+display="inline"><![CDATA[s[x|a]]]></fr:tex> an <fr:em>x-modification of the assignment function</fr:em> <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>245</fr:anchor><fr:addr
+type="user">mlg-0009</fr:addr><fr:route>mlg-0009.xml</fr:route><fr:title
+text="Term Assignment">Term Assignment</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure with the variable assignment <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.
+    The function <fr:tex
+display="inline"><![CDATA[\overline {s} : \mathcal {L}-terms \to  A]]></fr:tex> is defined inductively as follows:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[t :\equiv  v]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\overline {s}(t) = s(t)]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[t :\equiv  c]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\overline {s} (t) = c^{\mathcal {U}}]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[t :\equiv  f t_{1} \cdots  t_{n}]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\overline {s}(t) = f^{\mathcal {U}}(\overline {s}(t_{1}), \cdots , \overline {s}(t_{n}))]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>247</fr:anchor><fr:addr
+type="user">mlg-000A</fr:addr><fr:route>mlg-000A.xml</fr:route><fr:title
+text="Satisfies">Satisfies</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is a <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure, <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula and <fr:tex
+display="inline"><![CDATA[s : Vars \to  A]]></fr:tex> is
+   an assignment function. The <fr:em>satisfies</fr:em> relation, denoted <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi [s]]]></fr:tex>, is inductively defined as follows:
+   <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[ \mathcal {U} \vDash  = t_{1}t_{2}[s]]]></fr:tex> iff  <fr:tex
+display="inline"><![CDATA[\overline {s}(t_1) = \overline {s}(t_2)]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  R t_1 \cdots  t_n[s]]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[(\overline {s}(t_1) \cdots  \overline {s}(t_n)) \in  R^{\mathcal {U}}]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\lnot  \alpha )[s] ]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\mathcal {U} \nvDash  \alpha  [s]]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\alpha  \lor  \beta )[s]]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \alpha  [s]]]></fr:tex> or  <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \beta  [s]]]></fr:tex></fr:li>
+
+   <fr:li><fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\forall  x)(\alpha )]]></fr:tex> iff for each <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \alpha  [s(x/a)]]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:addr
+type="user">mlg-000B</fr:addr><fr:route>mlg-000B.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>7</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[s_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[s_2]]></fr:tex> are variable assignment functions into a structure <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>
+    such that <fr:tex
+display="inline"><![CDATA[s_1(v) = s_2(v)]]></fr:tex> for every variable <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> in the term <fr:tex
+display="inline"><![CDATA[t]]></fr:tex>. Then, <fr:tex
+display="inline"><![CDATA[\overline {s_1}(v) = \overline {s_2}(v)]]></fr:tex>.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[s_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[s_2]]></fr:tex> are variable assignment functions into a structure <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>
+    such that <fr:tex
+display="inline"><![CDATA[\overline {s_1}(v) = \overline {s_2}(v)]]></fr:tex> for every free variable <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> in the formula
+    <fr:tex
+display="inline"><![CDATA[\Phi ]]></fr:tex>. Then, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Phi  [s_1]]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Phi  [s_2]]]></fr:tex>.</fr:p><fr:p>As a corollary: If <fr:tex
+display="inline"><![CDATA[\sigma ]]></fr:tex> is a sentence in the language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is an
+    <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure, either <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \sigma  [s]]]></fr:tex> for all assignment functions <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>, or
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vdash  \sigma [s]]]></fr:tex> for no assignment function s.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+type="user">mlg-000C</fr:addr><fr:route>mlg-000C.xml</fr:route><fr:title
+text="Model">Model</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>7</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a formula in the language <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure,
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> is a model of <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>, denoted <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ]]></fr:tex>, if and only if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi  [s]]]></fr:tex>
+    for every assignment function <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.</fr:p><fr:p>If <fr:tex
+display="inline"><![CDATA[\Phi ]]></fr:tex> is a set of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex> formulas, then <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Phi ]]></fr:tex> if and only if
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vdash  \phi ]]></fr:tex> for each <fr:tex
+display="inline"><![CDATA[\phi  \in  \Phi ]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+type="user">mlg-000D</fr:addr><fr:route>mlg-000D.xml</fr:route><fr:title
+text="Substitution">Substitution</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>7</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is a term, <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is a variable, and <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a term. The term <fr:tex
+display="inline"><![CDATA[u^{x}_{t}]]></fr:tex> is
+    inductively defined as follows:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[u]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[u :\nequiv  x]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[t]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[u :\equiv  x]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[u]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[u :\equiv  c]]></fr:tex>, where c is some constant symbol</fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[f(u_1)^{x}_{t}(u_2)^{x}_{t} \cdots  (u_n)^{x}_{t}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[u :\equiv  f u_{1} \cdots  u_{n}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula, <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a term, and <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is a variable.
+    The formula <fr:tex
+display="inline"><![CDATA[\phi ^{x}_{t}]]></fr:tex> is inductively defined as follows:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[= (u_1)^{x}_{t} (u_2)^{x}_{t} ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  = u_1 u_2]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[R (u_1)^{x}_{t} \cdots  (u_2)^{x}_{t} ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  R u_1 \cdots  u_n]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\lnot  (\alpha )^{x}_{t}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  \lnot  (\alpha )]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[( \alpha ^{x}_{t} \lor  \beta ^{x}_{t})]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  \alpha  \lor  \beta ]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[x :\equiv  y]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[(\forall  y)(\alpha ^{x}_{t})]]></fr:tex> otherwise, <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\forall  y)(\alpha )]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">mlg-000H</fr:addr><fr:route>mlg-000H.xml</fr:route><fr:title
+text="Logical Implication and Validity">Logical Implication and Validity</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Delta ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> are sets of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas. We will say that <fr:tex
+display="inline"><![CDATA[\Delta ]]></fr:tex>
+    <fr:em>logically implies</fr:em> <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> and write <fr:tex
+display="inline"><![CDATA[\Delta  \vDash  \Gamma ]]></fr:tex> if for every <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure
+    <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Delta ]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \Gamma ]]></fr:tex>.</fr:p><fr:p>An <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is <fr:em>valid</fr:em> if <fr:tex
+display="inline"><![CDATA[\empty  \vDash  \phi ]]></fr:tex>, meaning if
+    <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is true in every <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-structure with every assignment function <fr:tex
+display="inline"><![CDATA[s]]></fr:tex>.
+    We write <fr:tex
+display="inline"><![CDATA[\vDash  \phi ]]></fr:tex> to denote that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is valid.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:addr
+type="user">mlg-000E</fr:addr><fr:route>mlg-000E.xml</fr:route><fr:title
+text="Substiutability">Substiutability</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[L]]></fr:tex>-formula, t is a term and x is a variable. We say that
+    t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> if
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is atomic</fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  \lnot  (\alpha )]]></fr:tex> and t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\alpha  \lor  \beta )]]></fr:tex> and t is substitutable for x in both <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\forall  y)(\alpha )]]></fr:tex> and either x is not free in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li> or y does not occur in t and t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
+type="user">mlg-000F</fr:addr><fr:route>mlg-000F.xml</fr:route><fr:title
+text="Deduction">Deduction</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> is a collection of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas
+    and D is a finite sequence (<fr:tex
+display="inline"><![CDATA[\phi _{1}, \cdots , \phi _{n}]]></fr:tex>) of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas.
+    We say that D is a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> if for each i, <fr:tex
+display="inline"><![CDATA[1 \leq  i \leq  n]]></fr:tex>, either
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\phi _{i} \in  \Lambda ]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[\phi _i \in  \Sigma ]]></fr:tex></fr:li>
+
+    <fr:li>There is a rule of inference <fr:tex
+display="inline"><![CDATA[(\Gamma , \phi _i)]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\Gamma  \subset  \{\phi _1, \cdots , \phi _n\}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>If there is a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> as the last line, we call this a deduction
+    from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>, and write <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \phi ]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+type="user">mlg-000P</fr:addr><fr:route>mlg-000P.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Fix sets of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> and a collection of rules of inference.
+    The set <fr:tex
+display="inline"><![CDATA[T = \{ \phi  | \Sigma  \vdash  \phi  \}]]></fr:tex> is the smallest set <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> such that
+
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\Sigma  \subset  C]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\Lambda  \subset  C]]></fr:tex></fr:li>
+
+        <fr:li>If <fr:tex
+display="inline"><![CDATA[(\Gamma , \theta )]]></fr:tex> is a rule of inference and <fr:tex
+display="inline"><![CDATA[\Gamma  \subset  C]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\theta  \in  C]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>We begin by proving the three properties for <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>.
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\Sigma  \subset  T]]></fr:tex>. It is sufficient to show that each <fr:tex
+display="inline"><![CDATA[\sigma  \in  \Sigma ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>. Well, for each
+    <fr:tex
+display="inline"><![CDATA[\sigma  \in  \Sigma ]]></fr:tex> we know that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \sigma ]]></fr:tex> because we can write the one line deduction with just <fr:tex
+display="inline"><![CDATA[\sigma ]]></fr:tex>. Thus,
+    <fr:tex
+display="inline"><![CDATA[\sigma  \in  \Sigma ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>.</fr:p><fr:p>We want to show that <fr:tex
+display="inline"><![CDATA[\Lambda  \subset  T]]></fr:tex>. It is sufficient to show that each <fr:tex
+display="inline"><![CDATA[\lambda  \in  \Lambda ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>. Well, for each
+    <fr:tex
+display="inline"><![CDATA[\lambda  in \Lambda ]]></fr:tex> we know that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \lambda ]]></fr:tex> because we can write the one line deduction with just <fr:tex
+display="inline"><![CDATA[\lambda ]]></fr:tex>. Thus.
+    <fr:tex
+display="inline"><![CDATA[\lambda  in \Lambda ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[(\Gamma , \theta )]]></fr:tex> is a rule of inference and that <fr:tex
+display="inline"><![CDATA[\Gamma  \subset  T]]></fr:tex>. We want to show that <fr:tex
+display="inline"><![CDATA[\theta  \in  T]]></fr:tex>.
+    It is sufficient to create a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> that ends with <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex>. By our supposition that <fr:tex
+display="inline"><![CDATA[\Gamma  \subset  T]]></fr:tex>,
+    we know that each <fr:tex
+display="inline"><![CDATA[\gamma  \in  T]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \gamma ]]></fr:tex> for each <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex>. Consider the deduction that is the concatenation
+    of all the deductions ending in a <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex>. From this deduction, we can add the line <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of the
+    preceding lines. Thus, we have constructed a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex>.</fr:p><fr:p>Now, we want to show that <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> is the smallest such set that satisfies the aforementioned properties.
+    Consider a set <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> that satisfies the three properties. It is sufficient to show that <fr:tex
+display="inline"><![CDATA[T \subset  C]]></fr:tex> by
+    demonstrating that all <fr:tex
+display="inline"><![CDATA[\phi  \in  T]]></fr:tex> are also in <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>. Let <fr:tex
+display="inline"><![CDATA[\phi  \in  T]]></fr:tex>. There must be deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>.
+    Suppose that the last line <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is justified because it is a logical or non-logical axiom. Then, <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> by definition.
+    Now suppose that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is justified by a rule of inference. Then, there is a <fr:tex
+display="inline"><![CDATA[(\Gamma , \phi )]]></fr:tex> such that each <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex> appears
+    deduction. Thus, by straightforward induction we get each <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>. Thus, by the third property, <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+type="user">mlg-000G</fr:addr><fr:route>mlg-000G.xml</fr:route><fr:title
+text="Logical Axioms">Logical Axioms</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The groups of equality axioms are defined as follows:
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[x = x]]></fr:tex> for each variable <fr:tex
+display="inline"><![CDATA[x]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[f(x_{1}, \cdots , x_{n}) = f(y_{1}, \cdots , y_{n})]]></fr:tex> when <fr:tex
+display="inline"><![CDATA[x_{1} = y_{1}, \cdots , x_{n} = y_{n}]]></fr:tex></fr:li>
+
+    <fr:li><fr:tex
+display="inline"><![CDATA[R(x_{1}, \cdots , x_{n}) = R(y_{1}, \cdots , y_{n})]]></fr:tex> when <fr:tex
+display="inline"><![CDATA[x_{1} = y_{1}, \cdots , x_{n} = y_{n}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>The groups of quanitfier axioms are defined as follows:
+
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[(\forall  x. \phi ) \rightarrow  \phi ^{x}_{t}]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is substitutable for <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\phi ^{x}_{t} \to  (\exists  x \phi )]]></fr:tex>, if t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:addr
+type="user">mlg-000I</fr:addr><fr:route>mlg-000I.xml</fr:route><fr:title
+text="Truth Assignment">Truth Assignment</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Given an assignment <fr:tex
+display="inline"><![CDATA[v : Vars \to  \{T, F\}]]></fr:tex> we extend <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\overline {v}]]></fr:tex> as follows:
+
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[v(\phi )]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a propositional variable</fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[F]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\lnot  \alpha )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\overline (v)(\alpha ) = T]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[F]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[\phi  :\equiv  (\alpha  \lor  \beta )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\overline (v)(\alpha ) = \overline (v)(\beta ) = F]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[T]]></fr:tex> otherwise</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
+type="user">mlg-000J</fr:addr><fr:route>mlg-000J.xml</fr:route><fr:title
+text="Propositional Consequence">Propositional Consequence</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> is a set of propositional formulas and <fr:tex
+display="inline"><![CDATA[\phi _{p}]]></fr:tex> is a propositional formula. We say that
+    <fr:tex
+display="inline"><![CDATA[\phi _{p}]]></fr:tex> is a <fr:em>propositional consequence of</fr:em> <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> if every truth assignment that makes each formula in
+    <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> true also makes <fr:tex
+display="inline"><![CDATA[\phi _{p}]]></fr:tex> true. Notice <fr:tex
+display="inline"><![CDATA[\phi _{p}]]></fr:tex> is a tautology if <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> is a propositional consequence of
+    <fr:tex
+display="inline"><![CDATA[\empty ]]></fr:tex>.</fr:p><fr:p>We also overload this terminology to sets of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>
+    to indicate that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a propositional consequence of <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> after both undergo the transformation to propositional
+    formulas.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>259</fr:anchor><fr:addr
+type="user">mlg-000K</fr:addr><fr:route>mlg-000K.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> is a nonempty finite set of propositional formulas and <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> is a propositional formula, then <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex>
+    is a propositional consequence of <fr:tex
+display="inline"><![CDATA[\Gamma _{p}]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}] \to  \phi _p]]></fr:tex>
+    is a tautology.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> is a propositional consequence of <fr:tex
+display="inline"><![CDATA[\Gamma _p]]></fr:tex>. Let <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> be any truth assignment. Suppose <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> makes the
+    formula <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}]]]></fr:tex> false. Then, <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}] \to  \phi _p]]></fr:tex> is true.
+    Suppose <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> makes the formula <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}]]]></fr:tex> true. By definition, <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> makes <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> true.
+    Then,  <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}] \to  \phi _p]]></fr:tex> is true. So the formula is a tautology.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[[\gamma _{1p} \land  \cdots  \land  \gamma _{np}] \to  \phi _p]]></fr:tex> is a tautology. Let <fr:tex
+display="inline"><![CDATA[v]]></fr:tex> be a truth assignment
+    such that <fr:tex
+display="inline"><![CDATA[\overline (v)([\gamma _{1p} \land  \cdots  \land  \gamma _{np}]) = T]]></fr:tex>. If there is no such assignment, then the claim holds
+    vacuosly. We know that <fr:tex
+display="inline"><![CDATA[\overline (v)(\phi _p) = T]]></fr:tex> by definiton of tautology. Thus, every assignment that makes the formulas in <fr:tex
+display="inline"><![CDATA[\Gamma _p]]></fr:tex>
+    true also makes <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> true. Thus, <fr:tex
+display="inline"><![CDATA[\phi _p]]></fr:tex> is a propositional consequence of <fr:tex
+display="inline"><![CDATA[\Gamma _p]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:addr
+type="user">mlg-000L</fr:addr><fr:route>mlg-000L.xml</fr:route><fr:title
+text="Propositional Consequence as Inference Rule">Propositional Consequence as Inference Rule</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> is a finite set of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas, <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formula, and <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is a propositional
+    consequence of <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[(\Gamma , \phi )]]></fr:tex> is a rule of inference of type (PC).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:addr
+type="user">mlg-000M</fr:addr><fr:route>mlg-000M.xml</fr:route><fr:title
+text="Quantifier Inference Rules">Quantifier Inference Rules</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that the variable <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is not free in the formula <fr:tex
+display="inline"><![CDATA[\psi ]]></fr:tex>. Then the following are rules of type (QR):
+
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[(\{ \psi  \to  \phi  \}, \psi  (\forall  x \phi ))]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[(\{ \phi  \to  \psi  \}, (\exists  x \phi ) \to  \psi )]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:addr
+type="user">mlg-000N</fr:addr><fr:route>mlg-000N.xml</fr:route><fr:title
+text="Validity of Equality Axioms">Validity of Equality Axioms</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>We will prove the validity of the equality axioms (E1), (E2), and (E3).
+    Let <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> be any struture and <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> any assignment function.
+
+    (E1)
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((\forall  x)(x = x))[s]]]></fr:tex>.
+
+    By definition, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((\forall  x)(x = x))[s]]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((\forall  x)(x = x))[s[a/x]]]]></fr:tex> for
+    each <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex>. Thus, we want to show that <fr:tex
+display="inline"><![CDATA[\overline {s}'(x) = \overline {s}'(x)]]></fr:tex> for each <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex> where <fr:tex
+display="inline"><![CDATA[s' = [s[a/x]]]]></fr:tex>.
+    Well, {s'(x) = s'(x)} for each <fr:tex
+display="inline"><![CDATA[a in \mathcal {U}]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[a = a]]></fr:tex> for any <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex>. Thus, (E1) is valid</fr:p><fr:p>(E2)
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((x_1 = y_1) \land  \cdots  \land  (x_n = y_n) \to  (f(x_1, \cdots , x_n) = f(y_1, \cdots , y_n)))(s)]]></fr:tex>.
+
+    Suppose <fr:tex
+display="inline"><![CDATA[s(x_1) = s(y_1), \cdots , s(x_n) = s(y_n)]]></fr:tex>. We want to show that
+    <fr:tex
+display="inline"><![CDATA[\overline {s}(f(x_1, \cdots , x_n)) = \overline {s}(f(y_1, \cdots , y_n))]]></fr:tex>. By the definition of term assignment,
+    <fr:tex
+display="inline"><![CDATA[f(\overline {s}(x_1), \cdots , \overline {s}(x_n)) = f^{\mathcal {U}}(\overline {s}(y_1), \cdots , \overline {s}(y_n))]]></fr:tex>. Because
+    <fr:tex
+display="inline"><![CDATA[\overline {s}(x_i) = s(x_i) = s(y_i) = \overline {s}(y_i)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[f^{\mathcal {U}}]]></fr:tex> is a function, this is true. Thus,
+    (E2) is valid.</fr:p><fr:p>(E3)
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  ((x_1 = y_1) \land  \cdots  \land  (x_n = y_n) \to  (R(x_1, \cdots , x_n) = R(y_1, \cdots , y_n)))(s)]]></fr:tex>.
+
+    Suppose <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (x_1 = y_1) \land  \cdots  \land  (x_n = y_n) (s)]]></fr:tex>. Then,
+    <fr:tex
+display="inline"><![CDATA[s(x_1) = s(y_1), \cdots , s(x_n) = s(y_n)]]></fr:tex>. We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (R(x_1, \cdots , x_n) = R(y_1, \cdots , y_n))]]></fr:tex>.
+    By definition, this translates to showing <fr:tex
+display="inline"><![CDATA[\overline {s}(R(x_1, \cdots , x_n)) = \overline {s}(R(y_1, \cdots , y_n))]]></fr:tex>.
+    By definition of term assignment, this is equivalent to saying <fr:tex
+display="inline"><![CDATA[R^{\mathcal {U}}(\overline {s}(x_1), \cdots , \overline {s}(x_n)) = R^{\mathcal {U}}(\overline {s}(y_1), \cdots , \overline {s}(y_n))]]></fr:tex>.
+    Because <fr:tex
+display="inline"><![CDATA[\overline {s}(x_i) = s(x_i) = s(y_i) = \overline {s}(y_i)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[R^{\mathcal {U}}]]></fr:tex> is a relation, this is true. Thus,
+    (E3) is valid.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:addr
+type="user">mlg-000O</fr:addr><fr:route>mlg-000O.xml</fr:route><fr:title
+text="Validity of Quantifier Axioms">Validity of Quantifier Axioms</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>We prove that the quantifier axioms (Q1) and (Q2) are valid. Let <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex> be any structure and <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> any assignment function.
+    Suppose t is substitutable for x in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>.
+
+    (Q1) We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\forall  x \phi ) \to  \phi ^{x}_{t} [s]]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is substitutable for <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>.
+
+    If the antecedent is false, we are done. So suppose <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\forall  x \phi )[s]]]></fr:tex>,
+    which means <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\phi )[s[a/x]]]]></fr:tex> for every <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex>.
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ^{x}_{t}]]></fr:tex>[s]. Well, we know <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\phi )[s[\overline {s}(t)/x]]]]></fr:tex>
+    because <fr:tex
+display="inline"><![CDATA[\overline {s}]]></fr:tex> maps the term <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> to some element in <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ^{x}_{t}]]></fr:tex>[s].
+    It is shown later that <fr:tex
+display="inline"><![CDATA[\phi (s[\overline {s}(t)/x])]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\phi ^{x}_{t}[s]]]></fr:tex> are equivalent.</fr:p><fr:p>(Q2) We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ^{x}_{t} \to  (\exists  x \phi )[s]]]></fr:tex>.
+
+    Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi ^{x}_{t}[s]]]></fr:tex>. We want to show that <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  (\exists  x \phi )[s]]]></fr:tex>.
+    By definition this means, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi (s[a/x])]]></fr:tex> for some <fr:tex
+display="inline"><![CDATA[a \in  \mathcal {U}]]></fr:tex>.
+    Well we know <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi (s[\overline {s}(t)/x])]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[\overline {s}]]></fr:tex> maps the term <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> to some element in <fr:tex
+display="inline"><![CDATA[\mathcal {U}]]></fr:tex>.
+    Thus, <fr:tex
+display="inline"><![CDATA[\mathcal {U} \vDash  \phi (s[a/x])]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>264</fr:anchor><fr:addr
+type="user">mlg-000P</fr:addr><fr:route>mlg-000P.xml</fr:route><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Fix sets of <fr:tex
+display="inline"><![CDATA[\mathcal {L}]]></fr:tex>-formulas <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Lambda ]]></fr:tex> and a collection of rules of inference.
+    The set <fr:tex
+display="inline"><![CDATA[T = \{ \phi  | \Sigma  \vdash  \phi  \}]]></fr:tex> is the smallest set <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> such that
+
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\Sigma  \subset  C]]></fr:tex></fr:li>
+
+        <fr:li><fr:tex
+display="inline"><![CDATA[\Lambda  \subset  C]]></fr:tex></fr:li>
+
+        <fr:li>If <fr:tex
+display="inline"><![CDATA[(\Gamma , \theta )]]></fr:tex> is a rule of inference and <fr:tex
+display="inline"><![CDATA[\Gamma  \subset  C]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[\theta  \in  C]]></fr:tex></fr:li></fr:ul></fr:p><fr:p>We begin by proving the three properties for <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>.
+
+    We want to show that <fr:tex
+display="inline"><![CDATA[\Sigma  \subset  T]]></fr:tex>. It is sufficient to show that each <fr:tex
+display="inline"><![CDATA[\sigma  \in  \Sigma ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>. Well, for each
+    <fr:tex
+display="inline"><![CDATA[\sigma  \in  \Sigma ]]></fr:tex> we know that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \sigma ]]></fr:tex> because we can write the one line deduction with just <fr:tex
+display="inline"><![CDATA[\sigma ]]></fr:tex>. Thus,
+    <fr:tex
+display="inline"><![CDATA[\sigma  \in  \Sigma ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>.</fr:p><fr:p>We want to show that <fr:tex
+display="inline"><![CDATA[\Lambda  \subset  T]]></fr:tex>. It is sufficient to show that each <fr:tex
+display="inline"><![CDATA[\lambda  \in  \Lambda ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>. Well, for each
+    <fr:tex
+display="inline"><![CDATA[\lambda  in \Lambda ]]></fr:tex> we know that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \lambda ]]></fr:tex> because we can write the one line deduction with just <fr:tex
+display="inline"><![CDATA[\lambda ]]></fr:tex>. Thus.
+    <fr:tex
+display="inline"><![CDATA[\lambda  in \Lambda ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[(\Gamma , \theta )]]></fr:tex> is a rule of inference and that <fr:tex
+display="inline"><![CDATA[\Gamma  \subset  T]]></fr:tex>. We want to show that <fr:tex
+display="inline"><![CDATA[\theta  \in  T]]></fr:tex>.
+    It is sufficient to create a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> that ends with <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex>. By our supposition that <fr:tex
+display="inline"><![CDATA[\Gamma  \subset  T]]></fr:tex>,
+    we know that each <fr:tex
+display="inline"><![CDATA[\gamma  \in  T]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \gamma ]]></fr:tex> for each <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex>. Consider the deduction that is the concatenation
+    of all the deductions ending in a <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex>. From this deduction, we can add the line <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> is a subset of the
+    preceding lines. Thus, we have constructed a deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex>.</fr:p><fr:p>Now, we want to show that <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> is the smallest such set that satisfies the aforementioned properties.
+    Consider a set <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> that satisfies the three properties. It is sufficient to show that <fr:tex
+display="inline"><![CDATA[T \subset  C]]></fr:tex> by
+    demonstrating that all <fr:tex
+display="inline"><![CDATA[\phi  \in  T]]></fr:tex> are also in <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>. Let <fr:tex
+display="inline"><![CDATA[\phi  \in  T]]></fr:tex>. There must be deduction from <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>.
+    Suppose that the last line <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is justified because it is a logical or non-logical axiom. Then, <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[C]]></fr:tex> by definition.
+    Now suppose that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is justified by a rule of inference. Then, there is a <fr:tex
+display="inline"><![CDATA[(\Gamma , \phi )]]></fr:tex> such that each <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex> appears
+    deduction. Thus, by straightforward induction we get each <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>. Thus, by the third property, <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is in <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:addr
+type="user">mlg-000Q</fr:addr><fr:route>mlg-000Q.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>19</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> is a term, <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is a variable, and <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a term. Suppose that <fr:tex
+display="inline"><![CDATA[s : Vars \to  A]]></fr:tex> is a variable
+    assignment function and that <fr:tex
+display="inline"><![CDATA[s' = s[x|\overline {s}(t)]]]></fr:tex>. Then <fr:tex
+display="inline"><![CDATA[\overline {s}(u^{x}_{t}) = \overline {s^{'}}(u)]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>266</fr:anchor><fr:addr
+type="user">mlg-000R</fr:addr><fr:route>mlg-000R.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>19</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[L]]></fr:tex>-formula, <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is a variable, <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is a term, and <fr:tex
+display="inline"><![CDATA[t]]></fr:tex> is substitutable for <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[s : Vars \ to A]]></fr:tex> is a variable assignment function and that <fr:tex
+display="inline"><![CDATA[s' = s[x|\overline {s}(t)]]]></fr:tex>. Then <fr:tex
+display="inline"><![CDATA[U \vDash  \phi ^{x}_{t}[s]]]></fr:tex>
+    if and only if <fr:tex
+display="inline"><![CDATA[U \vDash  \phi [s']]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:addr
+type="user">mlg-000S</fr:addr><fr:route>mlg-000S.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>19</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \theta ]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \forall  x. \theta ]]></fr:tex></fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \theta ]]></fr:tex>. We can produce a deduction for <fr:tex
+display="inline"><![CDATA[\forall  \theta ]]></fr:tex> by adding an application of LEM, QR, and modus ponens to the deduction of <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex>.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \forall  x. \theta ]]></fr:tex>. We only need to add an application of <fr:tex
+display="inline"><![CDATA[Q1]]></fr:tex> to the deduction of <fr:tex
+display="inline"><![CDATA[\forall  x. \theta ]]></fr:tex> to produce a deduction of <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>268</fr:anchor><fr:addr
+type="user">mlg-000T</fr:addr><fr:route>mlg-000T.xml</fr:route><fr:title
+text="Universal Closure Preserves Deducibility">Universal Closure Preserves Deducibility</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>19</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \theta ]]></fr:tex>. Then if <fr:tex
+display="inline"><![CDATA[\Sigma ']]></fr:tex> is formed by taking any <fr:tex
+display="inline"><![CDATA[\sigma  \in  \Sigma ]]></fr:tex> and adding or
+    deleting a universal quantifier whose scope is the entire formula, <fr:tex
+display="inline"><![CDATA[\Sigma ' \vdash  \theta ]]></fr:tex>.</fr:p><fr:p>This lemma follows immediately from <fr:link
+type="local"
+href="mlg-000S.xml"
+addr="mlg-000S">the preceding lemma</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>269</fr:anchor><fr:addr
+type="user">mlg-000U</fr:addr><fr:route>mlg-000U.xml</fr:route><fr:title
+text="The Deduction Theorem">The Deduction Theorem</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>19</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex> is a sentence and <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> is a set of formulas. Then <fr:tex
+display="inline"><![CDATA[\Sigma  \cup  \theta  \vdash  \theta ]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  (\theta  \to  \phi )]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>283</fr:anchor><fr:addr
+type="user">mlg-000S</fr:addr><fr:route>mlg-000S.xml</fr:route><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>19</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \theta ]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \forall  x. \theta ]]></fr:tex></fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \theta ]]></fr:tex>. We can produce a deduction for <fr:tex
+display="inline"><![CDATA[\forall  \theta ]]></fr:tex> by adding an application of LEM, QR, and modus ponens to the deduction of <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex>.</fr:p><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma  \vdash  \forall  x. \theta ]]></fr:tex>. We only need to add an application of <fr:tex
+display="inline"><![CDATA[Q1]]></fr:tex> to the deduction of <fr:tex
+display="inline"><![CDATA[\forall  x. \theta ]]></fr:tex> to produce a deduction of <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

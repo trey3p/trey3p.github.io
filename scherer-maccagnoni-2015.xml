@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>494</fr:anchor><fr:addr
+type="user">scherer-maccagnoni-2015</fr:addr><fr:route>scherer-maccagnoni-2015.xml</fr:route><fr:title
+text="Polarised Intermediate Representation of Lambda Calculus with Sums">Polarised Intermediate Representation of Lambda Calculus with Sums</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /></fr:frontmatter><fr:mainmatter><fr:code>@inproceedings{munch-maccagnoni_polarised_2015,
+	address = {Kyoto, Japan},
+	title = {Polarised {Intermediate} {Representation} of {Lambda} {Calculus} with {Sums}},
+	isbn = {978-1-4799-8875-4},
+	url = {http://ieeexplore.ieee.org/document/7174876/},
+	doi = {10.1109/LICS.2015.22},
+	abstract = {The theory of the 𝜆-calculus with extensional sums is more complex than with only pairs and functions. We propose an untyped representation—an intermediate calculus—for the 𝜆calculus with sums, based on the following principles: 1 Computation is described as the reduction of pairs of an expression and a context; the context must be represented inside-out, 2 Operations are represented abstractly by their transition rule, 3 Positive and negative expressions are respectively eager and lazy; this polarity is an approximation of the type. We oﬀer an introduction from the ground up to our approach, and we review the beneﬁts.},
+	language = {en},
+	urldate = {2024-11-09},
+	booktitle = {2015 30th {Annual} {ACM}/{IEEE} {Symposium} on {Logic} in {Computer} {Science}},
+	publisher = {IEEE},
+	author = {Munch-Maccagnoni, Guillaume and Scherer, Gabriel},
+	month = jul,
+	year = {2015},
+	pages = {127--140},
+	file = {Munch-Maccagnoni and Scherer - 2015 - Polarised Intermediate Representation of Lambda Ca.pdf:/Users/treyplante/Zotero/storage/T89PD964/Munch-Maccagnoni and Scherer - 2015 - Polarised Intermediate Representation of Lambda Ca.pdf:application/pdf},
+}</fr:code></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>495</fr:anchor><fr:addr
+type="user">pl-0001</fr:addr><fr:route>pl-0001.xml</fr:route><fr:title
+text="Simply-typed Lambda Calculus with Sums">Simply-typed Lambda Calculus with Sums</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>9</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="treyplante.xml"
+addr="treyplante"
+title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Instantiation:</fr:p><fr:embedded-tex
+hash="061a710a74cf8a5c7399c79a3225f2b9"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+     \DeclareMathOperator {\bPsi }{\mathbf {\Psi }}
+     \DeclareMathOperator {\case }{case}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+    \infer 0{\Gamma , x : A \vdash  x : A}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>The arrow type:</fr:p><fr:embedded-tex
+hash="4f94c22a1697f01fc9f12e538f0709fd"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+     \DeclareMathOperator {\bPsi }{\mathbf {\Psi }}
+     \DeclareMathOperator {\case }{case}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma , x : A \vdash  B}
+        \infer 1[intro]{\Gamma  \vdash  \lambda  x : A. e : A \to  B}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  f : A \to  B} \hypo {\Gamma  \vdash  a : A}
+        \infer 2[elim]{\Gamma  \vdash  f a : B}
+    \end {prooftree}
+
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:embedded-tex
+hash="34ef35a8c77b5cc84d11b14e01cb830f"><fr:embedded-tex-preamble><![CDATA[\usepackage {amsmath}]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    $
+    \begin {aligned}
+        (\lambda  x : A. e) v \approx _{\beta } = e[v/x]\\
+        f \approx _{\eta } (\lambda  x. f x)
+    \end {aligned}$
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>The product type:</fr:p><fr:embedded-tex
+hash="9d30d31a34c7c95be27143b242fe5a0e"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+     \DeclareMathOperator {\bPsi }{\mathbf {\Psi }}
+     \DeclareMathOperator {\case }{case}
+     \DeclareMathOperator {\pr }{p}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  a : A} \hypo {\Gamma  \vdash  b : B}
+        \infer 2[intro]{\Gamma  \vdash  <a,b> : A \times  B}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  t : A_1 \times  A_2}
+        \infer 1[intro $i \in  \{1, 2\}$]{\pr _i(t) : A_i}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>The sum type:</fr:p><fr:embedded-tex
+hash="c79ab4611d2655223dc652c22d2e4a5a"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+     \DeclareMathOperator {\bPsi }{\mathbf {\Psi }}
+     \DeclareMathOperator {\case }{case}
+]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {prooftree}
+            \hypo {\Gamma  \vdash  u : A_i}
+            \infer 1[intro $(i \in  \{1, 2\})$]{\Gamma  \vdash  l_i(u) : A + B}
+    \end {prooftree}
+    \quad 
+    \begin {prooftree}
+        \hypo {\Gamma  \vdash  t : A + B} \hypo {\Gamma , x_i : A_i \vdash  u_i : B (\forall  i \in  \{1, 2\})}
+        \infer 2[elim]{\Gamma  \vdash  \case (t , x. u_1, y. u_2) : B}
+    \end {prooftree}
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:embedded-tex
+hash="bca681dfc8bc09ec8d4d65609a8ab7ec"><fr:embedded-tex-preamble><![CDATA[
+    \usepackage {ebproof}
+     \usepackage {mathtools}
+     \usepackage {amsmath}
+        \DeclareMathOperator {\cof }{cof}
+     \DeclareMathOperator {\A }{A}
+     \DeclareMathOperator {\sU }{\mathcal {U}}
+     \DeclareMathOperator {\inb }{in}
+     \DeclareMathOperator {\outb }{out}
+     \DeclareMathOperator {\bPsi }{\mathbf {\Psi }}
+     \DeclareMathOperator {\case }{case}
+    ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    $
+        \begin {aligned}
+            \case (l_i(t), x. u_1, y. u_2) \approx _{\beta } u_i[t/x_i] \\
+            u[t/y] \approx _{\eta } \case (l_i(t), x. u[l_1(x)/z], y. u[l_2(y)/z]) : C \\
+            u[t/y] \approx _{\text {weak}-\eta } \case (l_i, x. l_1(x), y. l_2(y)) : C
+        \end {aligned}
+    $
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>Paraphrased from n-Lab:
+
+    The <fr:tex
+display="inline"><![CDATA[\eta ]]></fr:tex> law says that if we unpack a term of type <fr:tex
+display="inline"><![CDATA[A + B]]></fr:tex> and then use the resulting term only to repackage it as a term of type
+    <fr:tex
+display="inline"><![CDATA[A + B]]></fr:tex>, then we can skip the unpacking. We obtain the weak <fr:tex
+display="inline"><![CDATA[\eta ]]></fr:tex> law by specifying the resulting type as <fr:tex
+display="inline"><![CDATA[ A + B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[u := z]]></fr:tex>.</fr:p><fr:p>This presentation adapts the presentation from <fr:link
+type="local"
+href="scherer-maccagnoni-2015.xml"
+addr="scherer-maccagnoni-2015"
+title="Polarised Intermediate Representation of Lambda Calculus with Sums">here</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
