@@ -311,7 +311,7 @@ display="inline"><![CDATA[\beta ]]></fr:tex> with <fr:tex
 display="inline"><![CDATA[e_{1}]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[e_{2}]]></fr:tex>
     as values of the branch. The expression is analagous to the common case expression on coproducts seen in dependent type theory.</fr:p><fr:embedded-tex
-hash="3de3f64a11126ca6a7e386bfe639d006"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+hash="a8b611481b65a6c1fffa06bbf237a2ea"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
      \usepackage {mathtools}
      \usepackage {amsmath}
         \DeclareMathOperator {\cof }{cof}
@@ -323,7 +323,8 @@ hash="3de3f64a11126ca6a7e386bfe639d006"><fr:embedded-tex-preamble><![CDATA[\usep
     ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     \begin {prooftree}
             \hypo {\Gamma  \vdash  A : \sU _{l}} \hypo {\Gamma  \vdash _{\bPsi } \alpha  \lor  \beta } \hypo {\Gamma , \alpha  \vdash  e_{1} : A} \hypo {\Gamma , \beta  \vdash  e_{2} : A}
-            \infer 4[intro]{\Gamma  \vdash  [e_{1}, e_{2}]_{\alpha , \beta } : A}
+            \hypo {\Gamma , \alpha , \beta  \vdash  e \equiv  f : A}
+            \infer 5[intro]{\Gamma  \vdash  [e_{1}, e_{2}]_{\alpha , \beta } : A}
     \end {prooftree}
 ]]></fr:embedded-tex-body></fr:embedded-tex><fr:embedded-tex
 hash="09e0846d494ffeadaf1bf759d2be8ff1"><fr:embedded-tex-preamble><![CDATA[
@@ -346,7 +347,7 @@ hash="09e0846d494ffeadaf1bf759d2be8ff1"><fr:embedded-tex-preamble><![CDATA[
         \hypo {\Gamma  \vdash  \beta }
         \infer 1[comp2]{\Gamma  \vdash  [e_{1}, e_{2}]_{\alpha , \beta } \equiv  e_{2}}
     \end {prooftree}
-]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>We now present two ways of writing the eta/extensionality rule:</fr:p><fr:embedded-tex
+]]></fr:embedded-tex-body></fr:embedded-tex><fr:p>We now present the eta and extensionality rules:</fr:p><fr:embedded-tex
 hash="b8aa09ae7ebb0676b63a1a4a94f074c3"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
      \usepackage {mathtools}
      \usepackage {amsmath}
