@@ -36,7 +36,7 @@
             <fr:authors />
           </fr:frontmatter>
           <fr:mainmatter>
-            <fr:p>I am an incoming Ph.D. student in Computer Science at the University of Illinois. 
+            <fr:p>I am an incoming Ph.D. student in Computer Science at the University of Illinois Urbana-Champaign. 
 Previously, I completed my Master's with Robert Rose and Dan Licata at Wesleyan University.</fr:p>
             <html:img xmlns:html="http://www.w3.org/1999/xhtml" class="portrait" src="mtbaker.jpeg" />
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
