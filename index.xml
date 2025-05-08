@@ -2,27 +2,23 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>250</fr:anchor>
+    <fr:anchor>252</fr:anchor>
     <fr:addr type="user">index</fr:addr>
     <fr:route>index.xml</fr:route>
     <fr:title text="Trey Plante">Trey Plante</fr:title>
-    <fr:authors />
+    <fr:authors>
+      <fr:author>
+        <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:meta name="author">false</fr:meta>
   </fr:frontmatter>
-  <fr:mainmatter>
-    <fr:p>I am an incoming Ph.D. student in Computer Science at the University of Illinois Urbana-Champaign. 
-Previously, I completed my Master's with Robert Rose and Dan Licata at Wesleyan University.</fr:p>
-    <html:img xmlns:html="http://www.w3.org/1999/xhtml" class="portrait" src="mtbaker.jpeg" />
-    <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-      <fr:frontmatter>
-        <fr:anchor>247</fr:anchor>
-        <fr:addr type="user">news</fr:addr>
-        <fr:route>news.xml</fr:route>
-        <fr:title text="News">News</fr:title>
-        <fr:authors>
-          <fr:author>trey-plante</fr:author>
-        </fr:authors>
-      </fr:frontmatter>
-      <fr:mainmatter>
+  <fr:mainmatter><html:img xmlns:html="http://www.w3.org/1999/xhtml" class="portrait" src="mtbaker.jpeg" />
+
+
+<fr:tree toc="false" numbered="true" show-heading="false" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:addr type="user">treyplante</fr:addr><fr:route>treyplante.xml</fr:route><fr:title text="Trey Plante">Trey Plante</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta name="institution"><fr:link type="external" href="Wesleyan">Wesleyan</fr:link></fr:meta><fr:meta name="position">CS Masters Student</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>I am an incoming Ph.D. student in Computer Science at the University of Illinois Urbana-Champaign. 
+Previously, I completed my Master's with Robert Rose and Dan Licata at Wesleyan University.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:addr type="user">news</fr:addr><fr:route>news.xml</fr:route><fr:title text="News">News</fr:title><fr:authors><fr:author>trey-plante</fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
   <html:tr xmlns:html="http://www.w3.org/1999/xhtml">
     
   <html:th>25.05.05</html:th>
@@ -31,9 +27,6 @@ Previously, I completed my Master's with Robert Rose and Dan Licata at Wesleyan 
   <html:td>Defended my Master's Thesis</html:td>
 
 </html:tr>
-</fr:mainmatter>
-      <fr:backmatter />
-    </fr:tree>
-  </fr:mainmatter>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter>
   <fr:backmatter />
 </fr:tree>
