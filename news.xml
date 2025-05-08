@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>244</fr:anchor>
+    <fr:addr type="user">news</fr:addr>
+    <fr:route>news.xml</fr:route>
+    <fr:title text="News">News</fr:title>
+    <fr:authors>
+      <fr:author>trey-plante</fr:author>
+    </fr:authors>
+  </fr:frontmatter>
+  <fr:mainmatter>
+  <html:tr xmlns:html="http://www.w3.org/1999/xhtml">
+    
+  <html:th>25.05.05</html:th>
+
+    
+  <html:td>Defended my Master's Thesis</html:td>
+
+</html:tr>
+</fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Context">Context</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>246</fr:anchor>
+            <fr:addr type="user">index</fr:addr>
+            <fr:route>index.xml</fr:route>
+            <fr:title text="Trey Plante">Trey Plante</fr:title>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>I am an incoming Ph.D. student in Computer Science at the University of Illinois. 
+Previously, I completed my Master's with Robert Rose and Dan Licata at Wesleyan University.</fr:p>
+            <html:img xmlns:html="http://www.w3.org/1999/xhtml" class="portrait" src="mtbaker.jpeg" />
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>247</fr:anchor>
+                <fr:addr type="user">news</fr:addr>
+                <fr:route>news.xml</fr:route>
+                <fr:title text="News">News</fr:title>
+                <fr:authors>
+                  <fr:author>trey-plante</fr:author>
+                </fr:authors>
+              </fr:frontmatter>
+              <fr:mainmatter>
+  <html:tr xmlns:html="http://www.w3.org/1999/xhtml">
+    
+  <html:th>25.05.05</html:th>
+
+    
+  <html:td>Defended my Master's Thesis</html:td>
+
+</html:tr>
+</fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

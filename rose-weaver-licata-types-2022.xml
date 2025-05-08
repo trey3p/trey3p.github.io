@@ -1,56 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>490</fr:anchor><fr:addr
-type="user">rose-weaver-licata-types-2022</fr:addr><fr:route>rose-weaver-licata-types-2022.xml</fr:route><fr:title
-text="Deciding the cofibration logic of cartesian cubical type theories">Deciding the cofibration logic of cartesian cubical type theories</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author>June, 2022 - Robert Rose, Matthew Weaver, Daniel R. Licata - 28th International Conference on Types for Proofs and Programs</fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:code>@inproceedings{rose-weaver-licata-2022-types,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>242</fr:anchor>
+    <fr:addr type="user">rose-weaver-licata-types-2022</fr:addr>
+    <fr:route>rose-weaver-licata-types-2022.xml</fr:route>
+    <fr:title text="Deciding the cofibration logic of cartesian cubical type theories">Deciding the cofibration logic of cartesian cubical type theories</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:authors>
+      <fr:author>June, 2022 - Robert Rose, Matthew Weaver, Daniel R. Licata - 28th International Conference on Types for Proofs and Programs</fr:author>
+    </fr:authors>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:code>@inproceedings{rose-weaver-licata-2022-types,
   author = {Rose, Robert and Weaver, Matthew and Licata, Daniel},
   booktitle = {28th International Conference on Types for Proofs and Programs (TYPES 2022)},
   year = {2022},
   title = {Deciding the cofibration logic of cartesian cubical type theories},
   url = {https://types22.inria.fr/files/2022/06/TYPES_2022_paper_49.pdf},
-}</fr:code></fr:mainmatter><fr:backmatter><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>492</fr:anchor><fr:addr
-type="user">ctt-0004</fr:addr><fr:route>ctt-0004.xml</fr:route><fr:title
-text="Cofibration Logics">Cofibration Logics</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
-type="local"
-href="rose-weaver-licata-types-2022.xml"
-addr="rose-weaver-licata-types-2022"
-title="Deciding the cofibration logic of cartesian cubical type theories">cofibration logic</fr:link> is a first-order intuitonstic logic used in the definition of cubical type theories.
-    Like any first-order logic, a cofibration logic is defined by a description of terms and formulas.</fr:p><fr:p>The terms of a cofibration logic are a specification of the structure of <fr:tex
-display="inline"><![CDATA[\mathbb {I}]]></fr:tex>, the interval.
-    The simplest interval term structure contains the endpoints <fr:tex
-display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[1]]></fr:tex> and arbitrary variables <fr:tex
-display="inline"><![CDATA[x_i]]></fr:tex>.
-    The most complex interval term structure contains the above and joins, meets, and complements (DeMorgan Algebra).
-    In cubical type thoeries, the specified structure of <fr:tex
-display="inline"><![CDATA[\mathbb {I}]]></fr:tex> is used to reason about the dimensions of the <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-cube.
-    Varying term definitions lead to varying levels of complexity of the path structure in a cubical type theory.</fr:p><fr:p>The formulas of a cofibration logic are a fragment of intuitionistic first-order equational logic over interval terms.
-    The formulas of a cofibration logic are called <fr:em>cofibrations</fr:em>. Cofibrations are used in cubical type theory to reason
-    about portions of paths.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+}</fr:code>
+  </fr:mainmatter>
+  <fr:backmatter />
+</fr:tree>

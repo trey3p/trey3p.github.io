@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>488</fr:anchor><fr:addr
-type="user">egp-0001</fr:addr><fr:route>egp-0001.xml</fr:route><fr:title
-text="My first tree">My first tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>HI</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>494</fr:anchor>
+    <fr:addr type="user">egp-0001</fr:addr>
+    <fr:route>egp-0001.xml</fr:route>
+    <fr:title text="My first tree">My first tree</fr:title>
+    <fr:date>
+      <fr:year>2024</fr:year>
+      <fr:month>8</fr:month>
+      <fr:day>22</fr:day>
+    </fr:date>
+    <fr:authors>
+      <fr:author>
+        <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+      </fr:author>
+    </fr:authors>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>HI</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter />
+</fr:tree>

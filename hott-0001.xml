@@ -1,244 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>436</fr:anchor><fr:addr
-type="user">hott-0001</fr:addr><fr:route>hott-0001.xml</fr:route><fr:title
-text="Functions are functors">Functions are functors</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The claim is that functions behave "functorially" on paths. This is equivalent to saying functions
-   respect equality in type theory and that functions are continuous (preserve paths) in topology.</fr:p><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>308</fr:anchor><fr:addr
-type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
-text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f : A \to  B]]></fr:tex> is a function. Then for any <fr:tex
-display="inline"><![CDATA[x, y : A]]></fr:tex> there is an operation
-    <fr:tex
-display="block"><![CDATA[ap_{f} : (x =_{A} y) \to  (f(x) =_{B} f(y))]]></fr:tex>.</fr:p><fr:p>Moreover, for each <fr:tex
-display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex
-display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p><fr:p>The notation <fr:tex
-display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
-    on paths of f.</fr:p><fr:p>It suffices (by induction) to define <fr:tex
-display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>For functions <fr:tex
-display="inline"><![CDATA[f : A \to  B]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[g : B \to  C]]></fr:tex> and paths <fr:tex
-display="inline"><![CDATA[p : x =_{A} y]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[q : y =_{A} z]]></fr:tex> we have:
-    <fr:ul><fr:li><fr:tex
-display="inline"><![CDATA[ap_{f}(p \bullet  q) = ap_{f}(p) \bullet  ap_f(q)]]></fr:tex></fr:li>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>444</fr:anchor>
+    <fr:addr type="user">hott-0001</fr:addr>
+    <fr:route>hott-0001.xml</fr:route>
+    <fr:title text="Functions are functors">Functions are functors</fr:title>
+    <fr:taxon>Lemma</fr:taxon>
+    <fr:date>
+      <fr:year>2024</fr:year>
+      <fr:month>9</fr:month>
+      <fr:day>4</fr:day>
+    </fr:date>
+    <fr:authors>
+      <fr:author>
+        <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+      </fr:author>
+    </fr:authors>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>The claim is that functions behave "functorially" on paths. This is equivalent to saying functions
+   respect equality in type theory and that functions are continuous (preserve paths) in topology.</fr:p>
+    <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:anchor>316</fr:anchor>
+        <fr:addr type="user">hott-0002</fr:addr>
+        <fr:route>hott-0002.xml</fr:route>
+        <fr:title text="Ap">Ap</fr:title>
+        <fr:taxon>Lemma</fr:taxon>
+        <fr:date>
+          <fr:year>2024</fr:year>
+          <fr:month>9</fr:month>
+          <fr:day>4</fr:day>
+        </fr:date>
+        <fr:authors>
+          <fr:author>
+            <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+          </fr:author>
+        </fr:authors>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:p>Suppose that <fr:tex display="inline"><![CDATA[f : A \to  B]]></fr:tex> is a function. Then for any <fr:tex display="inline"><![CDATA[x, y : A]]></fr:tex> there is an operation
+    <fr:tex display="block"><![CDATA[ap_{f} : (x =_{A} y) \to  (f(x) =_{B} f(y))]]></fr:tex>.</fr:p>
+        <fr:p>Moreover, for each <fr:tex display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p>
+        <fr:p>The notation <fr:tex display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
+    on paths of f.</fr:p>
+        <fr:p>It suffices (by induction) to define <fr:tex display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+    <fr:p>For functions <fr:tex display="inline"><![CDATA[f : A \to  B]]></fr:tex> and <fr:tex display="inline"><![CDATA[g : B \to  C]]></fr:tex> and paths <fr:tex display="inline"><![CDATA[p : x =_{A} y]]></fr:tex> and <fr:tex display="inline"><![CDATA[q : y =_{A} z]]></fr:tex> we have:
+    <fr:ul><fr:li><fr:tex display="inline"><![CDATA[ap_{f}(p \bullet  q) = ap_{f}(p) \bullet  ap_f(q)]]></fr:tex></fr:li>
 
-        <fr:li><fr:tex
-display="inline"><![CDATA[ap_{f}(p^{-1}) = ap_{f}(p)^{-1}]]></fr:tex></fr:li>
+        <fr:li><fr:tex display="inline"><![CDATA[ap_{f}(p^{-1}) = ap_{f}(p)^{-1}]]></fr:tex></fr:li>
 
-        <fr:li><fr:tex
-display="inline"><![CDATA[ap_{g}(ap_{f}(p)) = ap_{g \circ  f}(p)]]></fr:tex></fr:li>
+        <fr:li><fr:tex display="inline"><![CDATA[ap_{g}(ap_{f}(p)) = ap_{g \circ  f}(p)]]></fr:tex></fr:li>
 
-        <fr:li>ap_{id_{A}}(p) = p</fr:li></fr:ul></fr:p><fr:p>Notes from section 2.2 of the HoTT book</fr:p></fr:mainmatter><fr:backmatter><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>438</fr:anchor><fr:addr
-type="user">hott-0004</fr:addr><fr:route>hott-0004.xml</fr:route><fr:title
-text="Notes on Homotopy Type Theory">Notes on Homotopy Type Theory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>304</fr:anchor><fr:addr
-type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
-text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f : A \to  B]]></fr:tex> is a function. Then for any <fr:tex
-display="inline"><![CDATA[x, y : A]]></fr:tex> there is an operation
-    <fr:tex
-display="block"><![CDATA[ap_{f} : (x =_{A} y) \to  (f(x) =_{B} f(y))]]></fr:tex>.</fr:p><fr:p>Moreover, for each <fr:tex
-display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex
-display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p><fr:p>The notation <fr:tex
-display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
-    on paths of f.</fr:p><fr:p>It suffices (by induction) to define <fr:tex
-display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>306</fr:anchor><fr:addr
-type="user">hott-0001</fr:addr><fr:route>hott-0001.xml</fr:route><fr:title
-text="Functions are functors">Functions are functors</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The claim is that functions behave "functorially" on paths. This is equivalent to saying functions
-   respect equality in type theory and that functions are continuous (preserve paths) in topology.</fr:p><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>308</fr:anchor><fr:addr
-type="user">hott-0002</fr:addr><fr:route>hott-0002.xml</fr:route><fr:title
-text="Ap">Ap</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f : A \to  B]]></fr:tex> is a function. Then for any <fr:tex
-display="inline"><![CDATA[x, y : A]]></fr:tex> there is an operation
-    <fr:tex
-display="block"><![CDATA[ap_{f} : (x =_{A} y) \to  (f(x) =_{B} f(y))]]></fr:tex>.</fr:p><fr:p>Moreover, for each <fr:tex
-display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex
-display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p><fr:p>The notation <fr:tex
-display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
-    on paths of f.</fr:p><fr:p>It suffices (by induction) to define <fr:tex
-display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>For functions <fr:tex
-display="inline"><![CDATA[f : A \to  B]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[g : B \to  C]]></fr:tex> and paths <fr:tex
-display="inline"><![CDATA[p : x =_{A} y]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[q : y =_{A} z]]></fr:tex> we have:
-    <fr:ul><fr:li><fr:tex
-display="inline"><![CDATA[ap_{f}(p \bullet  q) = ap_{f}(p) \bullet  ap_f(q)]]></fr:tex></fr:li>
+        <fr:li>ap_{id_{A}}(p) = p</fr:li></fr:ul></fr:p>
+    <fr:p>Notes from section 2.2 of the HoTT book</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Context">Context</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>446</fr:anchor>
+            <fr:addr type="user">hott-0004</fr:addr>
+            <fr:route>hott-0004.xml</fr:route>
+            <fr:title text="Notes on Homotopy Type Theory">Notes on Homotopy Type Theory</fr:title>
+            <fr:date>
+              <fr:year>2024</fr:year>
+              <fr:month>9</fr:month>
+              <fr:day>4</fr:day>
+            </fr:date>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+              </fr:author>
+            </fr:authors>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>312</fr:anchor>
+                <fr:addr type="user">hott-0002</fr:addr>
+                <fr:route>hott-0002.xml</fr:route>
+                <fr:title text="Ap">Ap</fr:title>
+                <fr:taxon>Lemma</fr:taxon>
+                <fr:date>
+                  <fr:year>2024</fr:year>
+                  <fr:month>9</fr:month>
+                  <fr:day>4</fr:day>
+                </fr:date>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+                  </fr:author>
+                </fr:authors>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Suppose that <fr:tex display="inline"><![CDATA[f : A \to  B]]></fr:tex> is a function. Then for any <fr:tex display="inline"><![CDATA[x, y : A]]></fr:tex> there is an operation
+    <fr:tex display="block"><![CDATA[ap_{f} : (x =_{A} y) \to  (f(x) =_{B} f(y))]]></fr:tex>.</fr:p>
+                <fr:p>Moreover, for each <fr:tex display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p>
+                <fr:p>The notation <fr:tex display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
+    on paths of f.</fr:p>
+                <fr:p>It suffices (by induction) to define <fr:tex display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>314</fr:anchor>
+                <fr:addr type="user">hott-0001</fr:addr>
+                <fr:route>hott-0001.xml</fr:route>
+                <fr:title text="Functions are functors">Functions are functors</fr:title>
+                <fr:taxon>Lemma</fr:taxon>
+                <fr:date>
+                  <fr:year>2024</fr:year>
+                  <fr:month>9</fr:month>
+                  <fr:day>4</fr:day>
+                </fr:date>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+                  </fr:author>
+                </fr:authors>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>The claim is that functions behave "functorially" on paths. This is equivalent to saying functions
+   respect equality in type theory and that functions are continuous (preserve paths) in topology.</fr:p>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>316</fr:anchor>
+                    <fr:addr type="user">hott-0002</fr:addr>
+                    <fr:route>hott-0002.xml</fr:route>
+                    <fr:title text="Ap">Ap</fr:title>
+                    <fr:taxon>Lemma</fr:taxon>
+                    <fr:date>
+                      <fr:year>2024</fr:year>
+                      <fr:month>9</fr:month>
+                      <fr:day>4</fr:day>
+                    </fr:date>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>Suppose that <fr:tex display="inline"><![CDATA[f : A \to  B]]></fr:tex> is a function. Then for any <fr:tex display="inline"><![CDATA[x, y : A]]></fr:tex> there is an operation
+    <fr:tex display="block"><![CDATA[ap_{f} : (x =_{A} y) \to  (f(x) =_{B} f(y))]]></fr:tex>.</fr:p>
+                    <fr:p>Moreover, for each <fr:tex display="inline"><![CDATA[x : A]]></fr:tex> we have <fr:tex display="inline"><![CDATA[ap_{f}(refl_{x}) \equiv  refl_{f(x)}]]></fr:tex></fr:p>
+                    <fr:p>The notation <fr:tex display="inline"><![CDATA[ap_{f}]]></fr:tex> can be read as the application of f to a path, or as the action
+    on paths of f.</fr:p>
+                    <fr:p>It suffices (by induction) to define <fr:tex display="inline"><![CDATA[ap_{f}(refl) :\equiv  refl_{f(x)} : f(x) = f(x)]]></fr:tex></fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:p>For functions <fr:tex display="inline"><![CDATA[f : A \to  B]]></fr:tex> and <fr:tex display="inline"><![CDATA[g : B \to  C]]></fr:tex> and paths <fr:tex display="inline"><![CDATA[p : x =_{A} y]]></fr:tex> and <fr:tex display="inline"><![CDATA[q : y =_{A} z]]></fr:tex> we have:
+    <fr:ul><fr:li><fr:tex display="inline"><![CDATA[ap_{f}(p \bullet  q) = ap_{f}(p) \bullet  ap_f(q)]]></fr:tex></fr:li>
 
-        <fr:li><fr:tex
-display="inline"><![CDATA[ap_{f}(p^{-1}) = ap_{f}(p)^{-1}]]></fr:tex></fr:li>
+        <fr:li><fr:tex display="inline"><![CDATA[ap_{f}(p^{-1}) = ap_{f}(p)^{-1}]]></fr:tex></fr:li>
 
-        <fr:li><fr:tex
-display="inline"><![CDATA[ap_{g}(ap_{f}(p)) = ap_{g \circ  f}(p)]]></fr:tex></fr:li>
+        <fr:li><fr:tex display="inline"><![CDATA[ap_{g}(ap_{f}(p)) = ap_{g \circ  f}(p)]]></fr:tex></fr:li>
 
-        <fr:li>ap_{id_{A}}(p) = p</fr:li></fr:ul></fr:p><fr:p>Notes from section 2.2 of the HoTT book</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>310</fr:anchor><fr:addr
-type="user">hott-0007</fr:addr><fr:route>hott-0007.xml</fr:route><fr:title
-text="Transport &amp; Path Lifting">Transport &amp; Path Lifting</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>9</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[P]]></fr:tex> is a type famnily over <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> and that <fr:tex
-display="inline"><![CDATA[p : x =_{A} y]]></fr:tex>.
-   Then there is a function <fr:tex
-display="inline"><![CDATA[p_{*} : P(x) \to  P(y)]]></fr:tex>.</fr:p><fr:p>By induction, we can assume <fr:tex
-display="inline"><![CDATA[p]]></fr:tex> is <fr:tex
-display="inline"><![CDATA[refl_{x}]]></fr:tex>. We can take <fr:tex
-display="inline"><![CDATA[(refl_{x})_{*} : P(x) \to  P(x)]]></fr:tex>
-    to be the identity function.</fr:p><fr:p>We notate the type family P in which the trasport operation happens with:
-<fr:tex
-display="block"><![CDATA[transport^{P}(p, -) : P(x) \to  P(y)]]></fr:tex>
+        <fr:li>ap_{id_{A}}(p) = p</fr:li></fr:ul></fr:p>
+                <fr:p>Notes from section 2.2 of the HoTT book</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>318</fr:anchor>
+                <fr:addr type="user">hott-0007</fr:addr>
+                <fr:route>hott-0007.xml</fr:route>
+                <fr:title text="Transport &amp; Path Lifting">Transport &amp; Path Lifting</fr:title>
+                <fr:taxon>Lemma</fr:taxon>
+                <fr:date>
+                  <fr:year>2024</fr:year>
+                  <fr:month>9</fr:month>
+                  <fr:day>9</fr:day>
+                </fr:date>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+                  </fr:author>
+                </fr:authors>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Suppose that <fr:tex display="inline"><![CDATA[P]]></fr:tex> is a type famnily over <fr:tex display="inline"><![CDATA[A]]></fr:tex> and that <fr:tex display="inline"><![CDATA[p : x =_{A} y]]></fr:tex>.
+   Then there is a function <fr:tex display="inline"><![CDATA[p_{*} : P(x) \to  P(y)]]></fr:tex>.</fr:p>
+                <fr:p>By induction, we can assume <fr:tex display="inline"><![CDATA[p]]></fr:tex> is <fr:tex display="inline"><![CDATA[refl_{x}]]></fr:tex>. We can take <fr:tex display="inline"><![CDATA[(refl_{x})_{*} : P(x) \to  P(x)]]></fr:tex>
+    to be the identity function.</fr:p>
+                <fr:p>We notate the type family P in which the trasport operation happens with:
+<fr:tex display="block"><![CDATA[transport^{P}(p, -) : P(x) \to  P(y)]]></fr:tex>
 
-A type family P over a type <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> can be viewed as a property of elements of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> that holds for <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>
-if <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> is inhabited. Thus, transport says that properties are preserved along paths; if P holds for x,
-and there is a path from <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[y]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[P]]></fr:tex> holds for <fr:tex
-display="inline"><![CDATA[y]]></fr:tex>. This is equivalent to saying that
-properties (type families) respect equality.</fr:p><fr:p>Transportation can also be viewed as a "path liting" operation in a fibration. We consider a type family over <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> to be a fibration with a base space <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> and fibers <fr:tex
-display="inline"><![CDATA[P(x)]]></fr:tex>
-    over each <fr:tex
-display="inline"><![CDATA[x : A]]></fr:tex>. Thus, the total space of the fibration is <fr:tex
-display="inline"><![CDATA[\Sigma _{(x : A)} P(x)]]></fr:tex>. Fibrations have the property that given a path <fr:tex
-display="inline"><![CDATA[p : x = y]]></fr:tex> in the base space and a point
-    <fr:tex
-display="inline"><![CDATA[u : P(x)]]></fr:tex> we can lift the path <fr:tex
-display="inline"><![CDATA[p]]></fr:tex> to a path in the total space starting at <fr:tex
-display="inline"><![CDATA[u]]></fr:tex>.</fr:p><fr:p>Let <fr:tex
-display="inline"><![CDATA[P : A \to  \mathcal {U}]]></fr:tex> be a type family over <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> and assume we have <fr:tex
-display="inline"><![CDATA[u : P(x)]]></fr:tex> for some <fr:tex
-display="inline"><![CDATA[x : A]]></fr:tex>. Then for any <fr:tex
-display="inline"><![CDATA[p : x = y]]></fr:tex>, we have
-    <fr:tex
-display="block"><![CDATA[lift(u, p) : (x, u) = (y, p_{*}(u))]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\Sigma _{(x : A)} P(x)]]></fr:tex>, such that <fr:tex
-display="inline"><![CDATA[pr_{1}(lift(u, p)) = p]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>312</fr:anchor><fr:addr
-type="user">hott-0005</fr:addr><fr:route>hott-0005.xml</fr:route><fr:title
-text="Dependent map">Dependent map</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Suppose <fr:tex
-display="inline"><![CDATA[f : \Pi _{x : A} P(x)]]></fr:tex>; then we have a map <fr:tex
-display="block"><![CDATA[ apd_{f}: \Pi _{p : x = y} (p_{*}(f(x))) =_{p(y)} f(y) ]]></fr:tex></fr:p><fr:p>By induction, we can assume <fr:tex
-display="inline"><![CDATA[p]]></fr:tex> is <fr:tex
-display="inline"><![CDATA[refl_{x}]]></fr:tex>. Then, <fr:tex
-display="inline"><![CDATA[(refl_{x})(f(x)) = f(x)]]></fr:tex>.</fr:p><fr:p>The intuition is that given a section <fr:tex
-display="inline"><![CDATA[f : \Pi _{x : A} P(x)]]></fr:tex> and a path <fr:tex
-display="inline"><![CDATA[p : x =_{A} y]]></fr:tex> we can apply <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[p]]></fr:tex>
-    and obtain a path in the total space of <fr:tex
-display="inline"><![CDATA[P]]></fr:tex> over <fr:tex
-display="inline"><![CDATA[p]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>314</fr:anchor><fr:addr
-type="user">hott-0006</fr:addr><fr:route>hott-0006.xml</fr:route><fr:title
-text="S^1: The Circle "><fr:tex
-display="inline"><![CDATA[S^1]]></fr:tex>: The Circle </fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>6</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Informally, the circle <fr:tex
-display="inline"><![CDATA[S^1]]></fr:tex> is the higher inductive type generated by a point and a path.
-    Presented formally:</fr:p><fr:embedded-tex
-hash="706b0fdd5f71a607ef4007814fefac10"><fr:embedded-tex-preamble><![CDATA[\usepackage {ebproof}
+A type family P over a type <fr:tex display="inline"><![CDATA[A]]></fr:tex> can be viewed as a property of elements of <fr:tex display="inline"><![CDATA[A]]></fr:tex> that holds for <fr:tex display="inline"><![CDATA[x]]></fr:tex>
+if <fr:tex display="inline"><![CDATA[x]]></fr:tex> is inhabited. Thus, transport says that properties are preserved along paths; if P holds for x,
+and there is a path from <fr:tex display="inline"><![CDATA[x]]></fr:tex> to <fr:tex display="inline"><![CDATA[y]]></fr:tex>, <fr:tex display="inline"><![CDATA[P]]></fr:tex> holds for <fr:tex display="inline"><![CDATA[y]]></fr:tex>. This is equivalent to saying that
+properties (type families) respect equality.</fr:p>
+                <fr:p>Transportation can also be viewed as a "path liting" operation in a fibration. We consider a type family over <fr:tex display="inline"><![CDATA[A]]></fr:tex> to be a fibration with a base space <fr:tex display="inline"><![CDATA[A]]></fr:tex> and fibers <fr:tex display="inline"><![CDATA[P(x)]]></fr:tex>
+    over each <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. Thus, the total space of the fibration is <fr:tex display="inline"><![CDATA[\Sigma _{(x : A)} P(x)]]></fr:tex>. Fibrations have the property that given a path <fr:tex display="inline"><![CDATA[p : x = y]]></fr:tex> in the base space and a point
+    <fr:tex display="inline"><![CDATA[u : P(x)]]></fr:tex> we can lift the path <fr:tex display="inline"><![CDATA[p]]></fr:tex> to a path in the total space starting at <fr:tex display="inline"><![CDATA[u]]></fr:tex>.</fr:p>
+                <fr:p>Let <fr:tex display="inline"><![CDATA[P : A \to  \mathcal {U}]]></fr:tex> be a type family over <fr:tex display="inline"><![CDATA[A]]></fr:tex> and assume we have <fr:tex display="inline"><![CDATA[u : P(x)]]></fr:tex> for some <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. Then for any <fr:tex display="inline"><![CDATA[p : x = y]]></fr:tex>, we have
+    <fr:tex display="block"><![CDATA[lift(u, p) : (x, u) = (y, p_{*}(u))]]></fr:tex> in <fr:tex display="inline"><![CDATA[\Sigma _{(x : A)} P(x)]]></fr:tex>, such that <fr:tex display="inline"><![CDATA[pr_{1}(lift(u, p)) = p]]></fr:tex>.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>320</fr:anchor>
+                <fr:addr type="user">hott-0005</fr:addr>
+                <fr:route>hott-0005.xml</fr:route>
+                <fr:title text="Dependent map">Dependent map</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:date>
+                  <fr:year>2024</fr:year>
+                  <fr:month>9</fr:month>
+                  <fr:day>4</fr:day>
+                </fr:date>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+                  </fr:author>
+                </fr:authors>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Suppose <fr:tex display="inline"><![CDATA[f : \Pi _{x : A} P(x)]]></fr:tex>; then we have a map <fr:tex display="block"><![CDATA[ apd_{f}: \Pi _{p : x = y} (p_{*}(f(x))) =_{p(y)} f(y) ]]></fr:tex></fr:p>
+                <fr:p>By induction, we can assume <fr:tex display="inline"><![CDATA[p]]></fr:tex> is <fr:tex display="inline"><![CDATA[refl_{x}]]></fr:tex>. Then, <fr:tex display="inline"><![CDATA[(refl_{x})(f(x)) = f(x)]]></fr:tex>.</fr:p>
+                <fr:p>The intuition is that given a section <fr:tex display="inline"><![CDATA[f : \Pi _{x : A} P(x)]]></fr:tex> and a path <fr:tex display="inline"><![CDATA[p : x =_{A} y]]></fr:tex> we can apply <fr:tex display="inline"><![CDATA[f]]></fr:tex> to <fr:tex display="inline"><![CDATA[p]]></fr:tex>
+    and obtain a path in the total space of <fr:tex display="inline"><![CDATA[P]]></fr:tex> over <fr:tex display="inline"><![CDATA[p]]></fr:tex>.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>322</fr:anchor>
+                <fr:addr type="user">hott-0006</fr:addr>
+                <fr:route>hott-0006.xml</fr:route>
+                <fr:title text="S^1: The Circle "><fr:tex display="inline"><![CDATA[S^1]]></fr:tex>: The Circle </fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:date>
+                  <fr:year>2024</fr:year>
+                  <fr:month>9</fr:month>
+                  <fr:day>6</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Informally, the circle <fr:tex display="inline"><![CDATA[S^1]]></fr:tex> is the higher inductive type generated by a point and a path.
+    Presented formally:</fr:p>
+                <fr:resource hash="cfbe5d9edb762590084a1f02c12fd39c">
+                  <fr:resource-content>
+                    <fr:img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMi4yIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzQzNi43NzU5N3B0JyBoZWlnaHQ9JzM0Ljg0NDIxOXB0JyB2aWV3Qm94PSctNzIgLTcyIDI5MS4xODM5OCAyMy4yMjk0NzknPgo8c3R5bGUgdHlwZT0ndGV4dC9jc3MnPgo8IVtDREFUQVtAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtcjU7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU1jQUFvQUFBQUFBNFFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRU1BQUFCZ2hVeDFHMk50WVhBQUFBRTRBQUFBS1FBQUFEUUFEQUNFWjJ4NVpnQUFBV1FBQUFCa0FBQUFaREZ1QXJKb1pXRmtBQUFCeUFBQUFDMEFBQUEyS3UxeG5taG9aV0VBQUFINEFBQUFIZ0FBQUNRRnl3TFdhRzEwZUFBQUFoZ0FBQUFJQUFBQUNBWUtBSkpzYjJOaEFBQUNJQUFBQUFZQUFBQUdBRElBQUcxaGVIQUFBQUlvQUFBQUZ3QUFBQ0FBQkFBZ2JtRnRaUUFBQWtBQUFBREpBQUFCTXVzSWtlaHdiM04wQUFBRERBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbVptV2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVqQXhKSUtTNUxCMG9hTWhneU0vd0g4cGtoMGtocS9nT0ZBYU4zREZnQWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZpRy8vOUR5UDhYd0h3R0FGRkhCbzBBQUFBQUFRQ1NBQUFDTndLckFCNEFBQUVSQmhZN0FSVW1KeU1HQnpVek1qWW5FUTRCSnlNMU14WS9BVFkzTmhZQm1BUWlUak1zT3RFNkxETk9JUU11VkJNU0VoSStCejg1R0E0Q2kvM05GeFF0QXdFQkF5MFVGd0lBRWd3QkxRSUtBZ291QVFrQWVOcGpZR1JnWUFEaUw4d3pTK1A1YmI0eU1MTXdnTUFUcDJtL2tXbm1JS2JWUUlxRGdRbkVBd0F0SVFvb0FBQUFlTnBqWUdSZ1lHYjR6d0FrZ3hnbU1UUXltVE1BUlZBQUV3QkMzQUtvQUFBRFVnQUFBcmdBa2dBQUFBQUFNZ0FBZU5wallHUmdZR0Jpa0djQTBReFFFZ2tBQUFPa0FDVUFlTm85akRFTHdqQVFoYjlpRmEyRGcrRGdJTUVmVUxUcTV1Ymc1T3JnWmsyUURrMGxyVVVYOGFkN0RjRUxPYjU3NzkwQkNSOGl1b3FZK041VkxHOFN1TStZYWVDQjZJdkFDWE9XOUlqaWtTZ0w5b0ZqaGx3Qzk1bVJCeDZJL2dxY3NPVjdxTXJIc3pGT25TcHRuTDJWYm5jMnJpNHFxOWJwcWh1UHhocDNiWXhXK1Z2cHRxamJlNmsyYVpabUhLZ29lZkNrd2VCUW5FVFJuaTAzOFJ3N3puNnVLY1N6a2xtVHN2cTdSM0d0VDF6OUZTMkpuTGQwVFNzN3RmUzdaQlViMmN1Ni93TlZ1QzVGQUFBQWVOcGpZR1pBQm93TWFBQUFBSTRBQlE9PSkgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWk3O3NyYzp1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtiYXNlNjQsZDA5R1JnQUJBQUFBQUFPd0FBb0FBQUFBQkJ3QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJQVXk4eUFBQUE5QUFBQUVRQUFBQmdoVzUxQW1OdFlYQUFBQUU0QUFBQUtRQUFBRFFBREFDbVoyeDVaZ0FBQVdRQUFBRHpBQUFBK0JWcUU0NW9aV0ZrQUFBQ1dBQUFBQzhBQUFBMktuUnhybWhvWldFQUFBS0lBQUFBSUFBQUFDUUdLQUhIYUcxMGVBQUFBcWdBQUFBSUFBQUFDQVdVQUUxc2IyTmhBQUFDc0FBQUFBWUFBQUFHQUh3QUFHMWhlSEFBQUFLNEFBQUFGd0FBQUNBQUJBQlJibUZ0WlFBQUF0QUFBQURQQUFBQk9QTmhLcU53YjNOMEFBQURvQUFBQUJBQUFBQWdBQU1BQVhqYVkyQm1Pc1U0Z1lHVmdZRnBGdFBaZnlJTS9TQ2E4UTNqR3daalJrNEdJR0JqZ0FOR0JpU1FVbHlXRHBRTVpnaG1admdQNURORHBKSFUvQWNLQXdEeW9nMWdlTnBqWUdCZ1ltQmdZQVppRVNESkNLWlpHQlNBTkFzUWd2akIvLzlEeVAvcndId0dBRlFSQnE4QUFBQjQyaDJLWHkvRFVCaUh6L3UrM1RsWmUwNE5PUzBpMVd6U2l0R05iajMrVGcxWkpoYlprSXE0Y011RnpHZjBDVndSOFFsOENVcCtGMCtlUEQ4R2JQVHpqUi80eGk0WkErRkNJNDVpMDRsaUYwUUFLK0Q1bmgrQTV1Si9VVHdEdkJGMVRRL1NNZ2l1eTE2S1NhQUZDWm5zQ0RLVGVYNkoxTVAzTGdwcGM3REdWNU1YeEUxOWZMOGErck1MZU9iSWkrZlcwL3FXUzVacmlEdDJCWUJiaDczQjNSUXBYeTdTZmxzQ0RXcWp4L1p0c1AzM3d0ZFBWVVcway9NYm9JZTh1Y0ZyV3NtbHViMTZNVlQyQ1dIUTNKVUl6cGNTaUZVZXpsK0hJZEswdjVOVXRMTjQwSkhGcWNvSjZtdjdFb214WDFzYkl3Y0FlTnBqWUdSZ1lBQmk2V1hPRytQNWJiNHlNTE13Z01BVHAybS9FZlQvVjB3M21DNEN1UndNVENCUkFFUWVER3dBZU5wallHUmdZR2I0ejhEQXdIU093ZmYvTjZZYkRFQVJGTUFFQUhRaEJQTUN4Z0FBQXM0QVRRQUFBQUFBZkFBQWVOcGpZR1JnWUdCaUNHQUEwUXhRRWdrQUFBaHRBRllBZU5wTmpEMXZ3akFRaHArSUJJa3dzS0FPSFlxSHpoRUVKTFl1REV5c1RDeUFYWlRCTm5KQ0pLU3FZMzkzTDY2SG51VFQ4MzZjZ1pKdk1vYkptTVU5VEU0aDZvOExwc3dUajBVdEVwZTg4czZJTEorSTg4Wkg0bHlTVStLQ0Z6NFRqOFgvU2x5eTRXZm43ZjNSbWFBT1hwdmdydFkyMjZNSmJlT2RXbFhMcVBmR21YRHVqRmFYcDlKOTAvWTNxOVpWWGRYczhGanVQT2d3QkJRSGNYUmt4MVV5UzhPV1kzUmFZUysrWWtYRjhsKytsOXpGempuK3BLVno0U2xiMDB1amxYMlRybUl0bC9Yd2ZnSE1LeS81QUhqYVkyQm1RQWFNREdnQUFBQ09BQVU9KSBmb3JtYXQoJ3dvZmYnKTt9CkBmb250LWZhY2V7Zm9udC1mYW1pbHk6bXNibTEwO3NyYzp1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtiYXNlNjQsZDA5R1JnQUJBQUFBQUFOQUFBb0FBQUFBQTZ3QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJQVXk4eUFBQUE5QUFBQUVjQUFBQmdoc0IwZ21OdFlYQUFBQUU4QUFBQUtRQUFBRFFBREFDY1oyeDVaZ0FBQVdnQUFBQ1RBQUFBb0ZBYWhXOW9aV0ZrQUFBQi9BQUFBQzhBQUFBMktyaHhzR2hvWldFQUFBSXNBQUFBSGdBQUFDUUZQZ0dFYUcxMGVBQUFBa3dBQUFBSUFBQUFDQVNwQUJSc2IyTmhBQUFDVkFBQUFBWUFBQUFHQUZBQUFHMWhlSEFBQUFKY0FBQUFGZ0FBQUNBQUJRQXhibUZ0WlFBQUFuUUFBQUM3QUFBQklKOUpxUHh3YjNOMEFBQURNQUFBQUJBQUFBQWdBQU1BQVhqYVkyQm1DbUdjd01ES3dNQTBpK25zUHhHR2ZoRE4rSWJ4RFlNeEl5Y0RFTEF4d0FFakF4SklLUzVMQjBwNk1uZ3lyL3NYeE1EQXZJNXhIYXFhLy84WkdBRDYzZzh4QUhqYVkyQmdZR0pnWUdBR1loRWd5UWltV1JnVWdEUUxFSUw0bnYvL1E4ai9POEI4QmdCVFB3YWxBQUFBZU5vdHgwRUt3akFRQU1Ec2dodTBOUkNhYmtnRlE0aW1JSzBlaFBUbVYveERqOTc4bUYveElWS3JoMTRHUnFBdzh3d1BmSWtvTGtLQUpoN3lIcWdObEc1Z09iYzZKMGxueURaa1Z0QW1rcHJsTlEwNkRaRmhoN1pmVjJEVTk2MXFOSnVPRWZtMHJiQldFSlNCcXV6cUo1WmpnVmlNSmQ2bitjZ0ExTkNDUFNCRTk0K2pCUmVtai9QZTRhcngvZ2YzZUJWUEFIamFZMkJrWUdBQVluK1BqTko0ZnB1dkRNd3NEQ0R3eEduYWJ3VDkveit6RE5NK0lKZURnUWtrQ2dBd0pBdHlBSGphWTJCa1lHQmU5eThJU01vd2lEQUlNMVl4QUVWUUFCTUFUR0VDeHdBQUF4d0FBQUdOQUJRQUFBQUFBRkFBQUhqYVkyQmtZR0JnWWpBQVloQmdaRUFEQUFWa0FEY0FBSGphVFl5eGlzSkFGRVZQTUFrWXQ5NUNMT1lMUWhKbDYyM0V4dHJla0VFQ3pnZ1pEZGpzdCs5Tk1vWHZNVy9PWE00Ym9PQ1BoS2tTc25sT2xaTHJ0WERHUnIxd3J2Nk9YTEJseDRva1hTc3ArSW1jOHNWdjVFejJPWEt1dkkxY2NNQWZYM2M3dU5DNnVycllJZlFQYitxeVdvS1Q5WGE0UG0xbjJyZnB4ajZNTjJmMlpWTTJISGx4eHpMZ0NQclJVVk54bVpOQXp3T1BVVllxL1RST012eHNYWG5xN21TMXZEVTdSdTBGelp0Y3cxNjd6WFQrQWNyTEtHc0FlTnBqWUdaQUJvd01hQUFBQUk0QUJRPT0pIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbXN5MTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU84QUFvQUFBQUFCQ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRWNBQUFCZ2lHRnlTMk50WVhBQUFBRThBQUFBS1FBQUFEUUFEQUNvWjJ4NVpnQUFBV2dBQUFEdUFBQUE5RlBaTi9Cb1pXRmtBQUFDV0FBQUFERUFBQUEyS3FaeGttaG9aV0VBQUFLTUFBQUFId0FBQUNRRnkvOEhhRzEwZUFBQUFxd0FBQUFJQUFBQUNBV2MvKzVzYjJOaEFBQUN0QUFBQUFZQUFBQUdBSG9BQUcxaGVIQUFBQUs4QUFBQUZ3QUFBQ0FBQkFCT2JtRnRaUUFBQXRRQUFBRFZBQUFCUHE4M2RlTndiM04wQUFBRHJBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbU9zYzRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFFNWlFobGx2cWp5Y0RBTE1WOEhWWE4vLzhNREFBTlRRNmJBSGphWTJCZ1lHSmdZR0FHWWhFZ3lRaW1XUmdVZ0RRTEVJTDRvZi8vUThqL2E4QjhCZ0JVT3dheEFBQUFlTnBqWVB6Lzd2OGpwb05NZXhsOEdCZ1krUmpaK1JpVjlSak4xY3pzR2UwWTFkbllnVkFkeURZek54TVRZUU5Lc291SWlVUDQ1bWIyVEhhTVFIRitSckFFRzd1SXVMbVprVGlJcVc3SHlQaFR5Y2ZFdjgzQVRJK1JVY1BJUXB4SlVaTkxXb1NUbWRtRXk5UmFRRmxOVnQrVVVWdlZ3RVJaWDh6UHlWR0dsNC9UVUlpRG1WT1FYMEZZalYrU1dWU0VWNGlST1ZCSmpZVlJuZEZBSjliSTA1blJ6VVNycHJETnlwMlJoVnVZa1pGZFdJNVZocG1SM3kzRElXT1NtYkVsSTR1dXZJRlViRTZ1dDRhNmdCd2prNENrdmthU1piTjl0cjBZQ3hjcnU1QXVFNk9tM1dJR0JnWUFQSU1sT2dBQWVOcGpZR1JnWUFCaXhlcUMxSGgrbTY4TXpDd01JUERFYWRwdkdQMy8zZjlIekRKTWU0RmNEZ1lta0NnQVQ0VU5QZ0FBQUhqYVkyQmtZR0NXK3FNSkpHWCt2L3UvbitrZ0ExQUVCVEFCQUlweEJkUUFBeHdBQUFLQS8rNEFBQUFBQUhvQUFIamFZMkJrWUdCZ1l2QmxBTkVNVUJJSkFBQUlJZ0JUQUhqYVRZNnhhc013RkVXUHFXT29HK2lVREIyS3BvekdkdklCaFF5WnNtWXNKSkVJTGxnT2ttUHdVdm9CK2VnOEt4cjZoQjVIOTk3M0VKRHpTOEpVQ2UraFQ1V1N5ZXZKTTk1WVJNN2txTWc1SDZ4NElVbGZSZm5rSzNMS25PL0lNNWI4Uk01RS80dWNzK0crN2RycnJUZE83VHR0bkQyM2ZxektnM0crNmF5cWl2SXA3SXcxN3RnYnJVNmowa1BqaDB1cjFrVmQxR3pwYUxseW84Zmc1R2Q3VVhSZ3kxazh6MGhGeVNGb25rWjhLN21LUXRUL2laMGtiRWdkd3pZdHFaTjRTbWlRT1MvOUlubkZXbWJyNlQ0QUNkOHhGUUFBQUhqYVkyQm1RQWFNREdnQUFBQ09BQVU9KSBmb3JtYXQoJ3dvZmYnKTt9CkBmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21yMTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQW1BQUFvQUFBQUFES1FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hVTjBHV050WVhBQUFBRTRBQUFBV3dBQUFIUUJoUUpiWjJ4NVpnQUFBWlFBQUFZMEFBQUkxQml2b1NSb1pXRmtBQUFIeUFBQUFDMEFBQUEyS3QxdzgyaG9aV0VBQUFmNEFBQUFIZ0FBQUNRR1R3STBhRzEwZUFBQUNCZ0FBQUJHQUFBQVVDTUxBMGxzYjJOaEFBQUlZQUFBQUNvQUFBQXFGTndTbkcxaGVIQUFBQWlNQUFBQUdBQUFBQ0FBRndCR2JtRnRaUUFBQ0tRQUFBRE5BQUFCT0lMaktxbHdiM04wQUFBSmRBQUFBQXdBQUFBZ0FBTUFBSGphWTJCbVBNQTRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFRVWUNoaFp2Z1A1RE5EcEpIVS9BY0tBd0R0S2cxTGVOcGxqRUVLUUdBWVJCLytBMWc0QkFzTFd5NkRvcFNGNUQ0a3VZeWxVazR6dnY2dHFabXBOelZBQ0VUbXhETHc3YWg5eDBZY0dUa0ZGUzA5QXhPTFpHdnFhVWxEWjNSa2x2VHEwYTFMcHc3dDJyVDZ2NTgrV0IwWjBRQjQybzFXWFd6YjVoWDk3dmN4cEVYVCt1T2ZKSXVrS2Rta1pGbVdMWm1VSmNYeVgzN2NOSGJpSmVtU0dZazdPMWtHTkNpYTJPMWFiRU9SWkVPR1BXd0Y4bFlVQmZxYW9rV0tJc1VHYkNzd05FalJMaThEK3RTSEZ0bDdVYlRkZ0tLenZFdktUdEttMkdZSW9reks1NXg3Nzdubk13RnlkcHZBY1VhSVRzZ2VKZWU0bzFCMy9Ib2JxakdJZ3M0bkxkRGdtTFkrWHN3Q1pKM3huMmdnblZrQXVtODF4djRscnEyZXZERTE5OXFKOVhOUy9NZi92dlpDcDNNMndSSDhBZEpBM0dJWEZ6UmVpRUxPUTFSM3dxbUFVL2VybW00Q0ZFSkV0ZS8wSVhyc2NKSUJxQ0VQMlVGYzIvcjFhNTh2SmprYThpQm1MM2tYK3NrM0JHR0hiTStHL3M3bkVIOTNiOGkzZ205djBOZEpDcThKWG11QjZ1WUZyMWIxM1VRVVhFL3o2NzRHWlRZd1p5L2ZXTGJuTFZZOG5NaGVxQ1VFK3Z1dHYyYlZBY1lHMUN4TnlqMWdVYlVDSWlHVW5FTGMyL0FIMGtNU2hNaFlnak9CeXU5L3VBMVcyY0lYN0Y2dmFuZ3h6YzRyd2RXeVNJQnhjcnRKUGdneGpJY3dHQitEVVpqdzZ5WUlRWE5jQjV1eml5ZEhwVWgvZnpaVFVDaVh5MnRBeFlweUgvdGlCQURzb2cxN0hzK2NtcXlEeE1UbWVlUVozdjRLdm9hN1pKdzBzVHRSNmpwdU9NZTZOd3I1SEMrRVJJNkxOM3hzdmFEeW1vNDk4V29xa28rQ2k3TTJxVitIRTlIOTUzMmZnOHBrZGIxQTV3dnBHZFZXZ0paTEhEMDVzemlUa1NqRVVtSUdNcXd0RHhiRlg2d3dtRmc4d3BhR2FqU1Ztc292WlBRK2NQWk5LLzAwMTF0Q21Ob00wRloyeXJyTER6UFFTNDNHWHBkQzdmMmVNNk51aGJZUGtyQkh4dlkvcVVidkVJVU1ZNDlRb2dsNkZBU1VKZVFUdmlONGRWbEJ1VG8rUVF2NVRsQWJqK1hjbFBhM1ZuN09jVmZQVE03M0RxV3BPWEdkY2IxREI0WWJDVlVDa0dUbmdIeGdvSWZDbGZnNHBWZk9ucnRNNllReVRkZUdOTENrclRmN1lyRzlEQXJwd2FPR3ZXaTNHYVNHSmI2ckIyN0FoK2kzRXVxcCtXN0lHQVBrREh5cmE5TVF0RllUQWhHb01sUXNhTHk3OFFWSWZHOXFPanNjS1VRZ29pVmJybGlLbHJLZ2MyWkVLaXl2WEdYMCtaWFZVd0JpQXFqaGFlbzR4MHh4NkpmR0U2N2hBb3Z5eVlOOXpDcExFdmI3eWsvWGY4WFl6NDdFQkVBZjV0RFhUOU8vRXpkUXBPYTdGa2RONkd3M2tmZHFYaHRxS0UxQlBTakhFWERrYnovL0xNMzQydXpzczFVTGxwZlpXcU5ZZzdLYW9yS1lqdVFiRlA1b2RkN0pLZ01jc0FHSTJuRFlldTRIeTFBMGl4eWtIWVZGNk1GOTNma2dOOW1pYjVBNFNTTTdVdGRWVndpSncrRkVBeXRqTzI3UjlQaFR6eUFYR0dQWHdSd3pqREVUYm5kK1l5UWdXSytBUWg1U3dmcEwyZ0JyMkFhVDdOUzFCMmNmL3g3a1cyQlZMMTFFUUp3c3ZiTjF6WTd1QWxFbEdHSHc5elloYkJidUVKUXFoMnJVd09LaFY3QWRnZE5OMkFYMTBEcllGL1VCemFOM0xpTFhTOXBqRGVkRW43UXdNK0tMV2krQVc5allET295SzdVVEZFVnRiR0t2d2FoTWRIL2JDSjQ5R1pycXdsZ0xxRE03TUlkbTZzdk16YjZuUlhZMWYxYWVwOGVQL3VsQkVZL2MyS21IRHNKdE12SndQZjlISmJ1NlJ6eFJGN3VLLzV2Ry82MXVady91aFh0Z0I1a0M5NzNPcW0wYTdtR1FMTUV4RWNiNVBYWjU5ZlFWUmw5Y1c3MzhxZHZPQ1FBOThzakN3TFNXNk1HUFNXM3E0M1hjd0JmUHJmK1dzV3VkdThVRGg3TFdVbTR1bDhzL2JtV1g4L2xjeU5tZ0d0WnZoQjE0T0F2VTcvb3VESVVhZmdVZm9vNmJzZjJ0SDcwUXBFRnpoc09TTnk5MW5STmt3c2gwNnduR0ZwdUYvVHBjbGlzN1ljQzgySzBIQmNNbm1IU1cxTGtaNjR0Tnc4YVpVeHUwNUlabkN5WTNiS0ttL0s0aWhROWl2STZwYWNDM0ZqSFU5Ym80VmM4VnMzWmFacjNOYVZ4QmRXWnVzNnZsZDNCODhCQ0R3YXFxRjJVQStzelNxdzh0WURJY1QvZjh0RERQTDhIZnlEd2hRWDFobXFPdDZ6NW1qNkJxZUlxNmZ2QVdCUGZ1Qzg5WjNuRXhwMXkrN2psNkVQUzRCMTV3NUg3a3RmUVN3TUpweVRjVElpZEVHWXZ6UEVBc29qODJXd042cEd3M003MW9rYVdUeWIxNVJlWlk4QTJKUm1kbldwUGNFTy9lRVJOS3ppc2ZvUkJSNHlJRnlKenZwMEQ1ZERIdU1oZ3pTcmJBSzZsSXBkZzRSaUZxcFJJY1FQcGFQMEJ5ZmduQWN6MlpKWU82NU8wdjRUaDlqbGpodnVOL0YzbzFQSVlVMUI3VWcxbUdoZUtObXZvVzdkblRWODY2a0tuNFJpbGU1SDU0eURUUzErSGx6ajlpYnN6aG1vM0pKdTRqeGxuMkdQUnJRcnM5LzJlTC9BZlFoVnFWZU5wallHUmdZQURpdnJhZHZ2SDhObDhabUZrWVFPQ0owN1RmQ1BvL0E3TWpNNGpMd2NBRW9nQTRZZ3FCQUFBQWVOcGpZR1JnWUdiNHp3QWtReG00LzU5aWRtUUFpcUFBRVFCVDBRT0pBQUI0Mm1OcVlHQmc3R1ZJQVdKTHhsQUdiaVlHaG1oR0dZWklJSTRBc3JXWUxCaGtHWThEc1FXREVsQU1qSmxER1JTQjRvcEFlVm13L0FRZ25zd2dEelJER0FDTW9RbHlBQUFBQUFBQUFDd0FWZ0JrQUk0QXNBRGtBVUlCaWdIVUFoSUNRQUpnQXNnRERnTklBNUlEekFRNEJHb0FBSGphWTJCa1lHQVFZWEJsWUdJQUFVWUdOQUFBQ1ZjQVhuamFSWXc5aThKQUVJYWZZQ0lZQ3h1eHNMamJ3am9rMGZvYUN5dGJxMnZVWFNWRk5yS0pBVUVzNzNjN1dSZHVZSWZuL1pnRlVsNUVEQk14ODN1WW1FVFVoeE9tekFPUFJYMEhUbG15WWtRVVQ4VDU0aWR3TE1sdjRJUUZsOEJqOForQlV6YjhiWnY2ZHUrTVUvdEdHMmZQdFN2eWczRnQxVmhWWkxuWE8yT05PM1pHcTlORDZiNXErMnV0MWxtWmxXeHBxTGx4cDhQZ1VPekYwWjR0WjhrY0JUa0g3N1JVa2xwcEZXVGkvdWM3eWEzdkhQMVBXam9uSHJJMXZWeTFzcS9TVnF6bHNoemVHMlBITHhFQUFBQjQybU5nWnNBTEFBQjlBQVE9KSBmb3JtYXQoJ3dvZmYnKTt9CkBmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21taTEwO3NyYzp1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtiYXNlNjQsZDA5R1JnQUJBQUFBQUFqVUFBb0FBQUFBQzZnQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJQVXk4eUFBQUE5QUFBQUVRQUFBQmdoV1IwU0dOdFlYQUFBQUU0QUFBQVRnQUFBR1FCVndJcVoyeDVaZ0FBQVlnQUFBV3pBQUFJRU1EMzRUeG9aV0ZrQUFBSFBBQUFBREVBQUFBMktoRncvV2hvWldFQUFBZHdBQUFBSUFBQUFDUUZlQUZJYUcxMGVBQUFCNUFBQUFBd0FBQUFNQmRDQVpKc2IyTmhBQUFId0FBQUFCb0FBQUFhRFVvSy9HMWhlSEFBQUFmY0FBQUFHQUFBQUNBQUR3QlJibUZ0WlFBQUIvUUFBQURVQUFBQlBwa1JkY2R3YjNOMEFBQUl5QUFBQUF3QUFBQWdBQU1BQUhqYVkyQm0vTUE0Z1lHVmdZRnBGdFBaZnlJTS9TQ2E4UTNqR3daalJrNEdJR0JqZ0FOR0JpU1FVbHlXRHBUMFpDaG1admdQNURORHBKSFUvQWNLQXdBQ2l3MmJlTnBqWUdCZ1ltQmdZQVppRVNESkNLWlpHQUtBdEFBUWdzUTlHWUlaa2hoU0dYSVlDaGlLLy8rSGlpUXlwQUJGOGhtSy92Ly92K1AvK3YrTC9pLzhQL3YvelA4endHYWdBQUFOYUJWMUFBQjQyb1dWeTQvYlZCVEdmZTUxN0R6OGlKUFl6aVFlSjdFemRqS1p5VHYyVEpwSlp0SjVkK2k3bFpoMldsNmxYZEFGcW9TNmdhcENvRkkyU0NEK0FWWnNrRmhScVJXc0VFVmlCUklMRmxCMmJMcEFWZG5ORE1mcFJLcEtVWlVySmZmYTBUbS84MzNuWEFZWWUzOGZkc2s5cHNRd1FIa3VCNTRFTmVCZHgyMTd1dWI1U2M5dE96elhoeHo0dXFhbk9OZmg0TVpITERWbUNrVGtiMzhZQ1lHYzZPYlkyeFNjZ2dFaWQrc1dIa25KYm81YzNmMDlMUk5DVFE0b0JSS1dlUURWSUtWWVNNWVRneCtkUmlRT1R4a016M1QyL3lLZms1K1pkZHp3R01qMS9DcndFdkFtUmpkQng4WEp3UEdjNDhyRWNnZlFoNWFuODV5cTVVRHorNEJ2MTZBS3JqY0F6OWYwQWRISVp6NFZJZ1FJbkZ3NjhpWUJWMXNaTm1UUkptUXh2ZjVhZGNkcUNsd01URW5tdVNnSlViYVZtcXNmdlVMcFF1NXFlWkhRWlduajRwVktRK0JFY3Y5UG5RSWZhNXpaQkhwcFdKN2xFMHBDaWM2M3Q3Y3l5eXprWnJvaWpWM3Z6a1dKbUkwbnorU0VOS0Z2Ynl4TWh5Wmo2LzF6SzlJU2hZMURJcUhJU1pqeS9pUFlnKytaQ2pORVVzeGIwMlVxZ2FialR3OVJWQjRaZVFTUndBMXcvT0JqQWtXc0dqaXVoVTlIWmRBQ2dUeDRqK2dKZzRSclFveEFURFZ0QVhVSlJjS1MzaW0ydU5xSzBqc0N0S3NrVms3YVZhOU5RV2FWYXI0L29TVFlPSURoYUQwckJ1OHJXWUNzZGE5ZWxmSW1rTTJXaWpVTFR4VnlIUXFWUWlkRDRPWE5TNmUwMUJxRjR0NXZQeXBoTzJ5ejdhcHpXQnlXOGdNQytXa0J1ZXI3aitGTDhnT1Raem9NazZSSU0xWU1LZHJvcFQ0NE51ZDRMZDlyYVRvTktFendteU8rdG1NN3VIKzhsZTRWK3h1WXNMMXljbjRkK09oT0NCUTdqYjVhTEtlaTVLSVdvd1RLbWR4aVJrNHF0cUV1T2hGeWQrK25pU0xBK2JVM1RsZFdLWnpkbkNoUHdiV1VGRVdQOFN5d2UrOWNxS24yZkIzOFZtRjUrZFVhV0EzeFFBY1N4M3hiek9iSS9TK1dRRWNKRU1FZEl6eGZFUkwvbEgyaEZPSUNoWGhSQnhEWFp1UUkrZVg1eXBDN3UxOXJVZXRGbWt3K1NvV2pWRTZHa1hiM3p2L3BVME45dmtIZmxSaWZZWHc3U0JsUmRTMW9GMnoyMUpoNVJOc3lRZFU0ckluYjBrYjBiY2QxOEIvZmVhZ0FrYWt5SjNTbDNnTFB4YXBpb3Z2SzFtbGdWNVhVMFdQZUhNbTJ5K2MycG8ydVpiYlpVbEd0NjgySHRRbmJLSE1sbGtvaFpTVUdKRDBkaTVaWmN2bjQ5VlZGbm9lMkpRMHpja1FIUGlTcnZjd1VVRjIyUnpOaEZuTU9vMFpPb0JDR2YwWWhDK2VVbi9TOXAzd0Y0VTlEQUJITkxBcEVDSWZDRVNuVGNqd0kzY1FDRjlORTRnWmxOVUtDd3VwWm9VREdoYlVMK1Rsb3pxZ1NZVktjY09BY1p0U3YwNWpEQTZ4Ym5MRXdpN0doeDU0QU5IQWZPa0Y1dUNmRENoN1FvZlhTaFkxdG9FdEthbXRuN2R6ZTM4VWpobWxXWjdXdDBrUUJvQVBweXllS3l4UXVISDM5dUpwY29YQis3NHZHckhlalVPOERPUE9WbStWZU80aTkvOGYrSFB5RHNlZVpZd3lqSXlrR0NxSklvMUVYUlBhYm81b0VyVFlXTVBqV1dsNkt3MGx1amVaNDhrRHJKODNtSCtSYXZSWWlDU2xyaXl3WDRDb1NiOWxtSjVKWmRROXRBZTNKcWVVVDdteTBLQUtKVCtraWUrbXNKRWNLaVR0TkNtSW9VVFdYc3RpRFFCYkZTa1l1dkF2M2RVR1pUQUlzemNYREFFUVlHdkV5S1paenN3RGJHNWRQcVNuc3piTCtzU2Z3RVRvWkRQOHNUbjRGZnIyUGRvMmdYVDFzenZvT2RrVmFjRWJhbTFqM2I1SGRZNWdCK1E4NE9jQkdES3krNStOOU1Yb2NqRkxiY3YzdG5raVRvbUU5QmJmZTRPVmhzelFMaGVta3FRdFJOVi9oVWhaYnlNaWNHczFTMm52b0s5S3pDRkN4ZFkrQU01Y0hWVlR6TElmdXl2Q0pqdmpCVzU0c1pwUE13ZDMxR0w3Q1hQdTRHVjFhdWpsZTJsZ1d2SzZhd1EyS1EyOGtRekJaY0RsQi8yRzNZZHFPMy9iZ0UzRmVHellBNm9aVlY2TXBRbkpScFhybDhERUFXN09vWmFvbjVETm1pRTRRMHAvT2JPSGxJN2puRHcxZ1VpbUFBVGN3ZlRySVdCckh4ZFdJazdYYWlseG53WnV4QzBYZFp0MEVZUjAyNU9ybEhFZExYYnNoMTFobzI2YkJaaFNEK1JlNG9Sd1BBSGphWTJCa1lHQUFZdXY5K3c3SDg5dDhaV0JtWVFDQkowN1Rmc1BvLy9mL1d6Qk5ZN29FNUhJd01JRkVBWGx0RGgwQUFBQjQybU5nWkdCZ1p2alB3TURBVlBiLy92K2pUTk1ZZ0NJb2dBY0FoNjRGd3dKMkFBQUJ3Z0FqQW5RQU5RSWRBQ2tCdHdBd0FoUUFLUUhjQUM4Qk1RQXRBZkFBS2dJRC85OEJ6Z0FlQWQ4QU5RQUFBQUFBUmdDNkFTWUJmZ0gyQWxBQ2tnTFFBMDREcEFRSUFBQjQybU5nWkdCZzRHRUlZR0JpQUFGR0JqUUFBQW1TQUdGNDJrMk9zV3JETUJSRmo2bGpxRnZJbEF3ZGlxYU14bmI2QVlVTW1iSm1MQ1NSQ0M1SUNySmp5Qkw2QWYzb1Bpc2Erb1FlUitkZENRRWxkektteXBqSFBsVk9JYWNIejNoaGtiaVFwUktYdkxIaWlTeC9GdlBPWitLY1Y3NFN6MWp5bmJnUS81TzQ1SVBmamJlWDYyQ0Mybmx0Z2p0WjJ6WDEzb1MrODA0MVZmMFFXK05NT0F4R3ErTk42YkhyeDdOVjY2cXRXalo0TEJldURCaUMvR3duUmtkMm5HUm02V2lvMlVmWHk4bkxSSW1yeFA1UGJDWGhZdW9RWDlPU09uS1RyaGtsMDBzL1MxcXhscnZ0dFA4QTRJSXd2WGphWTJCbXdBc0FBSDBBQkE9PSkgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtcjc7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU1RQUFvQUFBQUFBM2dBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRU1BQUFCZ2hVeDBvMk50WVhBQUFBRTRBQUFBS1FBQUFEUUFEQUNFWjJ4NVpnQUFBV1FBQUFCWUFBQUFXT2ErZEJWb1pXRmtBQUFCdkFBQUFDMEFBQUEyS201eG5HaG9aV0VBQUFIc0FBQUFJQUFBQUNRRlZnSTVhRzEwZUFBQUFnd0FBQUFJQUFBQUNBVWFBSEJzYjJOaEFBQUNGQUFBQUFZQUFBQUdBQ3dBQUcxaGVIQUFBQUljQUFBQUZ3QUFBQ0FBQkFBYmJtRnRaUUFBQWpRQUFBREpBQUFCTXUwS2tleHdiM04wQUFBREFBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbTZtV2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVqQXhKSUtTNUxCMG9hTWhneU0vd0g4cGtoMGtocS9nT0ZBZFNCRE44QWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZpRy8vOUR5UDhYd0h3R0FGRkhCbzBBQUFBQUFRQndBQUFCNUFLcEFCa0FBQUVSQmhZN0FSVXZBUThCTlRNeU5pY1JEZ0VuTlJZMk56WVdBVmNESUVrbloxQndSaWRKSUFNc1ZCUWhkRE1WQ3dLTC9ja2FGU1VEQVFJQ0pSVWFBZ29VQ1FFa0FoWXVBUW9BZU5wallHUmdZQURpVHFPZHpmSDhObDhabUZrWVFPQ0owN1RmeURUVFphYVZRSXFEZ1FuRUF3QXdiUXFZQUFBQWVOcGpZR1JnWUdiNHo4REF3SFNab1lBaG1mRUpBMUFFQlRBQkFGYWFBNVFDMHdBQUFrY0FjQUFBQUFBQUxBQUFlTnBqWUdSZ1lHQmlrR0lBMFF4UUVna0FBQU1uQUNBQWVObzlqREVMd2pBUWhiOWlGYTJEZytEZ0lNRWZVTFFLTG00T1RxNE9idFlFNmRCVTBscDBFWCs2MXhDOGtPTzc5OTRka1BBaG9xdUlpZTlkeGZJbWdmdU1tUVllaUw0SW5EQm5TWThvSG9teVlCODRac2dsY0o4WmVlQ0I2Sy9BQ1Z1K2g2cDhQQnZqMUtuU3h0bGI2WFpuNCtxaXNtcWRycnJ4YUt4eDE4Wm9sYitWYm91NnZaZHFrMlpweG9HS2tnZFBHZ3dPeFVrVTdkbHlFOCt4NCt6bm1rSThLNWsxS2F1L2V4VFgrc1RWWDlHU3lIbEwxN1N5VTB1L1MxYXhrYjJzK3o5Wk1pNU5BQUFBZU5wallHWkFCb3dNYUFBQUFJNEFCUT09KSBmb3JtYXQoJ3dvZmYnKTt9CnRleHQuZjAge2ZvbnQtZmFtaWx5Om1zYm0xMDtmb250LXNpemU6OS45NjI2NHB4fQp0ZXh0LmYxIHtmb250LWZhbWlseTpjbXN5MTA7Zm9udC1zaXplOjkuOTYyNjRweH0KdGV4dC5mMiB7Zm9udC1mYW1pbHk6Y21taTEwO2ZvbnQtc2l6ZTo5Ljk2MjY0cHh9CnRleHQuZjMge2ZvbnQtZmFtaWx5OmNtbWk3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmY0IHtmb250LWZhbWlseTpjbXIxMDtmb250LXNpemU6OS45NjI2NHB4fQp0ZXh0LmY1IHtmb250LWZhbWlseTpjbXI3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmY2IHtmb250LWZhbWlseTpjbXI1O2ZvbnQtc2l6ZTo0Ljk4MTMycHh9Cl1dPgo8L3N0eWxlPgo8ZyBpZD0ncGFnZTEnPgo8cmVjdCB4PSctNzIuMDAwMDA0JyB5PSctNjQuNjM5MzMyJyBoZWlnaHQ9Jy4zOTg1JyB3aWR0aD0nMjYuNjc4OTc2Jy8+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nLTQwLjMzOTcwOCcgeT0nLTYyLjI5NTM1NCc+Zm9ybTwvdGV4dD4KPHRleHQgY2xhc3M9J2YyJyB4PSctNzIuMDAwMDA0JyB5PSctNTMuMTI4NjE4Jz5TPC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjUnIHg9Jy02NS4zMTY3NDInIHk9Jy01Ni43NDM5ODInPjE8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nLTU4LjA4MDA0JyB5PSctNTMuMTI4NjE4Jz46PC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy01Mi41NDUyOTknIHk9Jy01My4xMjg2MTgnPlU8L3RleHQ+CjxyZWN0IHg9Jy02LjgyNjQyMScgeT0nLTY0LjYzOTMzMicgaGVpZ2h0PScuMzk4NScgd2lkdGg9JzM4LjMyODM5MScvPgo8dGV4dCBjbGFzcz0nZjQnIHg9JzM2LjQ4MzI5JyB5PSctNjIuMjk1MzU0Jz5pbjx0c3BhbiB4PSc0NC41MDg3NjcnPnRybzE8L3RzcGFuPjx0c3BhbiB4PSctNi44MjY0MjEnIHk9Jy01My4xMjg2MTgnPmJhc2U8L3RzcGFuPjx0c3BhbiB4PScxNC44MTQ2MDgnPjo8L3RzcGFuPjwvdGV4dD4KPHRleHQgY2xhc3M9J2YyJyB4PScyMC4zNDkzNDknIHk9Jy01My4xMjg2MTgnPlM8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmNScgeD0nMjcuMDMyNjExJyB5PSctNTYuNzQzOTgyJz4xPC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjInIHg9JzExNS4wNzAxOTYnIHk9Jy02NS4xMzY4NTYnPnI8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nMTIyLjYwOTAxNicgeT0nLTY1LjEzNjg1Nic+OjwvdGV4dD4KPHRleHQgY2xhc3M9J2YwJyB4PScxMjguMTQzNzU3JyB5PSctNjUuMTM2ODU2Jz5JPC90ZXh0Pgo8cmVjdCB4PSc3NS41MzEzNzgnIHk9Jy02Mi4xMzQyNicgaGVpZ2h0PScuMzk4NScgd2lkdGg9Jzk2LjAyNTU0Jy8+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nMTc2LjUzODIzOCcgeT0nLTU5Ljc5MDI4Mic+aW48dHNwYW4geD0nMTg0LjU2MzcxNSc+dHJvLWxvPC90c3Bhbj48dHNwYW4geD0nMjA4LjY2Nzg2MSc+b3A8L3RzcGFuPjwvdGV4dD4KPHRleHQgY2xhc3M9J2YyJyB4PSc3NS41MzEzNzgnIHk9Jy01MS4yNjExODUnPmw8dHNwYW4geD0nNzguNzAwMDcyJz5vb3A8L3RzcGFuPjwvdGV4dD4KPHRleHQgY2xhc3M9J2Y0JyB4PSc5Ni4xMzgxMTMnIHk9Jy01MS4yNjExODUnPjo8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmMicgeD0nMTAxLjY3Mjg1NCcgeT0nLTUxLjI2MTE4NSc+STx0c3BhbiB4PScxMDYuODM0MDQ1Jz5kPC90c3Bhbj48L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmMycgeD0nMTEyLjAxOTQ3NycgeT0nLTQ5LjQ5MDA1Nic+UzwvdGV4dD4KPHRleHQgY2xhc3M9J2Y2JyB4PScxMTcuMjkyNzc4JyB5PSctNTEuNDgyNTY5Jz4xPC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjQnIHg9JzEyMS42NzkxNjEnIHk9Jy01MS4yNjExODUnPig8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmMicgeD0nMTI1LjU1MzUzNScgeT0nLTUxLjI2MTE4NSc+YmFzZTwvdGV4dD4KPHRleHQgY2xhc3M9J2Y0JyB4PScxNDQuNDA0MTgyJyB5PSctNTEuMjYxMTg1Jz47PC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjInIHg9JzE0OC44MzE5OScgeT0nLTUxLjI2MTE4NSc+YmFzZTwvdGV4dD4KPHRleHQgY2xhc3M9J2Y0JyB4PScxNjcuNjgyNjM3JyB5PSctNTEuMjYxMTg1Jz4pPC90ZXh0Pgo8L2c+Cjwvc3ZnPg==" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[\usepackage {ebproof}
      \usepackage {mathtools}
      \usepackage {amsmath, amsfonts}
      \DeclareMathOperator {\cof }{cof}
@@ -247,7 +267,8 @@ hash="706b0fdd5f71a607ef4007814fefac10"><fr:embedded-tex-preamble><![CDATA[\usep
      \DeclareMathOperator {\inb }{in}
      \DeclareMathOperator {\bI }{\mathbb {I}}
      \DeclareMathOperator {\base }{base}
-     ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+     ]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[
         \begin {prooftree}
             \infer 0[form]{S^{1} : \sU }
         \end {prooftree}
@@ -260,8 +281,13 @@ hash="706b0fdd5f71a607ef4007814fefac10"><fr:embedded-tex-preamble><![CDATA[\usep
             \hypo {r : \bI }
             \infer 1[intro-loop]{loop : Id_{S^1}(base; base)}
         \end {prooftree}
-]]></fr:embedded-tex-body></fr:embedded-tex><fr:embedded-tex
-hash="918c62b7bf304c6c5bcbe7e65623e10b"><fr:embedded-tex-preamble><![CDATA[    \usepackage {ebproof}
+]]></fr:resource-source>
+                </fr:resource>
+                <fr:resource hash="72d04815311ffc55f57dda58ea5bac06">
+                  <fr:resource-content>
+                    <fr:img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMi4yIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzMyLjMxODEzN3B0JyBoZWlnaHQ9JzE5Ljk4MzI4OHB0JyB2aWV3Qm94PSctNzIgLTcyIDIxLjU0NTQyNSAxMy4zMjIxOTInPgo8c3R5bGUgdHlwZT0ndGV4dC9jc3MnPgo8IVtDREFUQVtAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWkxMDtzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBVDRBQW9BQUFBQUJlQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFUUFBQUJnaFlCMFIyTnRZWEFBQUFFNEFBQUFPd0FBQUV3QTl3RkJaMng1WmdBQUFYUUFBQUljQUFBQ2pHbmRWRlpvWldGa0FBQURrQUFBQUM4QUFBQTJLaEp4cldob1pXRUFBQVBBQUFBQUh3QUFBQ1FGV3dHTWFHMTBlQUFBQStBQUFBQVVBQUFBRkFuQkFMMXNiMk5oQUFBRDlBQUFBQXdBQUFBTUFXSUNERzFoZUhBQUFBUUFBQUFBR0FBQUFDQUFDQUJIYm1GdFpRQUFCQmdBQUFEVUFBQUJQcGtSZGNkd2IzTjBBQUFFN0FBQUFBd0FBQUFnQUFNQUFIamFZMkJtL013NGdZR1ZnWUZwRnRQWmZ5SU0vU0NhOFEzakd3WmpSazRHSUdCamdBTkdCaVNRVWx5V0RwUk1aY2huWnZnUDVETkRwSkhVL0FjS0F3QUdrZzIyZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0N5QU5CY0RCMUNPaVNHVklZTWhoeUgvLzMrZ0dKejlmODcvV2Yrbi81OEsxZ0VGQUY0UkRpOEFlTnBka3MxdTAwQVVoZWZlOFcvczJuVVMyNGtiMHNaT0hEczBUaHU3ZGhKQ28wYWtxRFNFSUxHaVVGVUNxYS9BRG5YREN5QWVBUEVFckZoMHdRcnhHbjBCRml5NkpHV01SSVdZbWMyNTBramZPZWNTSkwyYmEvZ0MzMGhBTWtJeVQ5QkIyQVRMdGlhUVpxbHRsVVdCM1FqYVRHVnBYQWZURWtRTjJyR1Y2eXp4Mno3NzhUVlZLS0pPallFNjBzYjNSVUdKMW9xanMva3o0QTZOOHVKSk9zQ05KRHc1NnRSR2JqM2hncWE1WS9kLzlLcGVMUlFDam1xOE1WTUFLeDJsRUhKNHZueHphT2hEU0Z4dDZ1aXlEU0t2bTJPbkJkVFdQVUlJa096bUdudjRuY3lZb0duR29BUWRHV2UyRCt6Ri8xQW5FMkN6MUhkemFKMEtvc3VBc3hLYmVJS2Z4c3lSWllPL0hKd054MWptUFFQQjZjUUt4NHNpWDFTS1cxa3JBazQyUTRUS3dhN2hCRlFOU29XYVpBTHdIeWlzTnl1Z0NaUFFsQkV2VjVmSEhOenJSOU8xMTI3YkE3cmNWa1ZBbzFkMUlnNmlscWJXKysrNmR6cW1adS9MMGNkRkJSVkRNSEJSbGdxMEpvb2NjTXhYbDNVaE1WOSs3b3ZGYXRrNVBLdkQvT09Ic1NmL3MwdnZlUURacWpkVlZDVmVralVuOWxQZ0x5am96UXJlMHYzNmJHK29EY1JIc1ltQWt0ZllHa0IvMjlTUWxBWDFMd0E3U0RxTTRZcnR3enB4R1VXK0RyZnRzNkNobjdLRTkvTGE4MFJGTnJtaVUvZng2ZEZ6b0FkR2VmN3k0Y25xWi9PNFZxOUhYV3NlVkJzQWUxQTVmOXA4UU9GMDhXcHBsbVlVWHF3KzdYYlR0NDJkZlFCL2VQY2lIQ2VFL0FianRseXVlTnBqWUdSZ1lBQmkyYW1TdCtQNWJiNHlNTE13Z01BVHAybS9FUFQvcjB4bFRNZUJYQTRHSnBBb0FEeGlDL29BZU5wallHUmdZR2I0ejhEQXdGVEdvTVVnd0tUUEFCUkJBYXdBTXhRQjdRQUNkZ0FBQWR3QUx3Sk9BRGNCTVFBdEFmQUFLZ0FBQUFBQVdnREdBUWdCUm5qYVkyQmtZR0JnWlhCallHSUFBVVlHTkFBQUI5c0FVSGphVFk2eGFzTXdGRVdQcVdPb1c4aVVEQjJLcG96R2R2b0JoUXlac21Zc0pKRUlMa2dLc21QSUV2b0IvZWcrS3hyNmhCNUg1MTBKQVNWM01xYkttTWMrVlU0aHB3ZlBlR0dSdUpDbEVwZThzZUtKTEg4Vzg4NW40cHhYdmhMUFdQS2R1QkQvazdqa2c5K050NWZyWUlMYWVXMkNPMW5iTmZYZWhMN3pUalZWL1JCYjQwdzRERWFyNDAzcHNldkhzMVhycXExYU5uZ3NGNjRNR0lMOGJDZEdSM2FjWkdicGFLalpSOWZMeWN0RWlhdkUvazlzSmVGaTZoQmYwNUk2Y3BPdUdTWFRTejlMV3JHV3UrMjAvd0RnZ2pDOWVOcGpZR2JBQ3dBQWZRQUUpIGZvcm1hdCgnd29mZicpO30KdGV4dC5mMCB7Zm9udC1mYW1pbHk6Y21taTEwO2ZvbnQtc2l6ZTo5Ljk2MjY0cHh9Cl1dPgo8L3N0eWxlPgo8ZyBpZD0ncGFnZTEnPgo8cmVjdCB4PSctNzIuMDAwMDA0JyB5PSctNjguOTk3NDA5JyBoZWlnaHQ9Jy4zOTg1JyB3aWR0aD0nMjEuNTQ1NDI1Jy8+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTcyLjAwMDAwNCcgeT0nLTU4LjY3NzgxNic+aGVsPHRzcGFuIHg9Jy01OC40NTIzNyc+bDwvdHNwYW4+PHRzcGFuIHg9Jy01NS4yODM2NzYnPm88L3RzcGFuPjwvdGV4dD4KPC9nPgo8L3N2Zz4=" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[    \usepackage {ebproof}
         \usepackage {mathtools}
         \usepackage {amsmath, amsfonts}
         \DeclareMathOperator {\cof }{cof}
@@ -270,12 +296,18 @@ hash="918c62b7bf304c6c5bcbe7e65623e10b"><fr:embedded-tex-preamble><![CDATA[    \
         \DeclareMathOperator {\inb }{in}
         \DeclareMathOperator {\bI }{\mathbb {I}}
          \DeclareMathOperator {\base }{\base }
-        ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        ]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[
             \begin {prooftree}
                 \infer 0{hello}
             \end {prooftree}
-        ]]></fr:embedded-tex-body></fr:embedded-tex><fr:embedded-tex
-hash="001e43edcee3de853d88bcdbeb1a5fcd"><fr:embedded-tex-preamble><![CDATA[ \usepackage {ebproof}
+        ]]></fr:resource-source>
+                </fr:resource>
+                <fr:resource hash="468e2c69a8a397c2470b8a157e8588fc">
+                  <fr:resource-content>
+                    <fr:img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMi4yIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzQ2LjIwMTc5M3B0JyBoZWlnaHQ9JzEwLjM3Nzc0M3B0JyB2aWV3Qm94PSctNzIgLTcyIDMwLjgwMTE5NiA2LjkxODQ5Nic+CjxzdHlsZSB0eXBlPSd0ZXh0L2Nzcyc+CjwhW0NEQVRBW0Bmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21yMTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQVhVQUFvQUFBQUFCdGdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hYeDBPMk50WVhBQUFBRTRBQUFBUHdBQUFFd0EvUUV6WjJ4NVpnQUFBWGdBQUFMc0FBQURnQzFUbUNKb1pXRmtBQUFFWkFBQUFDOEFBQUEyS2h4eHJXaG9aV0VBQUFTVUFBQUFId0FBQUNRRk9RR1BhRzEwZUFBQUJMUUFBQUFjQUFBQUhBMHZBTDFzYjJOaEFBQUUwQUFBQUJBQUFBQVFBdFFEaEcxaGVIQUFBQVRnQUFBQUdBQUFBQ0FBQ2dCRmJtRnRaUUFBQlBnQUFBRE5BQUFCT0lMaktxbHdiM04wQUFBRnlBQUFBQXdBQUFBZ0FBTUFBSGphWTJCbWZNUTRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFJNWkNoaFp2Z1A1RE5EcEpIVS9BY0tBd0FBZWcybWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdDeUFOQmNEQjFDT2lTR1JJWmtoZzZIay8zK2dHSVJkOVAvLy93WC81LytmL1g4U1dBY1VBQUJjWVE0bkFIamFOWkxOYnh0RkdNYm5lV2V6RzIvOHRWN3ZycjIyZC8yUjdOanhGOWplM2NScEhDZHVtMUtwRGxJU1VRbm9vYTNVSzVDb1FnZ3VYQkFYTGozQmdUOEFUdHpoQmlvUzlNaVpBM2N1MEFPWGhsbTNIWTFHbzFlamVYL1A4ejZNMlBiVnYvZ1B6OWliYk1yWVZwWkVJSUlvbmlFT0IyZzFWYzJEcG1xQmtJWElrWGRMdFIwN2lzT3hsWVVZUUdUaGVCVEZPTS9lZUJSRkNvWTdvd2R0V3JUTGM2dFJCUFc3Q3QyZDM1bTdhVUt1cEx0dytjemM3T2lmdnNzeHVYUENsMXRqS3BYMlc3ZGNKNFBnK2tHeFFzMk5ydnhtUEFmdFZmZjlaK28yaDlQZDNiMG1DT05mMSs4TnhKQm14MHd1c05iVmMzeUgzMWlic2RqMlljZVNMQm83SzJSVmszU1NlbVE3Q2IvVU5JQVdhT3JIU245dDJQVlBTc2lzSytUb1JuRDYzbWVjUHJtL2Y0OTRyODloK3Q1eHF0Y2YvUGw0c0xaTjFMNnBnNHh1SWIrdDBPY1A3My9KcDVNaGxPNUdYYW1rUWIxQnd0RmdqRGJwS2V0SkRpTUt0REEyWkdjUEs4TTh4SmJRUWpzU1lSUUk2YWkwOEZYbFEvSW1UekxIaDcxUWQzUkF0Qzh1eHg1UUcwN09DZjdvNG1Ma0w2bTRaY05Qdi9pNmZzUlJ5cmhIaHovYktkUTVyeVBiK0x1L29MTzNmMnhrWHhVa1MwMENYZUlYMW1MTVhFRVUxV1l3aVdJNXFScFVldzlXa0VOQzh4TDBlMzAvYm5hcWpiTEpONllINUViVy9PaHk1RU9TZllXenpkc2NteVBMNlpnQWZiRDh0bHFzSzFoMVJtR0Y5WElPdnN6UVIvaWRMYVIrNmZySzdjaDI0dWdBa1diWlF3UWlTbzRrTEsrM0xVY1VpQnhVb2NaaDRDVGhjbVlJQS9udWozRFA2UUszM2s5SG5xRXJXcGJ6dktvQ3VaVHoxdUVZZE5KdlROME5IMWplTFZ4ckZVMkZKeS9TbEQyYzcrMG9XNnA0cWh2Rlp0Zy9JYVNzdkU2QSs2aENJTFhjeVF1T04ycmRocVlXUzZsaFovZVVrUFZMaGdLVXY2Z0FoY1VTQ0VWbzhrS2l5N3o2QjJmMG1QblNTME9WQVhOR3ErZ1hKWHVpeDJpRlVxZ3NqSzBmYUgwdDA2OEt1TU9vMXMxM2xIZHVlN1h5RTN6ejRxK2N5QVhLZEhkbk9qNG5NdlhxS1NxMk5wc3RmdkxaLzhYMWY5dDQybU5nWkdCZ0FPS2R1YkxmNC9sdHZqSXdzekNBd0JPbmFiOFI5UC9QVEExTXg0RmNEZ1lta0NnQVYxZ01tQUI0Mm1OZ1pHQmdadmpQd01EQTFNQWd6TURPcE1JQUZFRUI3QUF3Y1FIT0FBS0FBQUFDQUFBcUFjY0FJd0k0QUNFQmtBQWRBWk1BSHdHTkFCTUFBQUFBQUY0QW9nRG9BU0lCamdIQWVOcGpZR1JnWUdCbmNHRmdZZ0FCUmdZMEFBQUgzd0JRZU5wRmpEMkx3a0FRaHA5Z0loZ0xHN0d3dU52Q09pVFIraG9MSzF1cmE5UmRKVVUyc29rQlFTenZkenRaRjI1Z2grZjltQVZTWGtRTUV6SHplNWlZUk5TSEU2Yk1BNDlGZlFkT1diSmlSQlJQeFBuaUozQXN5Vy9naEFXWHdHUHhuNEZUTnZ4dG0vcDI3NHhUKzBZYlo4KzFLL0tEY1czVldGVmt1ZGM3WTQwN2RrYXIwMFBwdm1yN2E2M1dXWm1WYkdtb3VYR253K0JRN01YUm5pMW55UndGT1FmdnRGU1NXbWtWWk9MKzV6dkpyZThjL1U5YU9pY2Vzalc5WExXeXI5SldyT1d5SE40Ylk4Y3ZFUUFBQUhqYVkyQm13QXNBQUgwQUJBPT0pIGZvcm1hdCgnd29mZicpO30KdGV4dC5mMCB7Zm9udC1mYW1pbHk6Y21yMTA7Zm9udC1zaXplOjkuOTYyNjRweH0KXV0+Cjwvc3R5bGU+CjxnIGlkPSdwYWdlMSc+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTcyLjAwMDAwNCcgeT0nLTY1LjA4MTUwNic+c2NyYXRjPHRzcGFuIHg9Jy00Ni43MzM1NjgnPmg8L3RzcGFuPjwvdGV4dD4KPC9nPgo8L3N2Zz4=" />
+                  </fr:resource-content>
+                  <fr:resource-source type="latex" part="preamble"><![CDATA[ \usepackage {ebproof}
         \usepackage {mathtools}
         \usepackage {amsmath, amsfonts}
         \DeclareMathOperator {\cof }{cof}
@@ -284,20 +316,40 @@ hash="001e43edcee3de853d88bcdbeb1a5fcd"><fr:embedded-tex-preamble><![CDATA[ \use
         \DeclareMathOperator {\inb }{in}
         \DeclareMathOperator {\bI }{\mathbb {I}}
          \DeclareMathOperator {\base }{\base }
-        ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        ]]></fr:resource-source>
+                  <fr:resource-source type="latex" part="body"><![CDATA[
         scratch
-        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:addr
-type="user">hott-0003</fr:addr><fr:route>hott-0003.xml</fr:route><fr:title
-text="(S^{1}) = {Z} "><fr:tex
-display="inline"><![CDATA[\Pi (S^{1}) = \mathbb {Z}]]></fr:tex> </fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="treyplante.xml"
-addr="treyplante"
-title="Trey Plante">Trey Plante</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+        ]]></fr:resource-source>
+                </fr:resource>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>323</fr:anchor>
+                <fr:addr type="user">hott-0003</fr:addr>
+                <fr:route>hott-0003.xml</fr:route>
+                <fr:title text="(S^{1}) = {Z} "><fr:tex display="inline"><![CDATA[\Pi (S^{1}) = \mathbb {Z}]]></fr:tex> </fr:title>
+                <fr:taxon>Theorem</fr:taxon>
+                <fr:date>
+                  <fr:year>2024</fr:year>
+                  <fr:month>9</fr:month>
+                  <fr:day>4</fr:day>
+                </fr:date>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link type="local" href="treyplante.xml" addr="treyplante" title="Trey Plante">Trey Plante</fr:link>
+                  </fr:author>
+                </fr:authors>
+              </fr:frontmatter>
+              <fr:mainmatter />
+              <fr:backmatter />
+            </fr:tree>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
