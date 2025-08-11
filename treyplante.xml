@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>254</fr:anchor>
+    <fr:anchor>260</fr:anchor>
     <fr:addr type="user">treyplante</fr:addr>
     <fr:route>treyplante.xml</fr:route>
     <fr:title text="Trey Plante">Trey Plante</fr:title>
@@ -26,7 +26,7 @@ Previously, I completed my Master's with Robert Rose and Dan Licata at Wesleyan 
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>255</fr:anchor>
+            <fr:anchor>261</fr:anchor>
             <fr:addr type="user">index</fr:addr>
             <fr:route>index.xml</fr:route>
             <fr:title text="Trey Plante">Trey Plante</fr:title>
@@ -52,6 +52,21 @@ Previously, I completed my Master's with Robert Rose and Dan Licata at Wesleyan 
   <html:td>Defended my Master's Thesis</html:td>
 
 </html:tr>
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr type="user">talks</fr:addr><fr:route>talks.xml</fr:route><fr:title text="Talks and Presentations">Talks and Presentations</fr:title><fr:authors><fr:author>trey-plante</fr:author></fr:authors><fr:meta name="download">assets/talk2.pdf</fr:meta></fr:frontmatter><fr:mainmatter>
+  <html:tr xmlns:html="http://www.w3.org/1999/xhtml">
+    
+  <html:th>25.08.05</html:th>
+
+    
+  <html:td>Algorithmic Equivalence with Extension Types and Disjunction Elimination</html:td>
+
+    
+  <html:td>MURI Meeting 2025</html:td>
+
+    
+  <html:td />
+
+</html:tr>
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter>
           <fr:backmatter />
         </fr:tree>
@@ -66,7 +81,7 @@ Previously, I completed my Master's with Robert Rose and Dan Licata at Wesleyan 
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>257</fr:anchor>
+            <fr:anchor>263</fr:anchor>
             <fr:addr type="user">index</fr:addr>
             <fr:route>index.xml</fr:route>
             <fr:title text="Trey Plante">Trey Plante</fr:title>
@@ -90,6 +105,21 @@ Previously, I completed my Master's with Robert Rose and Dan Licata at Wesleyan 
 
     
   <html:td>Defended my Master's Thesis</html:td>
+
+</html:tr>
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr type="user">talks</fr:addr><fr:route>talks.xml</fr:route><fr:title text="Talks and Presentations">Talks and Presentations</fr:title><fr:authors><fr:author>trey-plante</fr:author></fr:authors><fr:meta name="download">assets/talk2.pdf</fr:meta></fr:frontmatter><fr:mainmatter>
+  <html:tr xmlns:html="http://www.w3.org/1999/xhtml">
+    
+  <html:th>25.08.05</html:th>
+
+    
+  <html:td>Algorithmic Equivalence with Extension Types and Disjunction Elimination</html:td>
+
+    
+  <html:td>MURI Meeting 2025</html:td>
+
+    
+  <html:td />
 
 </html:tr>
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter>
